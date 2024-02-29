@@ -1,19 +1,12 @@
-- name: Software Engineer Keywords
+- name: 编程技能
   keywords:
-      - Java
+      - javascript
       - C++
       - Python
       - Design Patterns
 
-- name: Mobile Developer Keywords
+- name: 人工智能
   keywords:
-      - Android
-      - Reverse Engineering
-
-- name: Windows Developer Keywords
-  keywords:
-      - Win32 SDK
-      - DuiLib
-      - WTL
-      - COM
-      - WinDbg
+      - 深度学习
+      - 大模型
+      - 自动驾驶
