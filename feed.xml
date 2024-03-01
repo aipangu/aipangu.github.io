@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="koalai.org/jekyll-theme-yat/feed.xml" rel="self" type="application/atom+xml" /><link href="koalai.org/jekyll-theme-yat/" rel="alternate" type="text/html" /><updated>2024-03-01T22:53:52+08:00</updated><id>koalai.org/jekyll-theme-yat/feed.xml</id><title type="html">考拉AI</title><subtitle>考拉AI的个人博客</subtitle><author><name>考拉AI</name></author><entry><title type="html">OpenAI Sora 如何使用：最新详细教程-新手小白必看</title><link href="koalai.org/jekyll-theme-yat/2024/03/01/sora-use/" rel="alternate" type="text/html" title="OpenAI Sora 如何使用：最新详细教程-新手小白必看" /><published>2024-03-01T00:00:00+08:00</published><updated>2024-03-01T00:00:00+08:00</updated><id>koalai.org/jekyll-theme-yat/2024/03/01/sora-use</id><content type="html" xml:base="koalai.org/jekyll-theme-yat/2024/03/01/sora-use/"><![CDATA[<h2 id="sora-是什么">Sora 是什么？</h2>
+
+<p>2024年2月16日，OpenAI 在其官网上面正式宣布推出文本生成视频的大模型 Sora:</p>
+
+<p><a href="https://openai.com/sora">https://openai.com/sora</a></p>
+
+<p>（PS：目前 openai 官方还未开放 sora 灰度，不过根据文生图模型 DALL·E 案例，一定是先给 ChatGPT Plus 付费用户使用，需要注册或者升级 GPT Plus 可以看这个教程: <a href="https://koalai.org/2024/02/29/chatgpt4.0-kaitong/">升级 ChatGPT Plus 的教程</a> ，一分钟完成升级</p>
+
+<p>Sora能够根据简单的文本描述，生成高达60秒的高质量视频，使得视频创作变得前所未有的简单和高效。</p>
+
+<p>本文将为您提供关于如何使用Sora的最新详细教程。</p>
+
+<h2 id="2-sora-视频案例">2. Sora 视频案例</h2>
+
+<p>Sora的应用范围非常广泛，从教育教学、产品演示到内容营销等，都可以通过Sora来实现高质量的视频内容创作。</p>
+
+<p>下面是 OpenAI 官方发布的应用案例：</p>
+
+<blockquote>
+  <p>1.Prompt: A stylish woman walks down a Tokyo street filled with warm glowing neon and animated city signage. She wears a black leather jacket, a long red dress, and black boots, and carries a black purse. She wears sunglasses and red lipstick. She walks confidently and casually. The street is damp and reflective, creating a mirror effect of the colorful lights. Many pedestrians walk about.</p>
+</blockquote>
+
+<p>翻译：一位时尚的女性走在东京街头，周围是温暖闪亮的霓虹灯和活力四射的城市标识。她穿着一件黑色皮夹克，一条长长的红色连衣裙，搭配黑色靴子，并背着一个黑色手提包。她戴着墨镜，涂着红色口红。她步履自信，悠然自得地走着。街道潮湿而反光，呈现出丰富多彩的灯光的镜面效果。许多行人在街上走动。</p>
+
+<p><img src="https://cdn.how2cs.cn/csguide/093357.jpg" alt="openai sora文生视频案例" /></p>
+
+<blockquote>
+  <p>2.Prompt: Several giant wooly mammoths approach treading through a snowy meadow, their long wooly fur lightly blows in the wind as they walk, snow covered trees and dramatic snow capped mountains in the distance, mid afternoon light with wispy clouds and a sun high in the distance creates a warm glow, the low camera view is stunning capturing the large furry mammal with beautiful photography, depth of field.</p>
+</blockquote>
+
+<p>翻译：几只巨大的长毛猛犸象踏过一片雪白的草地，它们长长的毛发在微风中轻轻飘动着，远处覆盖着雪的树木和雄伟的雪山，午后的光线下有些薄云，太阳高悬在远方，营造出温暖的光芒。低角度的摄影视角令人惊叹，捕捉到了这些大型毛茸茸的哺乳动物，画面景深感强烈。</p>
+
+<p><img src="https://cdn.how2cs.cn/csguide/093437.jpg" alt="openai sora文生视频案例" /></p>
+
+<blockquote>
+  <p>3.Prompt: Historical footage of California during the gold rush.</p>
+</blockquote>
+
+<p>翻译：加利福尼亚淘金热时期的历史影像。</p>
+
+<p><img src="https://pica.zhimg.com/v2-2a45207cad175a764b8d5d59947792c7.jpg?source=382ee89a" alt="openai sora文生视频案例" /></p>
+
+<blockquote>
+  <p>4.Prompt: A close up view of a glass sphere that has a zen garden within it. There is a small dwarf in the sphere who is raking the zen garden and creating patterns in the sand.</p>
+</blockquote>
+
+<p>翻译：放大观看一个玻璃球，里面有一个禅宗花园。球内有一个小矮人，他正在用耙子整理禅宗花园，并在沙地上创造出图案。</p>
+
+<p><img src="https://cdn.how2cs.cn/csguide/093726.jpg" alt="openai sora文生视频案例" /></p>
+
+<blockquote>
+  <p>5.Prompt: A cartoon kangaroo disco dances.</p>
+</blockquote>
+
+<p>翻译：一只卡通袋鼠在迪斯科舞厅跳舞。</p>
+
+<p><img src="https://cdn.how2cs.cn/csguide/093806.jpg" alt="openai sora文生视频案例" /></p>
+
+<blockquote>
+  <p>6.Prompt: The camera follows behind a white vintage SUV with a black roof rack as it speeds up a steep dirt road surrounded by pine trees on a steep mountain slope, dust kicks up from it’s tires, the sunlight shines on the SUV as it speeds along the dirt road, casting a warm glow over the scene. The dirt road curves gently into the distance, with no other cars or vehicles in sight. The trees on either side of the road are redwoods, with patches of greenery scattered throughout. The car is seen from the rear following the curve with ease, making it seem as if it is on a rugged drive through the rugged terrain. The dirt road itself is surrounded by steep hills and mountains, with a clear blue sky above with wispy clouds.</p>
+</blockquote>
+
+<p>翻译：摄像机跟随一辆白色老式SUV，顶部有黑色行李架，它加速通过一条陡峭的土路，周围是松树，地势陡峭，车轮卷起了尘土，阳光照射在SUV上，它沿着土路飞驰，给场景增添了温暖的光芒。土路在远处轻轻弯曲，看不到其他车辆。路边的树是红杉，绿色的植物点缀其中。汽车从后方的镜头中轻松地跟随着曲线，使其看起来好像在崎岖的地形中轻松驾驶。土路周围是陡峭的山丘和山脉，天空晴朗，偶有薄云飘过。</p>
+
+<p><img src="https://cdn.how2cs.cn/csguide/093801.jpg" alt="openai sora文生视频案例" /></p>
+
+<blockquote>
+  <p>7.Prompt: Reflections in the window of a train traveling through the Tokyo suburbs.</p>
+
+  <p>翻译：一辆列车穿越东京郊区时，窗户上的倒影。</p>
+</blockquote>
+
+<p><img src="https://cdn.how2cs.cn/csguide/094022.jpg" alt="openai sora文生视频案例" /></p>
+
+<p>8.Prompt: Tour of an art gallery with many beautiful works of art in different styles.<br />
+翻译：参观一个艺术画廊，展示了许多不同风格的精美艺术品。</p>
+
+<p><img src="https://cdn.how2cs.cn/csguide/094037.jpg" alt="openai sora文生视频案例" /></p>
+
+<blockquote>
+  <p>9.Prompt: A grandmother with neatly combed grey hair stands behind a colorful birthday cake with numerous candles at a wood dining room table, expression is one of pure joy and happiness, with a happy glow in her eye. She leans forward and blows out the candles with a gentle puff, the cake has pink frosting and sprinkles and the candles cease to flicker, the grandmother wears a light blue blouse adorned with floral patterns, several happy friends and family sitting at the table can be seen celebrating, out of focus. The scene is beautifully captured, cinematic, showing a 3/4 view of the grandmother and the dining room. Warm color tones and soft lighting enhance the mood.</p>
+</blockquote>
+
+<p>翻译：一位头发整齐梳理的祖母站在木制餐桌后面，桌上摆放着一个五彩缤纷的生日蛋糕，上面点着许多蜡烛，她的表情洋溢着纯粹的喜悦和幸福，眼中闪烁着快乐的光芒。她向前倾身，轻轻吹灭了蜡烛，蛋糕上涂着粉红色的糖霜和彩色糖粒，蜡烛的火焰也熄灭了，祖母穿着一件淡蓝色的上衣，上面点缀着花卉图案，可以看到几位快乐的朋友和家人坐在餐桌旁庆祝，但是他们处于焦点之外。这个场景被美丽地拍摄下来，有电影般的感觉，展示了祖母和餐厅的三分之四视角。温暖的色调和柔和的光线增强了氛围。</p>
+
+<p><img src="https://cdn.how2cs.cn/csguide/094117.jpg" alt="openai sora文生视频案例" /></p>
+
+<blockquote>
+  <p>10.Prompt: A Chinese Lunar New Year celebration video with Chinese Dragon.</p>
+</blockquote>
+
+<p>翻译：一个有中国龙的中国农历新年庆祝视频。</p>
+
+<p><img src="https://cdn.how2cs.cn/csguide/094447.jpg" alt="openai sora文生视频案例" /></p>
+
+<h2 id="3-sora-怎么使用">3. Sora 怎么使用</h2>
+
+<p>（PS：目前 openai 官方还未开放 sora 灰度，不过根据文生图模型 DALL·E 案例，一定是先给 ChatGPT Plus 付费用户使用，需要注册或者升级 GPT Plus 可以看这个教程: <a href="https://koalai.org/2024/02/29/chatgpt4.0-kaitong/">升级 ChatGPT Plus 的教程</a> ，一分钟完成升级</p>
+
+<h3 id="31-使用sora前的准备工作">3.1 使用Sora前的准备工作</h3>
+
+<p>在开始之前，确保您已经拥有了OpenAI账目，并获得了Sora的访问权限。准备好您想要转化成视频的文本描述，记住越详细越好。</p>
+
+<h3 id="32-sora使用步骤一文本描述">3.2 Sora使用步骤一：文本描述</h3>
+
+<p>登录您的OpenAI账户，找到Sora的使用界面。在指定区域输入您的文本描述，可以是一个故事概述、场景描述或是具体的动作指令。</p>
+
+<h3 id="33-sora使用步骤二生成视频">3.3 Sora使用步骤二：生成视频</h3>
+
+<p>完成文本描述和自定义设置后，点击“生成视频”按钮。Sora将开始处理您的请求，这可能需要几分钟时间。完成后，您可以预览生成的视频。</p>
+
+<p>**需要注意的是，截止2024年2月18日，OpenAI只向部分专业用户开放了Sora的访问权限。普通用户只能观看其发布的演示视频。</p>
+
+<h2 id="4-sora-常见问题">4. Sora 常见问题</h2>
+
+<p>OpenAI的Sora开启了视频创作的新纪元，无论是专业人士还是爱好者，都可以轻松创作出高质量的视频内容。尽管仍有一些限制，但随着技术的不断进步，相信这些问题将会逐渐被解决。立即尝试Sora，开启您的AI视频创作之旅吧</p>
+
+<h2 id="5-sora技术原理">5. Sora技术原理</h2>
+
+<p>OpenAI近日发布了一项重要的里程碑技术——Sora，它是基于文本生成视频的AI模型。通过简单的文本描述，Sora能够生成连贯的长达1分钟的视频。那么，Sora是如何实现这一壮举的呢？我们来揭开它的技术原理。</p>
+
+<h3 id="基于transformer架构">基于Transformer架构</h3>
+
+<p>Sora模型与GPT模型类似，都基于Transformer架构，这使得Sora具有极强的扩展性。Transformer是一种基于自注意力机制的神经网络架构，它能够同时处理输入文本中的所有位置信息，使得模型能够捕捉到全局的上下文信息。这样的架构使得Sora在生成视频时能够更好地理解文本描述。</p>
+
+<h3 id="扩散模型和训练稳定性">扩散模型和训练稳定性</h3>
+
+<p>Sora模型采用了扩散模型的方法，与传统的GAN模型相比，具有更好的生成多样性和训练稳定性。扩散模型通过逐步消除噪声来生成视频，这样可以有效地提高生成的视频质量。同时，通过采用扩散模型，Sora还能够生成更加逼真的视频场景。</p>
+
+<h3 id="生成视频的数据处理和压缩">生成视频的数据处理和压缩</h3>
+
+<p>生成视频需要处理大量的数据，对于这一问题，Sora模型采用了数据处理和压缩的技术。通过对视频数据进行处理和压缩，Sora能够在保持视频质量的同时，减少存储空间的占用。</p>
+
+<h3 id="视频质量和逼真度">视频质量和逼真度</h3>
+
+<p>Sora模型在生成视频的过程中，注重保持视频质量和逼真度。通过采用Transformer架构和扩散模型的方法，Sora能够生成更加连贯、且具有很高逼真度的视频场景。这使得Sora在应用领域具有广泛的潜力，比如可以用于影视制作、游戏开发等方面。</p>
+
+<p>参考链接：<a href="https://www.openai.com/research/sora/">https://www.openai.com/research/sora/</a></p>
+
+<h2 id="6-openai-sora如何使用的常见问答qa">6. openai sora如何使用的常见问答Q&amp;A</h2>
+
+<h3 id="问题sora是什么">问题：Sora是什么？</h3>
+
+<ul>
+  <li>Sora是由OpenAI开发的AI视频生成模型。</li>
+  <li>Sora可以根据用户提供的描述性文字生成长达60秒的高质量视频。</li>
+  <li>Sora的视频包含精细复杂的场景、生动的角色表情和复杂的镜头运动。</li>
+</ul>
+
+<h3 id="问题sora怎么使用">问题：Sora怎么使用？</h3>
+
+<ul>
+  <li>登录OpenAI账户并找到Sora的使用界面。</li>
+  <li>在指定区域输入您的文本描述，可以是一个故事概述、场景描述或是具体的动作指令。</li>
+  <li>点击生成按钮，OpenAI Sora会根据您的文本描述生成视频。</li>
+</ul>
+
+<h3 id="问题sora的优势有哪些">问题：Sora的优势有哪些？</h3>
+
+<ul>
+  <li>Sora具有极强的扩展性，基于Transformer架构，可以应用于各种场景。</li>
+  <li>Sora能够生成高质量、高清的视频，展现复杂场景的光影关系、物体的物理遮挡和碰撞关系。</li>
+  <li>Sora可以创造出包含多个角色、特定动作类型以及与主题和背景相符的详细场景。</li>
+</ul>
+
+<h3 id="问题sora的训练原理是什么">问题：Sora的训练原理是什么？</h3>
+
+<ul>
+  <li>Sora的训练分为两个阶段。首先，使用一个标注模型为训练集中的视频生成详细描述。</li>
+  <li>标注模型生成的描述能够更好地指导Sora生成视频。</li>
+  <li>Sora利用稳定扩散（Stable Diffusion）技术将静态噪声转换为连贯图像。</li>
+  <li>Sora模型采用初步的扩散模型生成视频长度，并逐步消除噪声完成视频。</li>
+</ul>]]></content><author><name>考拉AI</name></author><category term="ChatGPT" /><summary type="html"><![CDATA[OpenAI Sora 如何使用：最新详细教程-新手小白必看]]></summary></entry><entry><title type="html">国内如何快速开通 ChatGPT 4.0</title><link href="koalai.org/jekyll-theme-yat/2024/02/29/chatgpt4.0-kaitong/" rel="alternate" type="text/html" title="国内如何快速开通 ChatGPT 4.0" /><published>2024-02-29T00:00:00+08:00</published><updated>2024-02-29T00:00:00+08:00</updated><id>koalai.org/jekyll-theme-yat/2024/02/29/chatgpt4.0-kaitong</id><content type="html" xml:base="koalai.org/jekyll-theme-yat/2024/02/29/chatgpt4.0-kaitong/"><![CDATA[<p>关于国内快速开通ChatGPT4.0的方法，小白秒学秒用，保姆级教程。</p>
+
+<h2 id="如何升级-chatgpt-40">如何升级 ChatGPT 4.0</h2>
+
+<h2 id="一chatgpt40-的优势">一、ChatGPT4.0 的优势</h2>
+
+<p>（PS：如果想直接一键注册可以看 <a href="https://bewildcard.com/i/GPT778">https://bewildcard.com/i/GPT778</a>，注册的时候如果没有填邀请码，可以手动填入 <strong>GPT778</strong> 邀请码，可以免 2 美元的开卡费～）</p>
+
+<p>众所周知的原因，目前 Openai 已经把资源更多投入到 GPT4 以及训练未来 GPT5 了，GPT3.5 已经被一定程度上降智，同时 ChatGPT 4 支持多模态、GPTS 等能力，我个人感受来说，日常工作、编程、写文章已经完全离不开 4.0 了，这也是目前为止，我唯一一个愿意每个月掏 20 美元付费的产品。</p>
+
+<h2 id="二升级-40-为什么这么难">二、升级 4.0 为什么这么难？</h2>
+
+<p>但是升级 ChatGPT 4.0 很麻烦，不仅需要国外 VISA、Master 等双币信用卡，还需要有干净的 IP （国外IP，梯子用的人少），CHATGPT 是使用 stripe 进行收款，stripe 会根据账单地址、IP 地址等进行风控，国内付款一般都会被拦截。</p>
+
+<p>常常会见到这些报错：</p>
+
+<ul>
+  <li>Your credit card was declined.Try paying with a debit card instead.</li>
+  <li>您的信用卡被拒绝了。请尝试用借记卡支付。</li>
+</ul>
+
+<h2 id="三如何升级-chatgpt-40">三、如何升级 ChatGPT 4.0</h2>
+
+<p>然而由于官方限制，ChatGPT在国内无法直接访问，而ChatGPT Plus在此基础上还必须绑定美国的（欧洲的好像也行）信用卡才能开通，这门槛确实挡住了不少人……</p>
+
+<p>不过方法总比困难多，经过一晚上的折腾，成功开通会员！</p>
+
+<p><img src="https://cdn.how2cs.cn/csguide/085222.png" alt="" /></p>
+
+<p>推荐 wildcard 平台：</p>
+
+<p><a href="https://bewildcard.com/i/GPT778">https://bewildcard.com/i/GPT778</a></p>
+
+<p>这是一个虚拟卡平台（正规的，支付宝可以充值），开卡之后可以用 2 年，并且提供了一键升级和一键注册账号的能力：</p>
+
+<p><img src="https://cdn.how2cs.cn/csguide/085341.png" alt="" /></p>
+
+<h3 id="平台链接">平台链接</h3>
+
+<p>大家可以直接点链接进去：</p>
+
+<p><a href="https://bewildcard.com/i/GPT778">https://bewildcard.com/i/GPT778</a>，注册的时候如果没有填邀请码，可以手动填入 <strong>GPT778</strong> 邀请码，可以免 2 美元的开卡费～</p>
+
+<p>开通的是有效期1-2年的虚拟信用卡，开卡费包含两年年费，大约 70 元RMB，每天成本不到 1.5 毛钱。其他费用无，根据个人需求充值。</p>
+
+<p>关键是，如果没有消费成功，可以随时提现余额到支付宝。</p>]]></content><author><name>考拉AI</name></author><category term="ChatGPT" /><summary type="html"><![CDATA[关于国内快速开通 ChatGPT 4.0的方法，小白秒学秒用，保姆级教程。]]></summary></entry><entry><title type="html">国内ChatGPT账号注册教程，无需手机验证码</title><link href="koalai.org/jekyll-theme-yat/2024/01/01/chatgpt-sign-up-new/" rel="alternate" type="text/html" title="国内ChatGPT账号注册教程，无需手机验证码" /><published>2024-01-01T00:00:00+08:00</published><updated>2024-01-01T00:00:00+08:00</updated><id>koalai.org/jekyll-theme-yat/2024/01/01/chatgpt-sign-up-new</id><content type="html" xml:base="koalai.org/jekyll-theme-yat/2024/01/01/chatgpt-sign-up-new/"><![CDATA[<p>之前注册 ChatGPT 除了有一个海外邮箱，还需要手机号接码，一般都是推荐一些虚拟手机号接码平台，比如 <a href="https://sms-activate.org/?ref=4616107">sms-activate.org</a></p>
+
+<p>但是现在通通不用！</p>
+
+<p>只需要你能科学上网，即可注册。</p>
+
+<p>（如果还不会可以用这个：<a href="https://www.52xcjs.xyz/auth/register?code=tRE2VnaTKoEuiM7V">科学稳定访问 openai</a></p>
+
+<p>注册完后，或者你已经有账户，想要快速升级 Plus，可以看这篇教程：<a href="https://koalai.org/2024/02/29/chatgpt4.0-kaitong/">ChatGPT 2分钟升级 Plus方法</a></p>
+
+<p>注册步骤：</p>
+
+<p>国内的邮箱都不再允许注册 ChatGPT，建议申请一个免费的海外邮箱 Proton 来注册，其他海外邮箱，如 Gmail 也可以，但是注册难度高一些，步骤繁琐。</p>
+
+<h2 id="一注册-proton-邮箱">一、注册 proton 邮箱</h2>
+
+<h2 id="11-访问-proton">1.1 访问 proton</h2>
+
+<p><a href="https://proton.me/">https://proton.me/</a></p>
+
+<p>选择右上角的 「Create a free account」</p>
+
+<p><img src="https://cdn.how2cs.cn/csguide/054443.png" alt="proton 网站" /></p>
+
+<h2 id="12-选择免费套餐">1.2 选择免费套餐</h2>
+
+<p><img src="https://cdn.how2cs.cn/csguide/054505-1.png" alt="proton 套餐" /></p>
+
+<h2 id="13-选择邮箱后缀设置用户名和密码">1.3 选择邮箱后缀，设置用户名和密码</h2>
+
+<p>推荐选择 proton.me</p>
+
+<p><img src="https://cdn.how2cs.cn/csguide/151156.png" alt="proton" /></p>
+
+<h2 id="14-通过真人检验跳过手机验证">1.4 通过真人检验，跳过手机验证</h2>
+
+<p>依次拖动验证码，然后设置显示的名称，跳过手机验证就可以。</p>
+
+<p><img src="https://cdn.how2cs.cn/csguide/151253.png" alt="verification 验证" /></p>
+
+<p><img src="https://cdn.how2cs.cn/csguide/151315.png" alt="proton 验证" /></p>
+
+<p>注册完后，可以去登陆邮箱，方便接收验证码：</p>
+
+<p><a href="https://proton.me/">https://proton.me/</a></p>
+
+<h2 id="二注册-openai-账号">二、注册 OpenAI 账号</h2>
+
+<h2 id="21-申请-openai">2.1 申请 openai</h2>
+
+<p>首先打开 <a href="https://chat.openai.com/">OpenAI</a> 的账户注册页面，输入邮箱:</p>
+
+<p><a href="https://chat.openai.com/">https://chat.openai.com/</a></p>
+
+<p><img src="https://cdn.how2cs.cn/csguide/151820.png" alt="openai截图" /></p>
+
+<p>首先验证邮箱，去 Proton.me 收件箱里点击「Verify email address」即可。</p>
+
+<p><img src="https://cdn.how2cs.cn/csguide/151902.png" alt="验证邮箱" /></p>
+
+<p>然后提供你的名和姓及生日，并点击继续</p>
+
+<p><img src="https://cdn.how2cs.cn/csguide/151929.png" alt="生日" /></p>
+
+<p>然后选择您创建 API 还是 ChatGPT账户即可。</p>
+
+<p>个人用户一般都选择 ChatGPT 账户即可：</p>
+
+<p><img src="https://cdn.how2cs.cn/csguide/152006.png" alt="" /></p>
+
+<p>Openai 的用户体系分成两大类：ChatGPT 用户和API开发者用户，两个体系是相互独立的，用户名密码是一致的，但是访问入口和支付都是独立的：</p>
+
+<p>ChatGPT 用户的登录入口是 <a href="https://chat.openai.com/">https://chat.openai.com</a><br />
+API 开发者用户的登录入口是 <a href="https://platform.openai.com/">https://platform.openai.com</a></p>
+
+<p>ChatGPT 用户获取 GPT-4 的使用权限，是通过购买 GPT Plus 会员，会员的收费标准是 20 美元/每月。</p>
+
+<p>购买 GPT Plus 会员后，可以在 Chat 界面选择 GPT4 进行聊天。</p>
+
+<p>购买教程在这里:</p>
+
+<p><a href="https://koalai.org/2024/02/29/chatgpt4.0-kaitong/">ChatGPT 2分钟升级 Plus方法</a></p>
+
+<p>API 开发者用户获取 GPT-4 API的使用权限，是通过升级付费帐户，升级付费帐户的教程在这里。</p>
+
+<p>然后需要预充值5美元以上，才能开通GPT-4的访问权限</p>
+
+<p>本文参考来源 <a href="https://bewildcard.com/i/GPT778">bewildcard</a></p>]]></content><author><name>考拉AI</name></author><category term="ChatGPT" /><summary type="html"><![CDATA[国内ChatGPT账号注册教程，无需手机验证码]]></summary></entry><entry><title type="html">onlyfans虚拟信用卡订阅教程-Onlyfans 注册、充值全流程</title><link href="koalai.org/jekyll-theme-yat/2023/11/01/chatgpt4.0-onlyfans/" rel="alternate" type="text/html" title="onlyfans虚拟信用卡订阅教程-Onlyfans 注册、充值全流程" /><published>2023-11-01T00:00:00+08:00</published><updated>2023-11-01T00:00:00+08:00</updated><id>koalai.org/jekyll-theme-yat/2023/11/01/chatgpt4.0-onlyfans</id><content type="html" xml:base="koalai.org/jekyll-theme-yat/2023/11/01/chatgpt4.0-onlyfans/"><![CDATA[<h2 id="onlyfans怎么国内支付">onlyfans怎么国内支付？</h2>
+
+<p>onlyfans不支持国内银行开的普通卡，需要使用特定的虚拟卡进行订阅。</p>
+
+<p>下面我们来看下社交平台onlyfans虚拟信用卡订阅教程。</p>
+
+<p>（PS：本文教程完全目前可用(24年)，可以放心使用~</p>
+
+<h2 id="一注册">一、注册</h2>
+
+<h3 id="11-注册链接">1.1 注册链接</h3>
+
+<p><a href="https://onlyfans.com/">https://onlyfans.com/</a><br />
+使用国内邮箱、qq、163 等邮箱即可注册</p>
+
+<p><img src="https://cdn.how2cs.cn/csguide/142120.png" alt="onlyfans" /></p>
+
+<h3 id="12-邮箱验证">1.2 邮箱验证</h3>
+
+<p>然后进行邮箱验证，我们这里点击发送会收到一封onlyfans的验证邮件，将收到的链接在登录的浏览器里复制粘贴打开即可验证成功。</p>
+
+<p><img src="https://cdn.how2cs.cn/csguide/142312.png" alt="邮箱验证onlyfans" /></p>
+
+<h2 id="二支付">二、支付</h2>
+
+<h3 id="21-不建议大家去某宝店铺买">2.1 不建议大家去某宝店铺买</h3>
+
+<p>淘宝店铺的开卡费很贵，并且是一次性使用！！！</p>
+
+<p>我已经踩过坑了，买了 30 usd，实际汇率只需要 220 元左右，但是收了 280，最最关键的是这个卡只能用一次，是临时的！</p>
+
+<p><img src="https://cdn.how2cs.cn/csguide/152529.jpg" alt="" /></p>
+
+<h3 id="22-推荐长期稳定的虚拟卡平台">2.2 推荐长期稳定的虚拟卡平台</h3>
+
+<p>比如：</p>
+
+<p><a href="https://bewildcard.com/i/GPT778">https://bewildcard.com/i/GPT778</a> ( 使用这个链接复制到浏览器打开，2分钟即可搞定开卡，还可享受88折优惠~)</p>
+
+<p>用这个链接或者使用推荐码 <strong>GPT778</strong> 还可以享受开卡88折优惠，开卡费总共100元左右，<strong>开的卡有效期达2年</strong>，后续每次消费只需要充值你需要的美元金额即可，直接银行卡就能支付入账，超级方便，冲多了还可以提现回来。</p>
+
+<p><img src="https://cdn.how2cs.cn/csguide/152535.png" alt="wildcard" /></p>
+
+<h2 id="三-开好卡后如何使用">三 开好卡后，如何使用</h2>
+
+<p>首先往卡里充值订阅博主付费内容需要的金额即可（建议多充1-2美元，防止扣款失败）</p>
+
+<p>然后去onlyfans绑定虚拟卡，<a href="https://onlyfans.com/my/payments/add_card">https://onlyfans.com/my/payments/add_card</a>：</p>
+
+<p><img src="https://cdn.how2cs.cn/csguide/152542.png" alt="虚拟卡" /></p>
+
+<p>上面需要的每一项信息，都可以直接在虚拟卡网页上看到，直接复制过去即可：</p>
+
+<p><img src="https://cdn.how2cs.cn/csguide/143711.png" alt="onlyfans绑定卡方式" /></p>
+
+<p>绑定支付信用卡后，就可以去订阅喜欢的博主啦，比如 hongkongdoll 之类的，，是不是很快捷：</p>
+
+<p><img src="https://cdn.how2cs.cn/csguide/152556.png" alt="onlyfans绑定卡" /></p>]]></content><author><name>考拉AI</name></author><category term="ChatGPT" /><summary type="html"><![CDATA[onlyfans虚拟信用卡订阅教程-Onlyfans 注册、充值全流程]]></summary></entry><entry><title type="html">ChatGPT 怎么注册账号，新手小白最新详细使用教程-（国内可用接码手机推荐）</title><link href="koalai.org/jekyll-theme-yat/2023/10/01/chatgpt-sign-up/" rel="alternate" type="text/html" title="ChatGPT 怎么注册账号，新手小白最新详细使用教程-（国内可用接码手机推荐）" /><published>2023-10-01T00:00:00+08:00</published><updated>2023-10-01T00:00:00+08:00</updated><id>koalai.org/jekyll-theme-yat/2023/10/01/chatgpt-sign-up</id><content type="html" xml:base="koalai.org/jekyll-theme-yat/2023/10/01/chatgpt-sign-up/"><![CDATA[<h2 id="升级-chatgpt-plus">升级 ChatGPT Plus</h2>
+
+<p><strong>ChatGPT</strong> 的火爆程度一直居高不下，相信大家对它的名字早已耳熟能详。这得益于它不仅功能强大，而且关键的是账户永久免费使用（请注意：官方账户确实是永久免费的，任何需要充值才能提问或者提问次数有限制的都是盗版山寨产品）。然而，ChatGPT 并不支持国内网络和国内用户，许多刚接触的朋友可能对 <strong>ChatGPT</strong> 还不太了解，不知道如何才能拥有账号。本文将一步一步向大家解释，<strong>ChatGPT</strong> 是什么，以及如何使用和注册账号。</p>
+
+<p>(PS: 如果你已经有了 ChatGPT账号，需要升级 Plus 可以看这篇教程，几分钟搞定: <a href="https://koalai.org/2024/02/29/chatgpt4.0-kaitong/">ChatGPT升级Plus支付教程</a></p>
+
+<h2 id="chatgpt-是什么">ChatGPT 是什么</h2>
+
+<p><strong>ChatGPT</strong> 是由 OpenAI 开发的一款大型语言模型，擅长处理各种自然语言任务，如回答问题、生成文本和进行对话等。</p>
+
+<p>简而言之，Chat GPT 是最新一代的通用超强 AI，拥有庞大的知识库，能够回答形形色色的问题。无论您有什么疑问，向 ChatGPT 提问就能得到解答！</p>
+
+<p>ChatGPT 自2022年11月30日发布以来，仅用了五天时间，全球用户数就突破了100万大关。</p>
+
+<p><img src="https://cdn.how2cs.cn/csguide/161436.jpg" alt="ChatGPT" /></p>
+
+<h2 id="chatgpt-官网">ChatGPT 官网</h2>
+
+<p><strong>ChatGPT</strong>的官方网址是 <a href="https://chat.openai.com/">https://chat.openai.com</a></p>
+
+<p>请认准其官方域名 <a href="https://openai.com/">openai.com</a>，不是这个域名的ChatGPT服务都是镜像站或者假冒伪劣网站，请注意辨别。（国内山寨版本很多）</p>
+
+<h2 id="如何注册-chatgpt-使用流程">如何注册 ChatGPT 使用流程</h2>
+
+<p>我们都想尝试一下这样强大的工具，那么如何使用 <strong>ChatGPT</strong> 呢？下面我将逐步详细地为你介绍。</p>
+
+<p>使用 ChatGPT 主要包括4个步骤：</p>
+
+<ol>
+  <li>
+    <p>注册 ChatGPT 账号</p>
+  </li>
+  <li>
+    <p>注册需要一个外国手机号码：通过短信接码平台 <a href="https://sms-activate.org/?ref=4616107">sms-activate.org</a> 完成 ChatGPT 手机号验证</p>
+  </li>
+  <li>
+    <p>登录 ChatGPT 账号，对话框输入，开始使用 Chat GPT ！</p>
+  </li>
+  <li>
+    <p>输入任意问题，探索 ChatGPT 的强大功能</p>
+  </li>
+</ol>
+
+<p>好了，我们开始逐步图文介绍。</p>
+
+<p>由于 OpenAI 官方限制了中国大陆地区用户的使用，所以中国手机号码无法通过验证，需要使用外国手机号，这使得注册 Chat GPT 的过程稍微复杂一些。对于不喜欢麻烦的朋友，最简单直接的方法就是在淘宝购买一个已经注册并验证好的账号，购买后即可立即使用，无需准备各种复杂的环境（适合新手小白）。这是我非常推荐的方法！</p>
+
+<p>下面是具体过程。</p>
+
+<h2 id="1注册-chatgpt-账号">1.注册 ChatGPT 账号</h2>
+
+<p>注冊ChatGPT这一步主要包含以下几步（需要按照顺序逐步操作）：</p>
+
+<ol>
+  <li>将网络环境切换成国外ip（注意：必须是国外 ip 如美国、加拿大，日本，新加坡等openai支持的国家，香港澳门 ip 是不行的），且后续整个注册流程都必须在此网络环境下进行。</li>
+  <li>打开官方注册 <a href="https://chat.openai.com/auth/login">https://chat.openai.com/auth/login</a> 链接并使用自己的邮箱进行账号注册（网易，outlook邮箱不行，必须要gmail等国外邮箱，outlook以前可以，现在不行了）</li>
+  <li>打开邮箱查收 OpenAI 账号验证邮件，点击验证按钮完成邮箱验证</li>
+</ol>
+
+<p>下面每一个步骤的图片，大家可以对照着进行操作</p>
+
+<p><img src="https://cdn.how2cs.cn/csguide/161851.jpg" alt="chatgpt注册" /></p>
+
+<p><img src="https://cdn.how2cs.cn/csguide/161907.jpg" alt="chatgpt" /></p>
+
+<p><img src="https://cdn.how2cs.cn/csguide/161914.jpg" alt="chatgpt" /></p>
+
+<p><img src="https://cdn.how2cs.cn/csguide/161922.jpg" alt="chatgpt" /></p>
+
+<p>邮箱验证完成后，我们第一步注册 <a href="https://koalai.org/">ChatGPT 账号</a>就算完成了，但是到这里我们还不能开始使用 ChatGPT，因为我们还需要进行外国手机号码验证。没有通过手机号码验证是使用不了 OpenAI（ChatGPT的开发商） 的服务的。</p>
+
+<p>因为OpenAI官方的限制，国内和港澳的手机号码还有 Google Voice 的虚拟号码都是不能使用的。</p>
+
+<p>这时候就要用到下一步的接码平台。</p>
+
+<p>现在接码的成本大约在 1 美金以上，（之所以说以上，即如果你能一次验证成功，成本大约就是1美金，但是如果失败，就1美金往上）不过随着现在注册难度增大，有可能会接码失败，失败了就重新再来。需要再重新购买号码。</p>
+
+<p>那要怎么验证呢，请看下一步。</p>
+
+<h2 id="2完成-chatgtp-手机号码验证">2.完成 ChatGTP 手机号码验证</h2>
+
+<p>这一步需要用到接码平台完成手机号验证，推荐平台链接地址：<a href="https://sms-activate.org/?ref=4616107">sms-activate.org</a></p>
+
+<p>具体步骤如下：</p>
+
+<ol>
+  <li>使用自己的邮箱在 sms-activate.org 上注册账号并完成邮箱验证（其他接码平台同理，但并非所有平台都可靠，sms-activate 是经过我亲自验证的）</li>
+  <li>打开邮箱，查收验证邮件并点击链接完成 sms-activate.org 账号认证</li>
+  <li>登录 sms-activate，然后在右上角找到并点击充值按钮</li>
+  <li>在跳转后的页面中，向下滚动找到支付宝选项，建议大家先充值1美元（如有需要，再继续充值）</li>
+  <li>充值完成后，回到首页并搜索「open」关键字，就可以找到购买 OpenAI 验证码的临时号码链接</li>
+  <li>在右侧的激活区，你会看到待使用的临时号码，将这个号码复制到 OpenAI 的验证码接收区</li>
+  <li>在 OpenAI 的页面上点击发送验证码，然后在接码平台上接收验证码（有时可能稍慢，需要耐心等待），填入验证码，就完成了 ChatGPT 手机号验证。</li>
+</ol>
+
+<p>这一步比较长，但是操起其实也不复杂，简单说就是通过接码平台收验证码完成验证。（ps：6月份以后注册难度增加，就是可能会失败，比如号码失效，标记你的邮箱无法注册等）</p>
+
+<p>下面是每一步的操作图，大家可以对照操作。</p>
+
+<p><img src="https://cdn.how2cs.cn/csguide/162053.jpg" alt="chatgpt" /></p>
+
+<p>打开邮箱找到验证邮件</p>
+
+<p><img src="https://cdn.how2cs.cn/csguide/162108.jpg" alt="chatgpt" /></p>
+
+<p><img src="https://cdn.how2cs.cn/csguide/162128.jpg" alt="chatgpt" /></p>
+
+<p><img src="https://cdn.how2cs.cn/csguide/162136.jpg" alt="chatgpt" /></p>
+
+<p><img src="https://cdn.how2cs.cn/csguide/162156.jpg" alt="chatgpt" /></p>
+
+<p><img src="https://cdn.how2cs.cn/csguide/162200.jpg" alt="chatgpt" /></p>
+
+<p><img src="https://cdn.how2cs.cn/csguide/162211.png" alt="chatgpt" /></p>
+
+<p>历经千辛万苦，我们终于可以开始使用 ChatGPT 啦，恭喜！</p>
+
+<h2 id="3登录-chatgpt-账号并开始使用">3.登录 ChatGPT 账号并开始使用</h2>
+
+<p>有了官方账号，我们就可以直接去 ChatGPT 网站去登陆使用： <a href="https://chat.openai.com/auth/login">https://chat.openai.com/auth/login</a></p>
+
+<p>只需输入账号和密码，就可以成功登录。</p>
+
+<p>登录后，我们将看到 ChatGPT 的主界面。在屏幕的正下方，就是我们使用 ChatGPT 的输入对话框。ChatGPT 采用了交互式对话界面，使用起来非常便捷友好。你可以在此输入任何你感兴趣的内容，然后按回车键，ChatGPT 就会给出回答。</p>
+
+<p><img src="https://cdn.how2cs.cn/csguide/162238.png" alt="chatgpt" /></p>
+
+<p>比如我们问一下 ChatGPT 梯形相关的问题，看看他会怎么回答。</p>
+
+<p><img src="https://cdn.how2cs.cn/csguide/162252.png" alt="chatgpt" /></p>
+
+<p>到这里，你已经学会了如何使用 ChatGPT 了！</p>
+
+<h2 id="4探索-chat-gpt-的强大功能">4.探索 Chat GPT 的强大功能</h2>
+
+<p>你可以以各种方式向 ChatGPT 提问或下达指令，通过这一步你将更深入地体验到 ChatGPT 的强大功能。来吧，朋友，让我们真正掌握如何使用 Chat GPT。</p>
+
+<p>例如，你可以：</p>
+
+<ul>
+  <li>让 ChatGPT 为你写一首诗</li>
+  <li>让 ChatGPT 为你编写代码</li>
+  <li>让 ChatGPT 帮你翻译文本</li>
+  <li>让 ChatGPT 为你编写故事</li>
+</ul>
+
+<p><img src="https://cdn.how2cs.cn/csguide/162304.png" alt="chatgpt" /></p>
+
+<p><img src="https://cdn.how2cs.cn/csguide/162425.png" alt="chatgpt" /></p>
+
+<p><img src="https://cdn.how2cs.cn/csguide/162445.png" alt="chatgpt" /></p>
+
+<p><img src="https://cdn.how2cs.cn/csguide/162459.png" alt="chatgpt" /></p>
+
+<p>好啦，到这里为止，我们已经一步步教会了你怎麽注冊 ChatGPT账号，怎么通过 ChatGPT 手机号验证，怎么用 ChatGPT。</p>
+
+<p>祝大家玩的愉快！</p>
+
+<p>这更适合不懂技术或不想折腾但是又想马上尽快体验到 ChatGPT 的朋友，而且账号可靠，售后保证，有什么不懂随时可以咨询，用起来也很省心。</p>]]></content><author><name>考拉AI</name></author><category term="ChatGPT" /><summary type="html"><![CDATA[ChatGPT 怎么注册账号，新手小白最新详细使用教程-（国内可用接码手机推荐）]]></summary></entry></feed>
