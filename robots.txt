@@ -1,1 +1,1 @@
-Sitemap: koalai.org/sitemap.xml
+Sitemap: https://koalai.org/sitemap.xml

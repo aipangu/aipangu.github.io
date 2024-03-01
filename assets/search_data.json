@@ -5,7 +5,7 @@
   
     {
       "title"    : "页面没有找到",
-      "url"      : "koalai.org/404.html",
+      "url"      : "https://koalai.org/404.html",
       "keywords" : "404"
     } ,
   
@@ -13,7 +13,7 @@
   
     {
       "title"    : "About",
-      "url"      : "koalai.org/about/",
+      "url"      : "https://koalai.org/about/",
       "keywords" : "考拉AI"
     } ,
   
@@ -21,7 +21,7 @@
   
     {
       "title"    : "归档",
-      "url"      : "koalai.org/archives/",
+      "url"      : "https://koalai.org/archives/",
       "keywords" : "归档"
     } ,
   
@@ -29,7 +29,7 @@
   
     {
       "title"    : "Categories",
-      "url"      : "koalai.org/categories/",
+      "url"      : "https://koalai.org/categories/",
       "keywords" : "分类"
     } ,
   
@@ -37,7 +37,7 @@
   
     {
       "title"    : "捐助 / Donate",
-      "url"      : "koalai.org/donate/",
+      "url"      : "https://koalai.org/donate/",
       "keywords" : "Donate"
     } ,
   
@@ -45,7 +45,7 @@
   
     {
       "title"    : "Fragments",
-      "url"      : "koalai.org/fragments/",
+      "url"      : "https://koalai.org/fragments/",
       "keywords" : "fragments"
     } ,
   
@@ -55,7 +55,7 @@
   
     {
       "title"    : "Links",
-      "url"      : "koalai.org/links/",
+      "url"      : "https://koalai.org/links/",
       "keywords" : "友情链接"
     } ,
   
@@ -63,7 +63,7 @@
   
     {
       "title"    : "mindmap",
-      "url"      : "koalai.org/mindmap-viewer/",
+      "url"      : "https://koalai.org/mindmap-viewer/",
       "keywords" : "mindmap"
     } ,
   
@@ -71,7 +71,7 @@
   
     {
       "title"    : "Open Source Projects",
-      "url"      : "koalai.org/open-source/",
+      "url"      : "https://koalai.org/open-source/",
       "keywords" : "开源,open-source,GitHub,开源项目"
     } ,
   
@@ -81,7 +81,7 @@
   
     {
       "title"    : "Wiki",
-      "url"      : "koalai.org/wiki/",
+      "url"      : "https://koalai.org/wiki/",
       "keywords" : "维基, Wiki"
     } ,
   
@@ -100,7 +100,7 @@
       "title"    : "ChatGPT 怎么注册账号，新手小白最新详细使用教程-（国内可用接码手机推荐）",
       "category" : "ChatGPT",
       
-      "url"      : "koalai.org/2023/10/01/chatgpt-sign-up/",
+      "url"      : "https://koalai.org/2023/10/01/chatgpt-sign-up/",
       "keywords" : "Chatgpt, Chatgpt4.0, AI, 人工智能"
     } ,
   
@@ -108,7 +108,7 @@
       "title"    : "onlyfans虚拟信用卡订阅教程-Onlyfans 注册、充值全流程",
       "category" : "ChatGPT",
       
-      "url"      : "koalai.org/2023/11/01/chatgpt4.0-onlyfans/",
+      "url"      : "https://koalai.org/2023/11/01/chatgpt4.0-onlyfans/",
       "keywords" : "Chatgpt, Onlyfans, Chatgpt4.0, AI, 人工智能"
     } ,
   
@@ -116,7 +116,7 @@
       "title"    : "国内ChatGPT账号注册教程，无需手机验证码",
       "category" : "ChatGPT",
       
-      "url"      : "koalai.org/2024/01/01/chatgpt-sign-up-new/",
+      "url"      : "https://koalai.org/2024/01/01/chatgpt-sign-up-new/",
       "keywords" : "Chatgpt, Chatgpt4.0, AI, 人工智能"
     } ,
   
@@ -124,7 +124,7 @@
       "title"    : "国内如何快速开通 ChatGPT 4.0",
       "category" : "ChatGPT",
       
-      "url"      : "koalai.org/2024/02/29/chatgpt4.0-kaitong/",
+      "url"      : "https://koalai.org/2024/02/29/chatgpt4.0-kaitong/",
       "keywords" : "Chatgpt, Chatgpt4.0, AI, 人工智能"
     } ,
   
@@ -132,7 +132,7 @@
       "title"    : "OpenAI Sora 如何使用：最新详细教程-新手小白必看",
       "category" : "ChatGPT",
       
-      "url"      : "koalai.org/2024/03/01/sora-use/",
+      "url"      : "https://koalai.org/2024/03/01/sora-use/",
       "keywords" : "Chatgpt, Sora, Chatgpt4.0, AI, 人工智能"
     } 
   

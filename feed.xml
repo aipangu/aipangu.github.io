@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="koalai.org/feed.xml" rel="self" type="application/atom+xml" /><link href="koalai.org/" rel="alternate" type="text/html" /><updated>2024-03-02T03:40:18+08:00</updated><id>koalai.org/feed.xml</id><title type="html">考拉AI</title><subtitle>考拉AI的个人博客</subtitle><author><name>考拉AI</name></author><entry><title type="html">OpenAI Sora 如何使用：最新详细教程-新手小白必看</title><link href="koalai.org/2024/03/01/sora-use/" rel="alternate" type="text/html" title="OpenAI Sora 如何使用：最新详细教程-新手小白必看" /><published>2024-03-01T00:00:00+08:00</published><updated>2024-03-01T00:00:00+08:00</updated><id>koalai.org/2024/03/01/sora-use</id><content type="html" xml:base="koalai.org/2024/03/01/sora-use/"><![CDATA[<h2 id="sora-是什么">Sora 是什么？</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="https://koalai.org/feed.xml" rel="self" type="application/atom+xml" /><link href="https://koalai.org/" rel="alternate" type="text/html" /><updated>2024-03-02T04:28:15+08:00</updated><id>https://koalai.org/feed.xml</id><title type="html">考拉AI</title><subtitle>考拉AI的个人博客</subtitle><author><name>考拉AI</name></author><entry><title type="html">OpenAI Sora 如何使用：最新详细教程-新手小白必看</title><link href="https://koalai.org/2024/03/01/sora-use/" rel="alternate" type="text/html" title="OpenAI Sora 如何使用：最新详细教程-新手小白必看" /><published>2024-03-01T00:00:00+08:00</published><updated>2024-03-01T00:00:00+08:00</updated><id>https://koalai.org/2024/03/01/sora-use</id><content type="html" xml:base="https://koalai.org/2024/03/01/sora-use/"><![CDATA[<h2 id="sora-是什么">Sora 是什么？</h2>
 
 <p>2024年2月16日，OpenAI 在其官网上面正式宣布推出文本生成视频的大模型 Sora:</p>
 
@@ -170,7 +170,7 @@
   <li>标注模型生成的描述能够更好地指导Sora生成视频。</li>
   <li>Sora利用稳定扩散（Stable Diffusion）技术将静态噪声转换为连贯图像。</li>
   <li>Sora模型采用初步的扩散模型生成视频长度，并逐步消除噪声完成视频。</li>
-</ul>]]></content><author><name>考拉AI</name></author><category term="ChatGPT" /><summary type="html"><![CDATA[OpenAI Sora 如何使用：最新详细教程-新手小白必看]]></summary></entry><entry><title type="html">国内如何快速开通 ChatGPT 4.0</title><link href="koalai.org/2024/02/29/chatgpt4.0-kaitong/" rel="alternate" type="text/html" title="国内如何快速开通 ChatGPT 4.0" /><published>2024-02-29T00:00:00+08:00</published><updated>2024-02-29T00:00:00+08:00</updated><id>koalai.org/2024/02/29/chatgpt4.0-kaitong</id><content type="html" xml:base="koalai.org/2024/02/29/chatgpt4.0-kaitong/"><![CDATA[<p>关于国内快速开通ChatGPT4.0的方法，小白秒学秒用，保姆级教程。</p>
+</ul>]]></content><author><name>考拉AI</name></author><category term="ChatGPT" /><summary type="html"><![CDATA[OpenAI Sora 如何使用：最新详细教程-新手小白必看]]></summary></entry><entry><title type="html">国内如何快速开通 ChatGPT 4.0</title><link href="https://koalai.org/2024/02/29/chatgpt4.0-kaitong/" rel="alternate" type="text/html" title="国内如何快速开通 ChatGPT 4.0" /><published>2024-02-29T00:00:00+08:00</published><updated>2024-02-29T00:00:00+08:00</updated><id>https://koalai.org/2024/02/29/chatgpt4.0-kaitong</id><content type="html" xml:base="https://koalai.org/2024/02/29/chatgpt4.0-kaitong/"><![CDATA[<p>关于国内快速开通ChatGPT4.0的方法，小白秒学秒用，保姆级教程。</p>
 
 <h2 id="如何升级-chatgpt-40">如何升级 ChatGPT 4.0</h2>
 
@@ -215,7 +215,7 @@
 
 <p>开通的是有效期1-2年的虚拟信用卡，开卡费包含两年年费，大约 70 元RMB，每天成本不到 1.5 毛钱。其他费用无，根据个人需求充值。</p>
 
-<p>关键是，如果没有消费成功，可以随时提现余额到支付宝。</p>]]></content><author><name>考拉AI</name></author><category term="ChatGPT" /><summary type="html"><![CDATA[关于国内快速开通 ChatGPT 4.0的方法，小白秒学秒用，保姆级教程。]]></summary></entry><entry><title type="html">国内ChatGPT账号注册教程，无需手机验证码</title><link href="koalai.org/2024/01/01/chatgpt-sign-up-new/" rel="alternate" type="text/html" title="国内ChatGPT账号注册教程，无需手机验证码" /><published>2024-01-01T00:00:00+08:00</published><updated>2024-01-01T00:00:00+08:00</updated><id>koalai.org/2024/01/01/chatgpt-sign-up-new</id><content type="html" xml:base="koalai.org/2024/01/01/chatgpt-sign-up-new/"><![CDATA[<p>之前注册 ChatGPT 除了有一个海外邮箱，还需要手机号接码，一般都是推荐一些虚拟手机号接码平台，比如 <a href="https://sms-activate.org/?ref=4616107">sms-activate.org</a></p>
+<p>关键是，如果没有消费成功，可以随时提现余额到支付宝。</p>]]></content><author><name>考拉AI</name></author><category term="ChatGPT" /><summary type="html"><![CDATA[关于国内快速开通 ChatGPT 4.0的方法，小白秒学秒用，保姆级教程。]]></summary></entry><entry><title type="html">国内ChatGPT账号注册教程，无需手机验证码</title><link href="https://koalai.org/2024/01/01/chatgpt-sign-up-new/" rel="alternate" type="text/html" title="国内ChatGPT账号注册教程，无需手机验证码" /><published>2024-01-01T00:00:00+08:00</published><updated>2024-01-01T00:00:00+08:00</updated><id>https://koalai.org/2024/01/01/chatgpt-sign-up-new</id><content type="html" xml:base="https://koalai.org/2024/01/01/chatgpt-sign-up-new/"><![CDATA[<p>之前注册 ChatGPT 除了有一个海外邮箱，还需要手机号接码，一般都是推荐一些虚拟手机号接码平台，比如 <a href="https://sms-activate.org/?ref=4616107">sms-activate.org</a></p>
 
 <p>但是现在通通不用！</p>
 
@@ -302,7 +302,7 @@ API 开发者用户的登录入口是 <a href="https://platform.openai.com/">htt
 
 <p>然后需要预充值5美元以上，才能开通GPT-4的访问权限</p>
 
-<p>本文参考来源 <a href="https://bewildcard.com/i/GPT778">bewildcard</a></p>]]></content><author><name>考拉AI</name></author><category term="ChatGPT" /><summary type="html"><![CDATA[国内ChatGPT账号注册教程，无需手机验证码]]></summary></entry><entry><title type="html">onlyfans虚拟信用卡订阅教程-Onlyfans 注册、充值全流程</title><link href="koalai.org/2023/11/01/chatgpt4.0-onlyfans/" rel="alternate" type="text/html" title="onlyfans虚拟信用卡订阅教程-Onlyfans 注册、充值全流程" /><published>2023-11-01T00:00:00+08:00</published><updated>2023-11-01T00:00:00+08:00</updated><id>koalai.org/2023/11/01/chatgpt4.0-onlyfans</id><content type="html" xml:base="koalai.org/2023/11/01/chatgpt4.0-onlyfans/"><![CDATA[<h2 id="onlyfans怎么国内支付">onlyfans怎么国内支付？</h2>
+<p>本文参考来源 <a href="https://bewildcard.com/i/GPT778">bewildcard</a></p>]]></content><author><name>考拉AI</name></author><category term="ChatGPT" /><summary type="html"><![CDATA[国内ChatGPT账号注册教程，无需手机验证码]]></summary></entry><entry><title type="html">onlyfans虚拟信用卡订阅教程-Onlyfans 注册、充值全流程</title><link href="https://koalai.org/2023/11/01/chatgpt4.0-onlyfans/" rel="alternate" type="text/html" title="onlyfans虚拟信用卡订阅教程-Onlyfans 注册、充值全流程" /><published>2023-11-01T00:00:00+08:00</published><updated>2023-11-01T00:00:00+08:00</updated><id>https://koalai.org/2023/11/01/chatgpt4.0-onlyfans</id><content type="html" xml:base="https://koalai.org/2023/11/01/chatgpt4.0-onlyfans/"><![CDATA[<h2 id="onlyfans怎么国内支付">onlyfans怎么国内支付？</h2>
 
 <p>onlyfans不支持国内银行开的普通卡，需要使用特定的虚拟卡进行订阅。</p>
 
@@ -359,7 +359,7 @@ API 开发者用户的登录入口是 <a href="https://platform.openai.com/">htt
 
 <p>绑定支付信用卡后，就可以去订阅喜欢的博主啦，比如 hongkongdoll 之类的，，是不是很快捷：</p>
 
-<p><img src="https://cdn.how2cs.cn/csguide/152556.png" alt="onlyfans绑定卡" /></p>]]></content><author><name>考拉AI</name></author><category term="ChatGPT" /><summary type="html"><![CDATA[onlyfans虚拟信用卡订阅教程-Onlyfans 注册、充值全流程]]></summary></entry><entry><title type="html">ChatGPT 怎么注册账号，新手小白最新详细使用教程-（国内可用接码手机推荐）</title><link href="koalai.org/2023/10/01/chatgpt-sign-up/" rel="alternate" type="text/html" title="ChatGPT 怎么注册账号，新手小白最新详细使用教程-（国内可用接码手机推荐）" /><published>2023-10-01T00:00:00+08:00</published><updated>2023-10-01T00:00:00+08:00</updated><id>koalai.org/2023/10/01/chatgpt-sign-up</id><content type="html" xml:base="koalai.org/2023/10/01/chatgpt-sign-up/"><![CDATA[<h2 id="升级-chatgpt-plus">升级 ChatGPT Plus</h2>
+<p><img src="https://cdn.how2cs.cn/csguide/152556.png" alt="onlyfans绑定卡" /></p>]]></content><author><name>考拉AI</name></author><category term="ChatGPT" /><summary type="html"><![CDATA[onlyfans虚拟信用卡订阅教程-Onlyfans 注册、充值全流程]]></summary></entry><entry><title type="html">ChatGPT 怎么注册账号，新手小白最新详细使用教程-（国内可用接码手机推荐）</title><link href="https://koalai.org/2023/10/01/chatgpt-sign-up/" rel="alternate" type="text/html" title="ChatGPT 怎么注册账号，新手小白最新详细使用教程-（国内可用接码手机推荐）" /><published>2023-10-01T00:00:00+08:00</published><updated>2023-10-01T00:00:00+08:00</updated><id>https://koalai.org/2023/10/01/chatgpt-sign-up</id><content type="html" xml:base="https://koalai.org/2023/10/01/chatgpt-sign-up/"><![CDATA[<h2 id="升级-chatgpt-plus">升级 ChatGPT Plus</h2>
 
 <p><strong>ChatGPT</strong> 的火爆程度一直居高不下，相信大家对它的名字早已耳熟能详。这得益于它不仅功能强大，而且关键的是账户永久免费使用（请注意：官方账户确实是永久免费的，任何需要充值才能提问或者提问次数有限制的都是盗版山寨产品）。然而，ChatGPT 并不支持国内网络和国内用户，许多刚接触的朋友可能对 <strong>ChatGPT</strong> 还不太了解，不知道如何才能拥有账号。本文将一步一步向大家解释，<strong>ChatGPT</strong> 是什么，以及如何使用和注册账号。</p>
 
