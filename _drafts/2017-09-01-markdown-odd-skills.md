@@ -37,7 +37,7 @@ keywords: Markdown, 奇技淫巧
 示例代码：
 
 ```
-<img align="right" src="https://raw.githubusercontent.com/mzlogin/mzlogin.github.io/master/images/posts/markdown/demo.png"/>
+<img align="right" src="https://raw.githubusercontent.com/aipangu/aipangu.github.io/master/images/posts/markdown/demo.png"/>
 
 这是一个示例图片。
 
@@ -53,7 +53,7 @@ N 与图片高度有关。
 ```
 示例效果：
 
-<img align="right" src="https://raw.githubusercontent.com/mzlogin/mzlogin.github.io/master/images/posts/markdown/demo.png"/>
+<img align="right" src="https://raw.githubusercontent.com/aipangu/aipangu.github.io/master/images/posts/markdown/demo.png"/>
 
 这是一个示例图片。
 
@@ -82,7 +82,7 @@ N 与图片高度有关。
 
 **加以控制后的效果：**
 
-<div align="center"><img width="65" height="75" src="https://raw.githubusercontent.com/mzlogin/mzlogin.github.io/master/images/posts/markdown/demo.png"/></div>
+<div align="center"><img width="65" height="75" src="https://raw.githubusercontent.com/aipangu/aipangu.github.io/master/images/posts/markdown/demo.png"/></div>
 ```
 
 示例效果：
@@ -93,7 +93,7 @@ N 与图片高度有关。
 
 **加以控制后的效果：**
 
-<div align="center"><img width="65" height="75" src="https://raw.githubusercontent.com/mzlogin/mzlogin.github.io/master/images/posts/markdown/demo.png"/></div>
+<div align="center"><img width="65" height="75" src="https://raw.githubusercontent.com/aipangu/aipangu.github.io/master/images/posts/markdown/demo.png"/></div>
 
 ## 格式化表格
 
