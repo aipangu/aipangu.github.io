@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: koalai.org
+url: https://koalai.org
 date_format: "ordinal"
 title: 考拉AI
 # subtitle: "考拉AI"
