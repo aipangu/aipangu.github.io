@@ -6,7 +6,7 @@ description: 使用 jsDelivr 加速 GitHub Pages 博客的图片资源、站内�
 keywords: GitHub, CDN, jsdelivr
 ---
 
-之前写过一篇 [使用 jsDelivr 免费加速 GitHub Pages 博客的静态资源](https://mazhuang.org/2020/05/01/cdn-for-github-pages/)，在那之后，又陆续想到并实施了几点利用 jsDelivr 进一步加速静态资源加载的措施，新起一篇作为记录和分享。
+之前写过一篇 [使用 jsDelivr 免费加速 GitHub Pages 博客的静态资源](https://koalai.org/2020/05/01/cdn-for-github-pages/)，在那之后，又陆续想到并实施了几点利用 jsDelivr 进一步加速静态资源加载的措施，新起一篇作为记录和分享。
 
 继上一轮改造过后，比较拖页面加载速度的主要有三点：
 
@@ -35,6 +35,7 @@ Jekyll 的 layout 可以理解为页面模板，它是可以继承的，比如�
 关键代码如下：
 
 {% raw %}
+
 ```liquid
 {% assign assets_base_url = site.url %}
 {% if site.cdn.jsdelivr.enabled %}
@@ -45,9 +46,10 @@ Jekyll 的 layout 可以理解为页面模板，它是可以继承的，比如�
     {{ content | replace: 'src="/images', assets_images_url }}
 {% include footer.html %}
 ```
+
 {% endraw %}
 
-大意就是，如果打开了启用 jsDelivr 加速的开关，就将 `content` 里的 `src="/images"` 替换为 `src="https://fastly.jsdelivr.net/gh/mzlogin/mzlogin.github.io@master/images"`，否则替换为 `src="https://mazhuang.org/images"`。
+大意就是，如果打开了启用 jsDelivr 加速的开关，就将 `content` 里的 `src="/images"` 替换为 `src="https://fastly.jsdelivr.net/gh/mzlogin/mzlogin.github.io@master/images"`，否则替换为 `src="https://koalai.org/images"`。
 
 以上便达成了我们的目的。
 
@@ -61,7 +63,7 @@ Jekyll 的 layout 可以理解为页面模板，它是可以继承的，比如�
 
 Jekyll 编译后长这样：
 
-<https://mazhuang.org/assets/search_data.json>
+<https://koalai.org/assets/search_data.json>
 
 这样的资源是没有办法直接通过替换网址来用 jsDelivr 加速的，因为 jsDelivr 上缓存的是编译前的文件，而我们需要的是编译后的。
 
@@ -130,13 +132,15 @@ Jekyll 编译后长这样：
     改为了
 
     {% raw %}
+
     ```liquid
-    {% if site.cdn.jsdelivr.enabled and site.url contains 'mazhuang.org' %}
+    {% if site.cdn.jsdelivr.enabled and site.url contains 'koalai.org' %}
       json: 'https://fastly.jsdelivr.net/gh/mzlogin/mzlogin.github.io@built/assets/search_data.json',
     {% else %}
       json: '{{ site.url }}/assets/search_data.json',
     {% endif %}
     ```
+
     {% endraw %}
 
 5. 将以上更改推送到源码仓库，等待处理完成即可。
@@ -147,4 +151,4 @@ Jekyll 编译后长这样：
 
 相关文章：
 
-- [使用 jsDelivr 免费加速 GitHub Pages 博客的静态资源](https://mazhuang.org/2020/05/01/cdn-for-github-pages/)
+- [使用 jsDelivr 免费加速 GitHub Pages 博客的静态资源](https://koalai.org/2020/05/01/cdn-for-github-pages/)

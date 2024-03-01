@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://aipangu.github.io
+url: koalai.org
 date_format: "ordinal"
 title: 考拉AI
 # subtitle: "考拉AI"

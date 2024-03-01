@@ -25,16 +25,16 @@ Toast 是 Android 开发里较常用的一个类了，有时候用它给用户�
 * [Toast 印象](#toast-印象)
 * [提出问题](#提出问题)
 * [解答问题](#解答问题)
-    * [Toast 的超时时间](#toast-的超时时间)
-    * [能不能弹一个时间超长的 Toast？](#能不能弹一个时间超长的-toast)
-    * [Toast 能不能在非 UI 线程调用？](#toast-能不能在非-ui-线程调用)
-    * [应用在后台时能不能 Toast？](#应用在后台时能不能-toast)
-    * [Toast 数量有没有限制？](#toast-数量有没有限制)
-    * [`Toast.makeText(…).show()` 具体都做了些什么？](#toastmaketextshow-具体都做了些什么)
+  * [Toast 的超时时间](#toast-的超时时间)
+  * [能不能弹一个时间超长的 Toast？](#能不能弹一个时间超长的-toast)
+  * [Toast 能不能在非 UI 线程调用？](#toast-能不能在非-ui-线程调用)
+  * [应用在后台时能不能 Toast？](#应用在后台时能不能-toast)
+  * [Toast 数量有没有限制？](#toast-数量有没有限制)
+  * [`Toast.makeText(…).show()` 具体都做了些什么？](#toastmaketextshow-具体都做了些什么)
 * [总结](#总结)
-    * [补充后的 Toast 知识点列表](#补充后的-toast-知识点列表)
-    * [遗留知识点](#遗留知识点)
-    * [本篇用到的源码分析方法](#本篇用到的源码分析方法)
+  * [补充后的 Toast 知识点列表](#补充后的-toast-知识点列表)
+  * [遗留知识点](#遗留知识点)
+  * [本篇用到的源码分析方法](#本篇用到的源码分析方法)
 * [后话](#后话)
 
 <!-- vim-markdown-toc -->
@@ -136,7 +136,7 @@ private static class TN extends ITransientNotification.Stub {
 
 这个 hideTimeoutMilliseconds 是干嘛的呢？
 
-文件 [platform_frameworks_base/core/java/android/view/WindowManager.java][8] 里能看到这个 
+文件 [platform_frameworks_base/core/java/android/view/WindowManager.java][8] 里能看到这个
 
 ```java
 /**
@@ -204,6 +204,7 @@ static final int SHORT_DELAY = 2000; // 2 seconds
 /** Amount of time (in milliseconds) a toast window can be shown. */
 public static final int TOAST_WINDOW_TIMEOUT = 3500; // 3.5 seconds
 ```
+
 至此，我们可以得出 **结论：Toast 的长/短超时时间分别为 3.5 秒和 2 秒。**
 
 *Tips: 也可以通过分析代码里的逻辑，一层一层追踪用到 `LENGTH_SHORT` 和 `LENGTH_LONG` 的地方，最终得出结论，而这里是根据一些合理推断来简化追踪过程，更快达到目标，这在一些场景下是可取和必要的。*
@@ -312,7 +313,7 @@ new Thread(new Runnable() {
 
 顺着堆栈里显示的方法调用从下往上一路看过去，
 
-文件 [platform_frameworks_base/core/java/android/widget/Toast.java][4] 
+文件 [platform_frameworks_base/core/java/android/widget/Toast.java][4]
 
 首先是两级 makeText 方法：
 
@@ -873,10 +874,8 @@ private static class TN extends ITransientNotification.Stub {
 
 最后，照例要安利一下我的微信公众号「闷骚的程序员」，扫码关注，接收 rtfsc-android 的最近更新。
 
-<div align="center"><img width="192px" height="192px" src="https://mazhuang.org/assets/images/qrcode.jpg"/></div>
+<div align="center"><img width="192px" height="192px" src="https://koalai.org/assets/images/qrcode.jpg"/></div>
 
-[1]: https://developer.android.com/reference/android/widget/Toast.html
-[2]: https://developer.android.com/guide/topics/ui/notifiers/toasts.html
 [3]: https://github.com/aosp-mirror/platform_frameworks_base
 [4]: https://github.com/aosp-mirror/platform_frameworks_base/blob/master/core/java/android/widget/Toast.java
 [5]: https://github.com/aosp-mirror/platform_frameworks_base/blob/master/services/core/java/com/android/server/notification/NotificationManagerService.java

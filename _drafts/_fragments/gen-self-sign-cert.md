@@ -43,7 +43,7 @@ openssl x509 -signkey local_self_key.pem -in local_self_csr.pem  -req -days 365 
 
 server {
    listen       443 ssl;
-   server_name  local.mazhuang.org;
+   server_name  local.koalai.org;
 
    ssl_certificate      local_self_cert.pem;
    ssl_certificate_key  local_self_key.pem;
@@ -63,4 +63,4 @@ server {
 
 ## 参考
 
-- https://www.cnblogs.com/wufengtinghai/p/15559537.html
+- <https://www.cnblogs.com/wufengtinghai/p/15559537.html>

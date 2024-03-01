@@ -7,7 +7,7 @@ description: 最好用的 Java IDE
 keywords: IDEA, Java
 ---
 
-快捷键基本与 [Android Studio](https://mazhuang.org/wiki/android-studio/) 一致，这里重点记录解决遇到过的问题。
+快捷键基本与 [Android Studio](https://koalai.org/wiki/android-studio/) 一致，这里重点记录解决遇到过的问题。
 
 ## Q&A
 
@@ -29,26 +29,26 @@ IDEA 与 Eclipse 配置文件目录的方式不同，可以将文件夹标记为
 
 ```
 org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [spring-demo.xml]; nested exception is java.io.FileNotFoundException: class path resource [spring-demo.xml] cannot be opened because it does not exist
-	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:343)
-	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:303)
-	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
-	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:216)
-	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:187)
-	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:251)
-	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:127)
-	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:93)
-	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
-	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:540)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:454)
-	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
-	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
-	at org.mazhuang.demo.protocol.db.DemoContext.init(DemoContext.java:22)
-	at org.mazhuang.demo.protocol.DemoServer.start(DemoServer.java:40)
-	at org.mazhuang.demo.DemoSrv.main(DemoSrv.java:17)
+ at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:343)
+ at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:303)
+ at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+ at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:216)
+ at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:187)
+ at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:251)
+ at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:127)
+ at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:93)
+ at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+ at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:540)
+ at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:454)
+ at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+ at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+ at org.mazhuang.demo.protocol.db.DemoContext.init(DemoContext.java:22)
+ at org.mazhuang.demo.protocol.DemoServer.start(DemoServer.java:40)
+ at org.mazhuang.demo.DemoSrv.main(DemoSrv.java:17)
 Caused by: java.io.FileNotFoundException: class path resource [spring-demo.xml] cannot be opened because it does not exist
-	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:158)
-	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:329)
-	... 15 more
+ at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:158)
+ at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:329)
+ ... 15 more
 ```
 
 **解决方案：**
@@ -191,7 +191,7 @@ Run > Edit Configurations > Templates
 
 File - Invalidate Caches
 
-参考：https://zhuanlan.zhihu.com/p/341969427
+参考：<https://zhuanlan.zhihu.com/p/341969427>
 
 ### 隐藏 Coverage 结果
 
@@ -212,7 +212,6 @@ java.lang.OutOfMemoryError: GC overhead limit exceeded
 Preferences - Build, Execution, Deployment - Compiler - Share build process heap size
 
 默认是 700，我修改成了 4096，单位 Mbytes。
-
 
 参考 <https://intellij-support.jetbrains.com/hc/en-us/community/posts/206166909-java-lang-OutOfMemoryError-GC-overhead-limit-exceeded>
 

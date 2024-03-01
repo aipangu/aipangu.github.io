@@ -30,7 +30,7 @@ keywords: GitHub, CDN, jsdelivr
 
 当然，因为页面自身还是在 GitHub Pages 托管，有时候首个请求还是会挺久才返回。
 
-改造后的效果可以打开 <https://mazhuang.org> 体验。
+改造后的效果可以打开 <https://koalai.org> 体验。
 
 ## 方案考虑
 
@@ -107,21 +107,25 @@ jsDelivr 对 GitHub 的支持是作为重要特性来宣传的，官网的介绍
 2. 修改 _layouts 里的文件，给名为 `assets_base_url` 的变量赋值，用它来代表加载静态资源的根路径：
 
     {% raw %}
+
     ```liquid
     {% assign assets_base_url = site.url %}
     {% if site.cdn.jsdelivr.enabled %}
         {% assign assets_base_url = "https://fastly.jsdelivr.net/gh/" | append: site.repository | append: '@master' %}
     {% endif %}
     ```
+
     {% endraw %}
 
 3. 修改以前直接用 {% raw %}`{{ site.url }}`{% endraw %} 拼接的静态资源引用链接，替换为 {% raw %}`{{ assets_base_url }}`{% endraw %}，比如 _includes/header.html 里：
 
     {% raw %}
+
     ```diff
     - <link rel="stylesheet" href="{{ site.url }}/assets/css/posts/index.css">
     + <link rel="stylesheet" href="{{ assets_base_url }}/assets/css/posts/index.css">
     ```
+
     {% endraw %}
 
 这样万一哪天 CDN 出了点什么状况，我们也可以很方便地通过一个开关就切回自已的资源链接恢复服务。
@@ -144,4 +148,4 @@ jsDelivr 对 GitHub 的支持是作为重要特性来宣传的，官网的介绍
 
 ## 相关文章
 
-- [使用 jsDelivr 免费加速 GitHub Pages 博客的静态资源（二）](https://mazhuang.org/2020/10/07/cdn-for-github-pages-2/)
+- [使用 jsDelivr 免费加速 GitHub Pages 博客的静态资源（二）](https://koalai.org/2020/10/07/cdn-for-github-pages-2/)

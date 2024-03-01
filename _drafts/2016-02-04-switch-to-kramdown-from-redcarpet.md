@@ -75,7 +75,6 @@ in kramdown:
 
 2. list item two
 
-
 * unordered list item one
 
   ```python
@@ -83,6 +82,7 @@ in kramdown:
   ```
 
 * unordered list item two
+
 ```
 
 ## 遍历 Collections
@@ -173,8 +173,6 @@ Hello, world!
 
 [1]: https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
 [2]: https://github.com/gettalong/kramdown/issues/209
-[3]: http://jekyllrb.com/docs/collections/
-[4]: https://mazhuang.org/2015/12/05/diff-between-gfm-and-redcarpet/#section-1
 [5]: https://github.com/gettalong/kramdown/issues/151
 [6]: https://github.com/jneen/rouge/wiki/List-of-supported-languages-and-lexers
 [7]: https://github.com/gettalong/kramdown/issues/304

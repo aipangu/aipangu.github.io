@@ -27,27 +27,33 @@ Did you mean?  tap
 ``undefined method `map` for false:FalseClass`` 这条报错之前总是伴随着 `Failed to open TCP connection to api.github.com:443` 一起出现，是在获取 GitHub Metadata 出错后，导致这一句报错：
 
 {% raw %}
+
 ```liquid
 {% assign repos = site.github.public_repositories | sort: "stargazers_count" | reverse %}
 ```
+
 {% endraw %}
 
 解决方法：
 
-模板里主要是 _includes/sidebar-popular-repo.html 和 _pages/open-source.md 两个文件里用到了 Metadata，将以上这一句前的判断条件做一下修改后问题解决，将
+模板里主要是 _includes/sidebar-popular-repo.html 和_pages/open-source.md 两个文件里用到了 Metadata，将以上这一句前的判断条件做一下修改后问题解决，将
 
 {% raw %}
+
 ```liquid
 {% if site.github.public_repositories != null %}
 ```
+
 {% endraw %}
 
 改为
 
 {% raw %}
+
 ```liquid
 {% if site.github.public_repositories != false %}
 ```
+
 {% endraw %}
 
 模板最新代码已经做了修改。
@@ -65,7 +71,7 @@ mathjax: true
 ---
 ```
 
-以上四个开关分别对应 flowchart.js（流程图）、sequence-diagram.js（时序图）、mermaid 和 MathJax 的支持，按需开启即可，然后就可以在正文里正常画图了，展示效果可以参见 <https://mazhuang.org/wiki/markdown/>，对应写法参考源文件 <https://github.com/mzlogin/mzlogin.github.io/blob/master/_wiki/markdown.md>。
+以上四个开关分别对应 flowchart.js（流程图）、sequence-diagram.js（时序图）、mermaid 和 MathJax 的支持，按需开启即可，然后就可以在正文里正常画图了，展示效果可以参见 <https://koalai.org/wiki/markdown/>，对应写法参考源文件 <https://github.com/mzlogin/mzlogin.github.io/blob/master/_wiki/markdown.md>。
 
 ## 如何修改代码高亮风格
 
@@ -106,7 +112,6 @@ mathjax: true
 2. giscus app 已经安装到 GitHub 账户；
 3. Discussions 功能已在仓库里启用；
 4. 如果存放评论的仓库里使用 giscus.json 文件限制加载的域名，要确保你的博客域名在这个文件里。
-
 
 ## 修改二维码图片
 
@@ -157,5 +162,5 @@ _config.yml 里的 components.qrcode 这一段用于控制二维码。
 
 参考 GitHub 的官方说明：<https://docs.github.com/zh/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages>
 
-[1]: https://mazhuang.org/about/
-[2]: https://mazhuang.org/links/
+[1]: https://koalai.org/about/
+[2]: https://koalai.org/links/

@@ -38,7 +38,7 @@ java.lang.NullPointerException: null
 
 ## 分析
 
-在之前的一篇文章里已经验证过这种写法是可以正常打印异常和堆栈信息的：[AI 自动补全的这句日志能正常打印吗？](https://mazhuang.org/2023/05/10/can-this-log-print-work/)
+在之前的一篇文章里已经验证过这种写法是可以正常打印异常和堆栈信息的：[AI 自动补全的这句日志能正常打印吗？](https://koalai.org/2023/05/10/can-this-log-print-work/)
 
 再三确认代码写法没问题，纳闷之下只好搜索了一下关键词「Java异常堆栈丢失」，发现了这篇文章：[Java异常堆栈丢失的现象及解决方法][1]，这里面提到的问题与我们遇到的一样，而且给出了 Oracle 官方文档里的相关说明：
 

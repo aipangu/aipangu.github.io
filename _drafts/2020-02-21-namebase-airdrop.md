@@ -50,7 +50,7 @@ Handshake Orgnization 可以提供 CA 的分布式替代方案，去中心化的
     cd hs-airdrop && npm install
     ```
 
-    我在 npm install 时遇到过两个问题，一个是 `Your PYTHONPATH points to a site-packages dir ...`，解决方案参考 <https://mazhuang.org/wiki/python/#your-pythonpath-points-to-a-site-packages-dir>，另一个是 `No Xcode or CLT version detected`，解决方案参考 <https://mazhuang.org/wiki/mac/#no-xcode-or-clt-version-detected>。
+    我在 npm install 时遇到过两个问题，一个是 `Your PYTHONPATH points to a site-packages dir ...`，解决方案参考 <https://koalai.org/wiki/python/#your-pythonpath-points-to-a-site-packages-dir>，另一个是 `No Xcode or CLT version detected`，解决方案参考 <https://koalai.org/wiki/mac/#no-xcode-or-clt-version-detected>。
 
 4. 第三步，找到你认为有资格的 SSH / PGP 私钥，一般是放在 ~/.ssh 目录下，比如我的是 ~/.ssh/id_rsa；
 
@@ -80,7 +80,7 @@ Handshake Orgnization 可以提供 CA 的分布式替代方案，去中心化的
 
     一、fee 可以设置高一点，比如 10，这会加快确认速度。
 
-    二、可以先把 https://github.com/handshake-org/hs-tree-data clone 到 ~/.hs-tree-data，这样在以上命令执行过程中需要下载的文件就在本地了。
+    二、可以先把 <https://github.com/handshake-org/hs-tree-data> clone 到 ~/.hs-tree-data，这样在以上命令执行过程中需要下载的文件就在本地了。
 
     **注：** 这一步会用到私钥，有很多人担忧这里存在安全隐患，文档上有说明说是用私钥只用于生成加密证明，不会被上传，证明里也不会包含私钥的任何信息，hs-airdrop 的源码是开源的，可以 review 它的代码，或者实在不放心的可以在操作完之后就把用于 GitHub 的密钥都换掉。
 

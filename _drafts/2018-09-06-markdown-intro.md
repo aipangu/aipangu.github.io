@@ -27,32 +27,32 @@ keywords: Markdown, VSCode
 <!-- vim-markdown-toc GFM -->
 
 * [背景](#背景)
-    * [优点](#优点)
-    * [使用场景](#使用场景)
-    * [编辑工具](#编辑工具)
+  * [优点](#优点)
+  * [使用场景](#使用场景)
+  * [编辑工具](#编辑工具)
 * [语法](#语法)
-    * [标题](#标题)
-    * [段落](#段落)
-    * [行内格式](#行内格式)
-    * [引用块](#引用块)
-    * [超链接](#超链接)
-    * [图片](#图片)
-    * [列表](#列表)
-    * [代码块](#代码块)
-    * [水平分割线](#水平分割线)
-    * [嵌入 HTML](#嵌入-html)
+  * [标题](#标题)
+  * [段落](#段落)
+  * [行内格式](#行内格式)
+  * [引用块](#引用块)
+  * [超链接](#超链接)
+  * [图片](#图片)
+  * [列表](#列表)
+  * [代码块](#代码块)
+  * [水平分割线](#水平分割线)
+  * [嵌入 HTML](#嵌入-html)
 * [扩展语法](#扩展语法)
-    * [表格](#表格)
-    * [任务列表](#任务列表)
-    * [删除线](#删除线)
-    * [自动链接](#自动链接)
-    * [emoji](#emoji)
+  * [表格](#表格)
+  * [任务列表](#任务列表)
+  * [删除线](#删除线)
+  * [自动链接](#自动链接)
+  * [emoji](#emoji)
 * [奇技淫巧](#奇技淫巧)
-    * [画流程图和时序图](#画流程图和时序图)
-    * [插入数学公式](#插入数学公式)
-    * [用 Markdown 做 PPT](#用-markdown-做-ppt)
-    * [用 Markdown 写微信公众号](#用-markdown-写微信公众号)
-    * [更多](#更多)
+  * [画流程图和时序图](#画流程图和时序图)
+  * [插入数学公式](#插入数学公式)
+  * [用 Markdown 做 PPT](#用-markdown-做-ppt)
+  * [用 Markdown 写微信公众号](#用-markdown-写微信公众号)
+  * [更多](#更多)
 * [参考](#参考)
 
 <!-- vim-markdown-toc -->
@@ -130,9 +130,9 @@ Setext-style 一级标题
 **预览效果：**
 
 > # atx-style 一级标题
-> 
+>
 > ## 二级标题
-> 
+>
 > ###### 六级标题
 >
 > Setext-style 一级标题
@@ -276,7 +276,7 @@ Markdown 支持行内式链接和引用式链接。
 **Markdown：**
 
 ```
-行内式 [博客](https://mazhuang.org "我的个人博客") 链接，带 title。
+行内式 [博客](https://koalai.org "我的个人博客") 链接，带 title。
 
 行内式 [GitHub](https://github.com/mzlogin) 链接。
 
@@ -284,13 +284,13 @@ Markdown 支持行内式链接和引用式链接。
 
 引用式 [GitHub][2] 链接，带 title。
 
-[1]: https://mazhuang.org
+[1]: https://koalai.org
 [2]: https://github.com/mzlogin "我的 GitHub 主页"
 ```
 
 **预览效果：**
 
-行内式 [博客](https://mazhuang.org "我的个人博客") 链接，带 title。
+行内式 [博客](https://koalai.org "我的个人博客") 链接，带 title。
 
 行内式 [GitHub](https://github.com/mzlogin) 链接。
 
@@ -298,17 +298,17 @@ Markdown 支持行内式链接和引用式链接。
 
 引用式 [GitHub][2] 链接，带 title。
 
-[1]: https://mazhuang.org
+[1]: https://koalai.org
 [2]: https://github.com/mzlogin "我的 GitHub 主页"
 
 **对应 HTML：**
 
 ```html
-<p>行内式 <a href="https://mazhuang.org" title="我的个人博客">博客</a> 链接，带 title。</p>
+<p>行内式 <a href="https://koalai.org" title="我的个人博客">博客</a> 链接，带 title。</p>
 
 <p>行内式 <a href="https://github.com/mzlogin">GitHub</a> 链接。</p>
 
-<p>引用式 <a href="https://mazhuang.org">博客</a> 链接。</p>
+<p>引用式 <a href="https://koalai.org">博客</a> 链接。</p>
 
 <p>引用式 <a href="https://github.com/mzlogin" title="我的 GitHub 主页">GitHub</a> 链接，带 title。</p>
 ```
@@ -320,17 +320,17 @@ Markdown 支持行内式链接和引用式链接。
 **Markdown：**
 
 ```
-![Alt text](https://mazhuang.org/favicon.ico "favicon")
+![Alt text](https://koalai.org/favicon.ico "favicon")
 ```
 
 **预览效果：**
 
-![Alt text](https://mazhuang.org/favicon.ico "favicon")
+![Alt text](https://koalai.org/favicon.ico "favicon")
 
 **对应 HTML：**
 
 ```html
-<img src="https://mazhuang.org/favicon.ico" alt="Alt text" title="favicon">
+<img src="https://koalai.org/favicon.ico" alt="Alt text" title="favicon">
 ```
 
 ### 列表
@@ -351,9 +351,9 @@ Markdown 支持行内式链接和引用式链接。
 
 **预览效果：**
 
-- 苹果
-- 葡萄
-- 榴莲
+* 苹果
+* 葡萄
+* 榴莲
 
 1. 苹果
 2. 葡萄
@@ -515,9 +515,9 @@ Markdown 标记语言的目的不是替代 HTML，也不是发明一种更便捷
 
 **预览效果：**
 
-- [x] 洗碗
-- [ ] 清洗油烟机
-- [ ] 拖地
+* [x] 洗碗
+* [ ] 清洗油烟机
+* [ ] 拖地
 
 **对应 HTML：**
 
@@ -569,7 +569,7 @@ https://github.com
 
 **预览效果：**
 
-https://github.com
+<https://github.com>
 
 <example@gmail.com>
 
@@ -635,7 +635,7 @@ https://github.com
 
 可以将公众号素材用 Markdown 编辑好后，贴到在线排版工具以后，复制到公众号编辑器里即可。有多种页面主题和代码主题可选择。
 
-我维护的工具地址：<https://md.mazhuang.org>
+我维护的工具地址：<https://md.koalai.org>
 
 ![微信公众号](https://raw.githubusercontent.com/mzlogin/markdown-intro/master/assets/wechat-markdown.png)
 
@@ -652,17 +652,17 @@ https://github.com
 
 以上功能基本都可以用 VSCode + 插件 Markdown Preview Enhanced 实现。
 
-另外可以参考我以前的一篇博客 [关于 Markdown 的一些奇技淫巧](https://mazhuang.org/2017/09/01/markdown-odd-skills/)。
+另外可以参考我以前的一篇博客 [关于 Markdown 的一些奇技淫巧](https://koalai.org/2017/09/01/markdown-odd-skills/)。
 
 ## 参考
 
 * [Markdown: Syntax - DARING FIREBALL](https://daringfireball.net/projects/markdown/syntax)
 * [Markdown - 维基百科](https://zh.wikipedia.org/wiki/Markdown)
 * [GitHub Flavored Markdown Spec](https://github.github.com/gfm/)
-* [关于 Markdown 的一些奇技淫巧](https://mazhuang.org/2017/09/01/markdown-odd-skills/)
+* [关于 Markdown 的一些奇技淫巧](https://koalai.org/2017/09/01/markdown-odd-skills/)
 
 ---
 
 欢迎关注我的微信公众号，接收 markdown-intro 最新动态。
 
-<div align="center"><img width="192px" height="192px" src="https://mazhuang.org/assets/images/qrcode.jpg"/></div>
+<div align="center"><img width="192px" height="192px" src="https://koalai.org/assets/images/qrcode.jpg"/></div>

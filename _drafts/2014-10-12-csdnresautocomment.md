@@ -35,19 +35,19 @@ CSDN 账号过一段时间就会累积几十个下载过但是未评论打分的
 
 1. 手动输入 CSDN 的用户名和密码。
 
-2. 用 `GET` 方法从 https://passport.csdn.net/account/login 页面获取 `lt`、`execution` 和 `_eventId` 等参数。
+2. 用 `GET` 方法从 <https://passport.csdn.net/account/login> 页面获取 `lt`、`execution` 和 `_eventId` 等参数。
 
-3. 将第 1 步中的用户名和密码，还有第 2 步中得到的参数 `POST` 给 https://passport.csdn.net/account/login ，从 Response 中判断是否登录成功——我采用的依据是 status\_code 为 200 且 Reponse 内容中有 `lastLoginIP`。
+3. 将第 1 步中的用户名和密码，还有第 2 步中得到的参数 `POST` 给 <https://passport.csdn.net/account/login> ，从 Response 中判断是否登录成功——我采用的依据是 status\_code 为 200 且 Reponse 内容中有 `lastLoginIP`。
 
-4. 用 `GET` 方法从 http://download.csdn.net/my/downloads 页面获取已下载资源总页数。从最后一个 `pageliststy` 的 `href` 中得到。
+4. 用 `GET` 方法从 <http://download.csdn.net/my/downloads> 页面获取已下载资源总页数。从最后一个 `pageliststy` 的 `href` 中得到。
 
-5. 根据第 4 步中得到的总页数，根据每个页面 num 拼得 url 为 http://download.csdn.net/my/downloads/num ，使用 `GET` 方法访问之拿到该页面中所有待评论资源 ID。从所有 `class="btn-comment"` 的 `a` 标签的 `href` 中得到。
+5. 根据第 4 步中得到的总页数，根据每个页面 num 拼得 url 为 <http://download.csdn.net/my/downloads/num> ，使用 `GET` 方法访问之拿到该页面中所有待评论资源 ID。从所有 `class="btn-comment"` 的 `a` 标签的 `href` 中得到。
 
 6. 在进行第 5 步的过程中，如果 num 为 1 的页面里有 `<span class="btn-comment">` 存在，那说明存在 10 分钟以内下载，暂时不能评论的资源，这时循环检查最多 11 次，每次检查完如果发现还需要等待就过一分钟再检查，进到不再需要等待或者超过 11 次为止。
 
-7. 对第 5 步中得到的所有待评论资源 ID 依次进行间隔至少 60S 的打分评论，根据资源的现有评星打分，不对资源评分造成不良影响。根据打出的 1 到 5 星，对应一句英文短句评论。出乎我意料的是评论这一步竟然也是用 `GET` 就可以做，http://download.csdn.net/index.php/comment/post_comment 后面带上 `sourceid`、`content`（评论内容）、`rating`（打分）和 `t`（时间戳）参数就可以。评论成功会返回 `({"succ":1})`，失败会返回「两次评论需要间隔 60 秒」、「您已经发表过评论」等之类的 `msg`。
+7. 对第 5 步中得到的所有待评论资源 ID 依次进行间隔至少 60S 的打分评论，根据资源的现有评星打分，不对资源评分造成不良影响。根据打出的 1 到 5 星，对应一句英文短句评论。出乎我意料的是评论这一步竟然也是用 `GET` 就可以做，<http://download.csdn.net/index.php/comment/post_comment> 后面带上 `sourceid`、`content`（评论内容）、`rating`（打分）和 `t`（时间戳）参数就可以。评论成功会返回 `({"succ":1})`，失败会返回「两次评论需要间隔 60 秒」、「您已经发表过评论」等之类的 `msg`。
 
-   获取资源的现有评星的方法是从 http://download.csdn.net/detail/\<资源所有者 ID\>/\<资源 ID\> 页面获取 `<span style="width:75px" class="star-yellow"></span>` 这一段内容，其中的 `75px` 表示为五星，如果是 `0px` 表示为零星，即每加一星增加 15px。
+   获取资源的现有评星的方法是从 <http://download.csdn.net/detail/\><资源所有者 ID\>/\<资源 ID\> 页面获取 `<span style="width:75px" class="star-yellow"></span>` 这一段内容，其中的 `75px` 表示为五星，如果是 `0px` 表示为零星，即每加一星增加 15px。
 
 最终运行截图如下：
 
@@ -74,7 +74,7 @@ CSDN 账号过一段时间就会累积几十个下载过但是未评论打分的
 # File   : csdncommenter.py
 # Author : Zhuang Ma
 # E-mail : chumpma(at)gmail.com
-# Website: https://mazhuang.org
+# Website: https://koalai.org
 # Date   : 2016-07-26
 import requests
 from BeautifulSoup import BeautifulSoup

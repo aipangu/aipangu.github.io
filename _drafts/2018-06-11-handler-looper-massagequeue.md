@@ -42,19 +42,19 @@ Handler 主要有两个用途：
 
 可以使用 Handler 的以下方法来调度 Messages 和 Runnables：
 
-- post(Runnable)
+* post(Runnable)
 
-- postAtTime(Runnable, long)
+* postAtTime(Runnable, long)
 
-- postDelayed(Runnable, Object, long)
+* postDelayed(Runnable, Object, long)
 
-- sendEmptyMessage(int)
+* sendEmptyMessage(int)
 
-- sendMessage(Message)
+* sendMessage(Message)
 
-- sendMessageAtTime(Message, long)
+* sendMessageAtTime(Message, long)
 
-- sendMessageDelayed(Message, long)
+* sendMessageDelayed(Message, long)
 
 其中 postXXX 系列用于将 Runnable 对象加入队列，sendXXX 系列用于将 Message 对象加入队列，Message 对象通常会携带一些数据，可以在 Handler 的 handlerMessage(Message) 方法中处理（需要实现一个 Handler 子类）。
 
@@ -516,23 +516,23 @@ public final class ActivityThread {
 
 ### 结论汇总
 
-- Thread 若与 Looper 关联，将会是一一对应的关系，且关联后关系无法改变。
+* Thread 若与 Looper 关联，将会是一一对应的关系，且关联后关系无法改变。
 
-- Looper 与 MessageQueue 是一一对应的关系。
+* Looper 与 MessageQueue 是一一对应的关系。
 
-- Handler 与 Looper 是多对一的关系，创建 Handler 实例时要么提供一个 Looper 实例，要么当前线程有关联的 Looper。
+* Handler 与 Looper 是多对一的关系，创建 Handler 实例时要么提供一个 Looper 实例，要么当前线程有关联的 Looper。
 
-- 在 Handler.sendMessage 时，会将 Message.target 设置为该 Handler 对象，这样从消息队列取出 Message 后，就能调用到该 Handler 的 dispatchMessage 方法来进行处理。
+* 在 Handler.sendMessage 时，会将 Message.target 设置为该 Handler 对象，这样从消息队列取出 Message 后，就能调用到该 Handler 的 dispatchMessage 方法来进行处理。
 
-- Handler 会对应一个 Looper 和 MessageQueue，而 Looper 与线程又一一对应，所以通过 Handler.sendXXX 和 Hanler.postXXX 添加到 MessageQueue 的 Message，会在这个对应的线程的 Looper.loop() 里取出来，并就地执行 Handler.dispatchMessage，这就可以完成线程切换了。
+* Handler 会对应一个 Looper 和 MessageQueue，而 Looper 与线程又一一对应，所以通过 Handler.sendXXX 和 Hanler.postXXX 添加到 MessageQueue 的 Message，会在这个对应的线程的 Looper.loop() 里取出来，并就地执行 Handler.dispatchMessage，这就可以完成线程切换了。
 
-- Runnable 被封装成 Message 之后添加到 MessageQueue。
+* Runnable 被封装成 Message 之后添加到 MessageQueue。
 
-- 可以从一个线程创建关联到另一个线程 Looper 的 Handler，只要能拿到对应线程的 Looper 实例。
+* 可以从一个线程创建关联到另一个线程 Looper 的 Handler，只要能拿到对应线程的 Looper 实例。
 
-- 消息可以插队，使用 Handler.xxxAtFrontOfQueue 方法。
+* 消息可以插队，使用 Handler.xxxAtFrontOfQueue 方法。
 
-- 尚未分发的消息是可以撤回的，处理过的就没法了。
+* 尚未分发的消息是可以撤回的，处理过的就没法了。
 
 ### 遗留知识点
 
@@ -552,6 +552,6 @@ public final class ActivityThread {
 
 最后，照例要安利一下我的微信公众号「闷骚的程序员」，扫码关注，接收 rtfsc-android 的最近更新。
 
-<div align="center"><img width="192px" height="192px" src="https://mazhuang.org/assets/images/qrcode.jpg"/></div>
+<div align="center"><img width="192px" height="192px" src="https://koalai.org/assets/images/qrcode.jpg"/></div>
 
 [1]: https://github.com/aosp-mirror/platform_frameworks_base

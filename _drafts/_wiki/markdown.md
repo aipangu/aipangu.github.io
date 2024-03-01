@@ -20,14 +20,14 @@ mindmap: true
 ### 超链接
 
 ```
-[靠谱-ing](https://mazhuang.org)
+[靠谱-ing](https://koalai.org)
 
-<https://mazhuang.org>
+<https://koalai.org>
 ```
 
-[靠谱-ing](https://mazhuang.org)  
+[靠谱-ing](https://koalai.org)  
 
-<https://mazhuang.org>
+<https://koalai.org>
 
 ### 列表
 
@@ -64,8 +64,8 @@ mindmap: true
 - [ ] 任务列表 2
 ```
 
-- [x] 任务列表 1
-- [ ] 任务列表 2
+* [x] 任务列表 1
+* [ ] 任务列表 2
 
 ### 强调
 
@@ -160,9 +160,9 @@ Hello, *world*{: style="color:red"}
 
 ![本站favicon](/favicon.ico){:.center}
 
-Hello, *world*{:#world} 
+Hello, *world*{:#world}
 
-Hello, *world*{: style="color:red"} 
+Hello, *world*{: style="color:red"}
 
 结合自定义的样式，有些场景比较有用。
 
