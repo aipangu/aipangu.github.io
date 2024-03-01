@@ -11,7 +11,7 @@ keywords: 考拉AI, ChatGPT, 人工智能
 timezone: Asia/Shanghai
 encoding: "utf-8"
 # 页面左下角显示的年份
-since: 2015
+since: 2024
 # 源码仓库，请替换成自己的
 repository: aipangu/aipangu.github.io
 # 对 css 和 js 资源的 cdn 加速配置
@@ -28,7 +28,7 @@ components:
     # 不蒜子访问统计
     busuanzi:
         enabled: false
-        start_date: 2020-05-03
+        start_date: 2024-02-28
     # My Popular Repositories
     side_bar_repo:
         enabled: false
@@ -39,7 +39,7 @@ components:
     # 页面右上角，以及「关于」页面的二维码
     # 修改图片请替换 assets/images/qrcode.jpg
     qrcode:
-        enabled: false
+        enabled: true
         image_alt: 考拉AI
     # 维基索引页使用哪种视图，支持 列表（list）/分类（cate）
     wiki:
@@ -52,7 +52,7 @@ compress_html:
   clippings: all
   comments: ["<!--", "-->"]
 # 代码高亮风格，支持的 theme 列表见 https://github.com/mzlogin/rouge-themes
-highlight_theme: github
+# highlight_theme: github
 
 # ---------------- #
 #      Author      #
@@ -60,8 +60,8 @@ highlight_theme: github
 author: 考拉AI
 organization: 
 organization_url: 
-# github_username: aipangu
-location: 北京
+github_username:
+location:
 email: zk330220942@gmail.com
 
 # ---------------- #
@@ -123,12 +123,12 @@ permalink: /:year/:month/:day/:title/
 plugins:
     - jekyll-github-metadata
     - rouge
-#     - jekyll-html-pipeline
+    # - jekyll-html-pipeline
     - jekyll-paginate
     - jekyll-sitemap
     - jekyll-feed
     - jemoji
-#     - jekyll-mentions
+    # - jekyll-mentions
 collections:
     wiki:
         output: true
