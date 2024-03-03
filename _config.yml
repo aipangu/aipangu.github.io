@@ -28,7 +28,7 @@ components:
     # 不蒜子访问统计
     busuanzi:
         enabled: false
-        start_date: 2023-02-28
+        start_date: 2024-02-28
     # My Popular Repositories
     side_bar_repo:
         enabled: false
@@ -60,7 +60,7 @@ compress_html:
 author: 考拉AI
 organization: 
 organization_url: 
-github_username: aipangu
+github_username:
 location: 中国
 email: zk330220942@gmail.com
 

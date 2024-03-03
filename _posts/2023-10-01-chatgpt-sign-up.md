@@ -1,8 +1,8 @@
 ---
 layout: post
-title: ChatGPT 怎么注册账号，新手小白最新详细使用教程-（国内可用接码手机推荐）
+title: ChatGPT 国内如何注册，新手小白详细使用教程（接码平台完成验证）
 categories: [ChatGPT]
-description: ChatGPT 怎么注册账号，新手小白最新详细使用教程-（国内可用接码手机推荐）
+description: ChatGPT 国内如何注册，新手小白详细使用教程（接码平台完成验证）
 keywords: Chatgpt, Chatgpt4.0, AI, 人工智能
 mermaid: false
 sequence: false

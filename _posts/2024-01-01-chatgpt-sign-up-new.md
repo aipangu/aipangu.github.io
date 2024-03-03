@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 国内ChatGPT账号注册教程，无需手机验证码
+title: ChatGPT 账号国内注册详细教程，无需手机验证码
 categories: [ChatGPT]
-description: 国内ChatGPT账号注册教程，无需手机验证码
+description: ChatGPT 账号国内注册详细教程，无需手机验证码
 keywords: Chatgpt, Chatgpt4.0, AI, 人工智能
 mermaid: false
 sequence: false
