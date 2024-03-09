@@ -23,20 +23,20 @@ topmost: false
 
 ## 官网安装Python环境（初学者不太推荐）
 官网下载Python需要科学上网，否则网速贼慢。首先查看自己电脑的系统类型，以window11为例，进入设置->系统->系统信息->设备规格->系统类型中可看到自己的系统位数，点击[下载链接](https://www.python.org/downloads/windows/)进入选择对应的版本进行下载
-![在这里插入图片描述](https://img-blog.csdnimg.cn/direct/b2a49fe9ae3840a9a032e2014e5cd13a.png)
+![在这里插入图片描述](/images/2024-03-09-python-install/b2a49fe9ae3840a9a032e2014e5cd13a.png)
 下载完成后，双击打开，勾选Add python.exe to PATH，点击Install Now，即可完成安装
-![在这里插入图片描述](https://img-blog.csdnimg.cn/direct/ec42ae0660ff43a0b619d2bea6c3b5b9.png)
+![在这里插入图片描述](/images/2024-03-09-python-install/ec42ae0660ff43a0b619d2bea6c3b5b9.png)
 测试是否安装成功，打开Window PowerShell，输入Python -V显示版本号即为安装成功
-![在这里插入图片描述](https://img-blog.csdnimg.cn/direct/62b21172f57a4c9ca479ec353e150f78.png)
+![在这里插入图片描述](/images/2024-03-09-python-install/62b21172f57a4c9ca479ec353e150f78.png)
 
 ## 基于Miniconda/Anaconda安装Python环境（小白极力推荐）
 
 由于某些限制，Miniconda官网很难进入，这里给出国内镜像的[下载地址](https://mirrors.bfsu.edu.cn/anaconda/miniconda/)，往后滑直接选择前缀是”Miniconda3-py”的，点击下载
-![在这里插入图片描述](https://img-blog.csdnimg.cn/direct/99b0d98d7b424eacbbd247c462ee8e4a.png)
+![在这里插入图片描述](/images/2024-03-09-python-install/99b0d98d7b424eacbbd247c462ee8e4a.png)
 双击打开后依次选择"Next"->"I Agree"->"Next"，设置安装路径
-![在这里插入图片描述](https://img-blog.csdnimg.cn/direct/3afce6613956417c8cd169612beb0e86.png)
+![在这里插入图片描述](/images/2024-03-09-python-install/3afce6613956417c8cd169612beb0e86.png)
 然后点击"Next"->"Install"等待安装完成，点击”Next“->"Finish"即可完成安装，安装完成后在应用中打开Anaconda Prompt，依次输入conda -V和python -V，版本号正常显示即为安装成功。
-![在这里插入图片描述](https://img-blog.csdnimg.cn/direct/9bcff483fa384e2c819aedbb6b5027c3.png)
+![在这里插入图片描述](/images/2024-03-09-python-install/9bcff483fa384e2c819aedbb6b5027c3.png)
 Miniconda会默认建立名字为base的虚拟环境，所以终端前面会带一个（base），表示我们目前进入到了base这个虚拟环境中。在Anaconda Prompt中执行以下命令可进入或者退出base虚拟环境。
 ```bash
 # 进入base环境
@@ -67,7 +67,7 @@ conda install numpy -y
 ```bash
 conda list
 ```
-![在这里插入图片描述](https://img-blog.csdnimg.cn/direct/790a497d3b2046efb94f7d732e299b7a.png)
+![在这里插入图片描述](/images/2024-03-09-python-install/790a497d3b2046efb94f7d732e299b7a.png)
 
 ## pip设置国内源
 以清华源为例，打开Window PowerShell，执行以下命令即可
@@ -77,7 +77,7 @@ python -m ensurepip
 python -m pip install --upgrade pip
 pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 ```
-![在这里插入图片描述](https://img-blog.csdnimg.cn/direct/0621559c9a01413586a34ad218ed8f96.png)
+![在这里插入图片描述](/images/2024-03-09-python-install/0621559c9a01413586a34ad218ed8f96.png)
 运行如下命令安装numpy库
 ```bash
  pip3 install numpy
@@ -86,6 +86,6 @@ pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 ```bash
 pip3 list
 ```
-![在这里插入图片描述](https://img-blog.csdnimg.cn/direct/1ff2850072d74f5f9590f6a3eae897b2.png)
+![在这里插入图片描述](/images/2024-03-09-python-install/1ff2850072d74f5f9590f6a3eae897b2.png)
 安装包我已经打包好了
 下载地址：https://url88.ctfile.com/d/54203788-60316438-32fd29?p=2573 (访问密码: 2573）

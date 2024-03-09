@@ -13,7 +13,7 @@ mindmap2: false
 topmost: false
 ---
 我们访问登录国外的一些网站，比如 ChatGPT，谷歌邮箱都是必须的，谷歌邮箱注册是比较简单的，但是国内是需要点技术才能访问（个人建议用[收费](https://e.500ml.link)的，免费的一般很不稳定，网速贼慢，一个月也就一杯奶茶钱。）
-##注册步骤
+## 谷歌邮箱注册步骤
 
 1. 进入[谷歌邮箱官网](https://www.google.com/intl/zh-CN_cn/gmail/about/), 首先点击创建账号-> 个人用途
 ![创建账号](/images/2024-03-01-gmail-sign-up/gmail_sign_up_0.png)
