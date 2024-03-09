@@ -17,7 +17,7 @@ permalink: /about/
 {% endfor %}
 {% if site.url contains 'koalai.org' %}
 <li>
-微信公众号：<br />
+微信公众号：树袋熊AI<br />
 <img style="height:192px;width:192px;border:1px solid lightgrey;" src="{{ site.url }}/assets/images/qrcode.jpg" alt="考拉AI" />
 </li>
 {% endif %}
