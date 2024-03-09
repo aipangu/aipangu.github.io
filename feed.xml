@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="https://koalai.org/feed.xml" rel="self" type="application/atom+xml" /><link href="https://koalai.org/" rel="alternate" type="text/html" /><updated>2024-03-09T20:47:45+08:00</updated><id>https://koalai.org/feed.xml</id><title type="html">考拉AI</title><subtitle>考拉AI的个人博客</subtitle><author><name>考拉AI</name></author><entry><title type="html">干货教程【软件篇】–如何在Windows上安装Python环境以及设置国内源（Miniconda/Anaconda安装）</title><link href="https://koalai.org/2024/03/09/python-install/" rel="alternate" type="text/html" title="干货教程【软件篇】–如何在Windows上安装Python环境以及设置国内源（Miniconda/Anaconda安装）" /><published>2024-03-09T00:00:00+08:00</published><updated>2024-03-09T00:00:00+08:00</updated><id>https://koalai.org/2024/03/09/python-install</id><content type="html" xml:base="https://koalai.org/2024/03/09/python-install/"><![CDATA[<p><strong>小白安装前须了解一下</strong></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="https://koalai.org/feed.xml" rel="self" type="application/atom+xml" /><link href="https://koalai.org/" rel="alternate" type="text/html" /><updated>2024-03-10T01:05:49+08:00</updated><id>https://koalai.org/feed.xml</id><title type="html">考拉AI</title><subtitle>考拉AI的个人博客</subtitle><author><name>考拉AI</name></author><entry><title type="html">干货教程【软件篇】–如何在Windows上安装Python环境以及设置国内源（Miniconda/Anaconda安装）</title><link href="https://koalai.org/2024/03/09/python-install/" rel="alternate" type="text/html" title="干货教程【软件篇】–如何在Windows上安装Python环境以及设置国内源（Miniconda/Anaconda安装）" /><published>2024-03-09T00:00:00+08:00</published><updated>2024-03-09T00:00:00+08:00</updated><id>https://koalai.org/2024/03/09/python-install</id><content type="html" xml:base="https://koalai.org/2024/03/09/python-install/"><![CDATA[<p><strong>小白安装前须了解一下</strong></p>
 <ul>
   <li>Python解释器是用来解释运行我们编写的Python代码。</li>
   <li>Python标准库是Python自带的一系列标准模块，提供了各种基础功能。</li>
@@ -11,20 +11,20 @@
 
 <h2 id="官网安装python环境初学者不太推荐">官网安装Python环境（初学者不太推荐）</h2>
 <p>官网下载Python需要科学上网，否则网速贼慢。首先查看自己电脑的系统类型，以window11为例，进入设置-&gt;系统-&gt;系统信息-&gt;设备规格-&gt;系统类型中可看到自己的系统位数，点击<a href="https://www.python.org/downloads/windows/">下载链接</a>进入选择对应的版本进行下载
-<img src="https://img-blog.csdnimg.cn/direct/b2a49fe9ae3840a9a032e2014e5cd13a.png" alt="在这里插入图片描述" />
+<img src="/images/2024-03-09-python-install/b2a49fe9ae3840a9a032e2014e5cd13a.png" alt="在这里插入图片描述" />
 下载完成后，双击打开，勾选Add python.exe to PATH，点击Install Now，即可完成安装
-<img src="https://img-blog.csdnimg.cn/direct/ec42ae0660ff43a0b619d2bea6c3b5b9.png" alt="在这里插入图片描述" />
+<img src="/images/2024-03-09-python-install/ec42ae0660ff43a0b619d2bea6c3b5b9.png" alt="在这里插入图片描述" />
 测试是否安装成功，打开Window PowerShell，输入Python -V显示版本号即为安装成功
-<img src="https://img-blog.csdnimg.cn/direct/62b21172f57a4c9ca479ec353e150f78.png" alt="在这里插入图片描述" /></p>
+<img src="/images/2024-03-09-python-install/62b21172f57a4c9ca479ec353e150f78.png" alt="在这里插入图片描述" /></p>
 
 <h2 id="基于minicondaanaconda安装python环境小白极力推荐">基于Miniconda/Anaconda安装Python环境（小白极力推荐）</h2>
 
 <p>由于某些限制，Miniconda官网很难进入，这里给出国内镜像的<a href="https://mirrors.bfsu.edu.cn/anaconda/miniconda/">下载地址</a>，往后滑直接选择前缀是”Miniconda3-py”的，点击下载
-<img src="https://img-blog.csdnimg.cn/direct/99b0d98d7b424eacbbd247c462ee8e4a.png" alt="在这里插入图片描述" />
+<img src="/images/2024-03-09-python-install/99b0d98d7b424eacbbd247c462ee8e4a.png" alt="在这里插入图片描述" />
 双击打开后依次选择”Next”-&gt;”I Agree”-&gt;”Next”，设置安装路径
-<img src="https://img-blog.csdnimg.cn/direct/3afce6613956417c8cd169612beb0e86.png" alt="在这里插入图片描述" />
+<img src="/images/2024-03-09-python-install/3afce6613956417c8cd169612beb0e86.png" alt="在这里插入图片描述" />
 然后点击”Next”-&gt;”Install”等待安装完成，点击”Next“-&gt;”Finish”即可完成安装，安装完成后在应用中打开Anaconda Prompt，依次输入conda -V和python -V，版本号正常显示即为安装成功。
-<img src="https://img-blog.csdnimg.cn/direct/9bcff483fa384e2c819aedbb6b5027c3.png" alt="在这里插入图片描述" />
+<img src="/images/2024-03-09-python-install/9bcff483fa384e2c819aedbb6b5027c3.png" alt="在这里插入图片描述" />
 Miniconda会默认建立名字为base的虚拟环境，所以终端前面会带一个（base），表示我们目前进入到了base这个虚拟环境中。在Anaconda Prompt中执行以下命令可进入或者退出base虚拟环境。</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 进入base环境</span>
 conda activate base
@@ -50,7 +50,7 @@ conda config <span class="nt">--set</span> show_channel_urls <span class="nb">ye
 <p>安装完成后执行如下命令，查看是否安装成功</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda list
 </code></pre></div></div>
-<p><img src="https://img-blog.csdnimg.cn/direct/790a497d3b2046efb94f7d732e299b7a.png" alt="在这里插入图片描述" /></p>
+<p><img src="/images/2024-03-09-python-install/790a497d3b2046efb94f7d732e299b7a.png" alt="在这里插入图片描述" /></p>
 
 <h2 id="pip设置国内源">pip设置国内源</h2>
 <p>以清华源为例，打开Window PowerShell，执行以下命令即可</p>
@@ -59,17 +59,17 @@ python <span class="nt">-m</span> ensurepip
 python <span class="nt">-m</span> pip <span class="nb">install</span> <span class="nt">--upgrade</span> pip
 pip3 config <span class="nb">set </span>global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 </code></pre></div></div>
-<p><img src="https://img-blog.csdnimg.cn/direct/0621559c9a01413586a34ad218ed8f96.png" alt="在这里插入图片描述" />
+<p><img src="/images/2024-03-09-python-install/0621559c9a01413586a34ad218ed8f96.png" alt="在这里插入图片描述" />
 运行如下命令安装numpy库</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> pip3 <span class="nb">install </span>numpy
 </code></pre></div></div>
 <p>执行以下命令查看安装是否成功</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip3 list
 </code></pre></div></div>
-<p><img src="https://img-blog.csdnimg.cn/direct/1ff2850072d74f5f9590f6a3eae897b2.png" alt="在这里插入图片描述" />
+<p><img src="/images/2024-03-09-python-install/1ff2850072d74f5f9590f6a3eae897b2.png" alt="在这里插入图片描述" />
 安装包我已经打包好了
-下载地址：https://url88.ctfile.com/d/54203788-60316438-32fd29?p=2573 (访问密码: 2573）</p>]]></content><author><name>考拉AI</name></author><category term="Python" /><summary type="html"><![CDATA[干货教程【软件篇】--如何在Windows上安装Python环境以及设置国内源（Miniconda/Anaconda安装）]]></summary></entry><entry><title type="html">谷歌邮箱账号注册教程</title><link href="https://koalai.org/2024/03/01/gmail-sign-up/" rel="alternate" type="text/html" title="谷歌邮箱账号注册教程" /><published>2024-03-01T00:00:00+08:00</published><updated>2024-03-01T00:00:00+08:00</updated><id>https://koalai.org/2024/03/01/gmail-sign-up</id><content type="html" xml:base="https://koalai.org/2024/03/01/gmail-sign-up/"><![CDATA[<p>我们访问登录国外的一些网站，比如 ChatGPT，谷歌邮箱都是必须的，谷歌邮箱注册是比较简单的，但是国内是需要点技术才能访问（个人建议用<a href="https://e.500ml.link">收费</a>的，免费的一般很不稳定，网速贼慢，一个月也就一杯奶茶钱。）
-##注册步骤</p>
+下载地址：https://url88.ctfile.com/d/54203788-60316438-32fd29?p=2573 (访问密码: 2573）</p>]]></content><author><name>考拉AI</name></author><category term="Python" /><summary type="html"><![CDATA[干货教程【软件篇】--如何在Windows上安装Python环境以及设置国内源（Miniconda/Anaconda安装）]]></summary></entry><entry><title type="html">谷歌邮箱账号注册教程</title><link href="https://koalai.org/2024/03/01/gmail-sign-up/" rel="alternate" type="text/html" title="谷歌邮箱账号注册教程" /><published>2024-03-01T00:00:00+08:00</published><updated>2024-03-01T00:00:00+08:00</updated><id>https://koalai.org/2024/03/01/gmail-sign-up</id><content type="html" xml:base="https://koalai.org/2024/03/01/gmail-sign-up/"><![CDATA[<p>我们访问登录国外的一些网站，比如 ChatGPT，谷歌邮箱都是必须的，谷歌邮箱注册是比较简单的，但是国内是需要点技术才能访问（个人建议用<a href="https://e.500ml.link">收费</a>的，免费的一般很不稳定，网速贼慢，一个月也就一杯奶茶钱。）</p>
+<h2 id="谷歌邮箱注册步骤">谷歌邮箱注册步骤</h2>
 
 <ol>
   <li>进入<a href="https://www.google.com/intl/zh-CN_cn/gmail/about/">谷歌邮箱官网</a>, 首先点击创建账号-&gt; 个人用途
@@ -335,7 +335,68 @@ pip3 config <span class="nb">set </span>global.index-url https://pypi.tuna.tsing
 
 <p>然后需要预充值5美元以上，才能开通GPT-4的访问权限</p>
 
-<p>本文参考来源 <a href="https://bewildcard.com/i/GPT778">bewildcard</a></p>]]></content><author><name>考拉AI</name></author><category term="ChatGPT" /><summary type="html"><![CDATA[ChatGPT 账号国内注册详细教程]]></summary></entry><entry><title type="html">Wildcard虚拟信用卡注册详细教程</title><link href="https://koalai.org/2023/03/02/bewildcard-sign-up/" rel="alternate" type="text/html" title="Wildcard虚拟信用卡注册详细教程" /><published>2023-03-02T00:00:00+08:00</published><updated>2023-03-02T00:00:00+08:00</updated><id>https://koalai.org/2023/03/02/bewildcard-sign-up</id><content type="html" xml:base="https://koalai.org/2023/03/02/bewildcard-sign-up/"><![CDATA[<p>国内想要付费订阅App store里面的某些国外软件，或者是付费升级ChatGPT Plus等，都需使用国外的银行卡进行支付，没有国外银行卡怎么办，虚拟信用卡是一个不错的选择，这里我比较推荐的是<a href="https://bewildcard.com/i/GPT778"> Wildcard</a>，开通一次可用2年，收费也比较便宜，这里不太建议去某宝上买，那上面的都比较贵，而且好多都是只能用一次。</p>
+<p>本文参考来源 <a href="https://bewildcard.com/i/GPT778">bewildcard</a></p>]]></content><author><name>考拉AI</name></author><category term="ChatGPT" /><summary type="html"><![CDATA[ChatGPT 账号国内注册详细教程]]></summary></entry><entry><title type="html">Claude3最新免费使用教程！无需注册！无需魔法！免费使用</title><link href="https://koalai.org/2023/03/09/claude3-free-use/" rel="alternate" type="text/html" title="Claude3最新免费使用教程！无需注册！无需魔法！免费使用" /><published>2023-03-09T00:00:00+08:00</published><updated>2023-03-09T00:00:00+08:00</updated><id>https://koalai.org/2023/03/09/claude3-free-use</id><content type="html" xml:base="https://koalai.org/2023/03/09/claude3-free-use/"><![CDATA[<hr />
+<p>使用Chatgpt4.0，注册海外邮箱、科学访问OpenAI、调用API，可以参考这篇文章：</p>
+
+<p><a href="https://koalai.org/2024/02/29/chatgpt4.0-kaitong/">2024年国内如何快速开通 ChatGPT 4.0 PLUS 升级教程。</a></p>
+
+<h2 id="一claude3简介">一、Claude3简介</h2>
+
+<p><img src="/images/2023-03-09-claude3-free-use/ltkb9ryt93.png" alt="图片" /></p>
+
+<p>Claude3是一个由生成式AI平台Anthropic发布的多模态大模型。性能及各项指标远超GPT-4，详情请看：<a href="http://mp.weixin.qq.com/s?__biz=MzkzMjY1NjEwNA==&amp;mid=2247483763&amp;idx=1&amp;sn=0096fb60fa33251e68c7aacc8dfa17d8&amp;chksm=c25927f4f52eaee23cace2daf19c2e6ebb813a8561acf6739284be62653a1128abdfb2ffd8de&amp;scene=21#wechat_redirect">Anthropic发布最强大模型Claude 3，实力碾压GPT-4和Gemini！</a></p>
+
+<h2 id="二官网使用claude3">二、官网使用Claude3</h2>
+
+<p>国内如果想使用官方的Claude3，<strong>只能登录官网</strong>：https://claude.ai/</p>
+
+<p>注册所需条件：</p>
+
+<hr />
+
+<ol>
+  <li>
+    <p>科学上网（自行解决）</p>
+  </li>
+  <li>
+    <p>海外手机号（某宝）</p>
+  </li>
+  <li>
+    <p>海外邮箱（参考：<a href="https://koalai.org/2024/03/01/gmail-sign-up/">谷歌邮箱注册教程。</a>）</p>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="三国内使用claude3">三、国内使用Claude3</h2>
+
+<ol>
+  <li>
+    <p><strong>打开LMSYS Org的主页，点击Chatbot Arena</strong></p>
+
+    <p><img src="/images/2023-03-09-claude3-free-use/ltkb9tmp49.jpg" alt="图片" /></p>
+  </li>
+  <li>
+    <p><strong>点击Direct Chat</strong></p>
+
+    <p><img src="/images/2023-03-09-claude3-free-use/ltkb9v8v61.jpg" alt="图片" /></p>
+  </li>
+  <li>
+    <p><strong>选择Claude3模型</strong></p>
+
+    <p><img src="/images/2023-03-09-claude3-free-use/image-1.png" alt="alt text" /></p>
+  </li>
+  <li>
+    <p><strong>然后就可以输入问题点击发送啦</strong></p>
+
+    <p><img src="/images/2023-03-09-claude3-free-use/image.png" alt="alt text" />
+___</p>
+  </li>
+</ol>
+
+<p><strong>LMSYS Org简介：</strong></p>
+
+<p>Large Model Systems Organization (LMSYS Org) 是一个开放的研究组织，由加州大学伯克利分校的学生和教师与加州大学圣地亚哥分校和卡内基梅隆大学合作创立。  他们的目标是通过共同开发开放数据集、模型、系统和评估工具，让每个人都能访问大型模型。</p>]]></content><author><name>考拉AI</name></author><category term="ChatGPT" /><summary type="html"><![CDATA[Claude3最新免费使用教程！无需注册！无需魔法！免费使用]]></summary></entry><entry><title type="html">Wildcard虚拟信用卡注册详细教程</title><link href="https://koalai.org/2023/03/02/bewildcard-sign-up/" rel="alternate" type="text/html" title="Wildcard虚拟信用卡注册详细教程" /><published>2023-03-02T00:00:00+08:00</published><updated>2023-03-02T00:00:00+08:00</updated><id>https://koalai.org/2023/03/02/bewildcard-sign-up</id><content type="html" xml:base="https://koalai.org/2023/03/02/bewildcard-sign-up/"><![CDATA[<p>国内想要付费订阅App store里面的某些国外软件，或者是付费升级ChatGPT Plus等，都需使用国外的银行卡进行支付，没有国外银行卡怎么办，虚拟信用卡是一个不错的选择，这里我比较推荐的是<a href="https://bewildcard.com/i/GPT778"> Wildcard</a>，开通一次可用2年，收费也比较便宜，这里不太建议去某宝上买，那上面的都比较贵，而且好多都是只能用一次。</p>
 
 <h2 id="wildcard注册">Wildcard注册</h2>
 <ol>
