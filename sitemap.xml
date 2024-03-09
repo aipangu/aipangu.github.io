@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://koalai.org/2023/10/01/chatgpt-sign-up/</loc>
-<lastmod>2023-10-01T00:00:00+08:00</lastmod>
-</url>
-<url>
-<loc>https://koalai.org/2023/11/01/chatgpt4.0-onlyfans/</loc>
-<lastmod>2023-11-01T00:00:00+08:00</lastmod>
+<loc>https://koalai.org/2023/03/02/bewildcard-sign-up/</loc>
+<lastmod>2023-03-02T00:00:00+08:00</lastmod>
 </url>
 <url>
 <loc>https://koalai.org/2024/01/01/chatgpt-sign-up-new/</loc>
@@ -17,8 +13,16 @@
 <lastmod>2024-02-29T00:00:00+08:00</lastmod>
 </url>
 <url>
+<loc>https://koalai.org/2024/03/01/gmail-sign-up/</loc>
+<lastmod>2024-03-01T00:00:00+08:00</lastmod>
+</url>
+<url>
 <loc>https://koalai.org/2024/03/01/sora-use/</loc>
 <lastmod>2024-03-01T00:00:00+08:00</lastmod>
+</url>
+<url>
+<loc>https://koalai.org/2024/03/09/python-install/</loc>
+<lastmod>2024-03-09T00:00:00+08:00</lastmod>
 </url>
 <url>
 <loc>https://koalai.org/about/</loc>

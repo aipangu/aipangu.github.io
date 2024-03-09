@@ -1,14 +1,94 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="https://koalai.org/feed.xml" rel="self" type="application/atom+xml" /><link href="https://koalai.org/" rel="alternate" type="text/html" /><updated>2024-03-03T18:51:54+08:00</updated><id>https://koalai.org/feed.xml</id><title type="html">考拉AI</title><subtitle>考拉AI的个人博客</subtitle><author><name>考拉AI</name></author><entry><title type="html">OpenAI Sora 新手小白详细使用教程，早学早用</title><link href="https://koalai.org/2024/03/01/sora-use/" rel="alternate" type="text/html" title="OpenAI Sora 新手小白详细使用教程，早学早用" /><published>2024-03-01T00:00:00+08:00</published><updated>2024-03-01T00:00:00+08:00</updated><id>https://koalai.org/2024/03/01/sora-use</id><content type="html" xml:base="https://koalai.org/2024/03/01/sora-use/"><![CDATA[<h2 id="sora-是什么">Sora 是什么？</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="https://koalai.org/feed.xml" rel="self" type="application/atom+xml" /><link href="https://koalai.org/" rel="alternate" type="text/html" /><updated>2024-03-09T20:47:45+08:00</updated><id>https://koalai.org/feed.xml</id><title type="html">考拉AI</title><subtitle>考拉AI的个人博客</subtitle><author><name>考拉AI</name></author><entry><title type="html">干货教程【软件篇】–如何在Windows上安装Python环境以及设置国内源（Miniconda/Anaconda安装）</title><link href="https://koalai.org/2024/03/09/python-install/" rel="alternate" type="text/html" title="干货教程【软件篇】–如何在Windows上安装Python环境以及设置国内源（Miniconda/Anaconda安装）" /><published>2024-03-09T00:00:00+08:00</published><updated>2024-03-09T00:00:00+08:00</updated><id>https://koalai.org/2024/03/09/python-install</id><content type="html" xml:base="https://koalai.org/2024/03/09/python-install/"><![CDATA[<p><strong>小白安装前须了解一下</strong></p>
+<ul>
+  <li>Python解释器是用来解释运行我们编写的Python代码。</li>
+  <li>Python标准库是Python自带的一系列标准模块，提供了各种基础功能。</li>
+  <li>Python第三方库（包）则是由Python社区开发的扩展模块，用于增强Python的功能。由于三方库众多，我们可以用包管理工具来管理这些三方库。常见的有pip、conda、easy_install等</li>
+  <li>Python编辑器或IDE是用于编写和编辑Python代码的软件工具，常见的Python编辑器或IDE有Visual Studio Code、PyCharm等。</li>
+  <li>Python虚拟环境，用于隔离不同项目的依赖关系，避免不同项目之间的冲突。虚拟环境可以使用工具如venv或conda来创建和管理，不同虚拟环境中可以有不同版本的Python、标准库和三方库。</li>
+</ul>
 
-<p>2024年2月16日，OpenAI 在其官网上面正式宣布推出文本生成视频的大模型 Sora:</p>
+<p>我们可以从Python官网下载安装Python环境(需要科学上网)，也可以直接安装Miniconda或者Anaconda。Miniconda和Anaconda的区别在于Miniconda比较轻量化，主要是conda、python解释器和标准库这些东西，Anaconda比较大，会安装一堆常用的三方库以及IDE等。这里我推荐安装Miniconda，需要什么三方库我们再去下载安装就可以。</p>
 
-<p><a href="https://openai.com/sora">https://openai.com/sora</a></p>
+<h2 id="官网安装python环境初学者不太推荐">官网安装Python环境（初学者不太推荐）</h2>
+<p>官网下载Python需要科学上网，否则网速贼慢。首先查看自己电脑的系统类型，以window11为例，进入设置-&gt;系统-&gt;系统信息-&gt;设备规格-&gt;系统类型中可看到自己的系统位数，点击<a href="https://www.python.org/downloads/windows/">下载链接</a>进入选择对应的版本进行下载
+<img src="https://img-blog.csdnimg.cn/direct/b2a49fe9ae3840a9a032e2014e5cd13a.png" alt="在这里插入图片描述" />
+下载完成后，双击打开，勾选Add python.exe to PATH，点击Install Now，即可完成安装
+<img src="https://img-blog.csdnimg.cn/direct/ec42ae0660ff43a0b619d2bea6c3b5b9.png" alt="在这里插入图片描述" />
+测试是否安装成功，打开Window PowerShell，输入Python -V显示版本号即为安装成功
+<img src="https://img-blog.csdnimg.cn/direct/62b21172f57a4c9ca479ec353e150f78.png" alt="在这里插入图片描述" /></p>
 
-<p>（PS：目前 openai 官方还未开放 sora 灰度，不过根据文生图模型 DALL·E 案例，一定是先给 ChatGPT Plus 付费用户使用，需要注册或者升级 GPT Plus 可以看这个教程: <a href="https://koalai.org/2024/02/29/chatgpt4.0-kaitong/">升级 ChatGPT Plus 的教程</a> ，一分钟完成升级</p>
+<h2 id="基于minicondaanaconda安装python环境小白极力推荐">基于Miniconda/Anaconda安装Python环境（小白极力推荐）</h2>
 
-<p>Sora能够根据简单的文本描述，生成高达60秒的高质量视频，使得视频创作变得前所未有的简单和高效。</p>
+<p>由于某些限制，Miniconda官网很难进入，这里给出国内镜像的<a href="https://mirrors.bfsu.edu.cn/anaconda/miniconda/">下载地址</a>，往后滑直接选择前缀是”Miniconda3-py”的，点击下载
+<img src="https://img-blog.csdnimg.cn/direct/99b0d98d7b424eacbbd247c462ee8e4a.png" alt="在这里插入图片描述" />
+双击打开后依次选择”Next”-&gt;”I Agree”-&gt;”Next”，设置安装路径
+<img src="https://img-blog.csdnimg.cn/direct/3afce6613956417c8cd169612beb0e86.png" alt="在这里插入图片描述" />
+然后点击”Next”-&gt;”Install”等待安装完成，点击”Next“-&gt;”Finish”即可完成安装，安装完成后在应用中打开Anaconda Prompt，依次输入conda -V和python -V，版本号正常显示即为安装成功。
+<img src="https://img-blog.csdnimg.cn/direct/9bcff483fa384e2c819aedbb6b5027c3.png" alt="在这里插入图片描述" />
+Miniconda会默认建立名字为base的虚拟环境，所以终端前面会带一个（base），表示我们目前进入到了base这个虚拟环境中。在Anaconda Prompt中执行以下命令可进入或者退出base虚拟环境。</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 进入base环境</span>
+conda activate base
+<span class="c"># 退出当前环境</span>
+conda deactivate
+</code></pre></div></div>
+<p>基于Anaconda安装Python环境的安装步骤Miniconda基本一致，这里我就不再详述了。点击<a href="https://www.anaconda.com/download">下载链接</a>进入Anaconda的官方下载网站，点击Download进行下载，可以看到Anaconda比Miniconda大的多。</p>
 
-<p>本文将为您提供关于如何使用Sora的最新详细教程。</p>
+<h2 id="conda-配置国内源">conda 配置国内源</h2>
+<p>conda可以用来管理虚拟环境和三方库，但是国内在安装这些三方库的时候会非常慢，甚至安装到一半就断开，所以配置国内的镜像源是非常有必要的，这里以清华源为例，在Anaconda Prompt中执行以下命令添加清华源</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda config <span class="nt">--add</span> channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+conda config <span class="nt">--add</span> channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+conda config <span class="nt">--add</span> channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge 
+conda config <span class="nt">--add</span> channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/
+conda config <span class="nt">--set</span> show_channel_urls <span class="nb">yes</span>
+</code></pre></div></div>
+<p>如果要恢复到默认源，可以执行以下命令</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda config <span class="nt">--remove-key</span> channels
+</code></pre></div></div>
+<p>conda 安装三方库的命令如下，这里以numpy库为例</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda <span class="nb">install </span>numpy <span class="nt">-y</span>
+</code></pre></div></div>
+<p>安装完成后执行如下命令，查看是否安装成功</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda list
+</code></pre></div></div>
+<p><img src="https://img-blog.csdnimg.cn/direct/790a497d3b2046efb94f7d732e299b7a.png" alt="在这里插入图片描述" /></p>
+
+<h2 id="pip设置国内源">pip设置国内源</h2>
+<p>以清华源为例，打开Window PowerShell，执行以下命令即可</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip3 <span class="nb">install </span>pip <span class="nt">-U</span>
+python <span class="nt">-m</span> ensurepip 
+python <span class="nt">-m</span> pip <span class="nb">install</span> <span class="nt">--upgrade</span> pip
+pip3 config <span class="nb">set </span>global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+</code></pre></div></div>
+<p><img src="https://img-blog.csdnimg.cn/direct/0621559c9a01413586a34ad218ed8f96.png" alt="在这里插入图片描述" />
+运行如下命令安装numpy库</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> pip3 <span class="nb">install </span>numpy
+</code></pre></div></div>
+<p>执行以下命令查看安装是否成功</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip3 list
+</code></pre></div></div>
+<p><img src="https://img-blog.csdnimg.cn/direct/1ff2850072d74f5f9590f6a3eae897b2.png" alt="在这里插入图片描述" />
+安装包我已经打包好了
+下载地址：https://url88.ctfile.com/d/54203788-60316438-32fd29?p=2573 (访问密码: 2573）</p>]]></content><author><name>考拉AI</name></author><category term="Python" /><summary type="html"><![CDATA[干货教程【软件篇】--如何在Windows上安装Python环境以及设置国内源（Miniconda/Anaconda安装）]]></summary></entry><entry><title type="html">谷歌邮箱账号注册教程</title><link href="https://koalai.org/2024/03/01/gmail-sign-up/" rel="alternate" type="text/html" title="谷歌邮箱账号注册教程" /><published>2024-03-01T00:00:00+08:00</published><updated>2024-03-01T00:00:00+08:00</updated><id>https://koalai.org/2024/03/01/gmail-sign-up</id><content type="html" xml:base="https://koalai.org/2024/03/01/gmail-sign-up/"><![CDATA[<p>我们访问登录国外的一些网站，比如 ChatGPT，谷歌邮箱都是必须的，谷歌邮箱注册是比较简单的，但是国内是需要点技术才能访问（个人建议用<a href="https://e.500ml.link">收费</a>的，免费的一般很不稳定，网速贼慢，一个月也就一杯奶茶钱。）
+##注册步骤</p>
+
+<ol>
+  <li>进入<a href="https://www.google.com/intl/zh-CN_cn/gmail/about/">谷歌邮箱官网</a>, 首先点击创建账号-&gt; 个人用途
+<img src="/images/2024-03-01-gmail-sign-up/gmail_sign_up_0.png" alt="创建账号" /></li>
+  <li>输入姓氏和名字，中英文都可，点击下一步
+<img src="/images/2024-03-01-gmail-sign-up/gmail_sign_up_1.png" alt="姓名" /></li>
+  <li>输入出生日期，选择性别，然后点击下一步
+<img src="/images/2024-03-01-gmail-sign-up/gmail_sign_up_2.png" alt="基本信息" /></li>
+  <li>选择创建自己的Gmail地址，然后输入邮箱的前缀英文名字（可包含数字，但不能是纯数字），点击下一步。如果显示用户名已被使用，请重新输入新的用户名，然后重新点击下一步
+<img src="/images/2024-03-01-gmail-sign-up/gmail_sign_up_3.png" alt="用户名" /></li>
+  <li>设置邮箱的密码，注意密码一定要包含（数字、字母和符合），且要保证两次输入的一样，然后点击下一步
+<img src="/images/2024-03-01-gmail-sign-up/gmail_sign_up_4.png" alt="密码" /></li>
+  <li>设置辅助邮箱，这里我用的是qq邮箱
+<img src="/images/2024-03-01-gmail-sign-up/gmail_sign_up_5.png" alt="辅助邮箱" /></li>
+  <li>最后点击下一步，再点击下一步，点击我同意，你的邮箱就注册好了，会自动登录跳转到邮箱里面</li>
+</ol>]]></content><author><name>考拉AI</name></author><category term="ChatGPT" /><summary type="html"><![CDATA[谷歌邮箱注册教程]]></summary></entry><entry><title type="html">OpenAI Sora 新手小白详细使用教程，早学早用</title><link href="https://koalai.org/2024/03/01/sora-use/" rel="alternate" type="text/html" title="OpenAI Sora 新手小白详细使用教程，早学早用" /><published>2024-03-01T00:00:00+08:00</published><updated>2024-03-01T00:00:00+08:00</updated><id>https://koalai.org/2024/03/01/sora-use</id><content type="html" xml:base="https://koalai.org/2024/03/01/sora-use/"><![CDATA[<h2 id="sora-是什么">Sora 是什么？</h2>
+<p>Sora 是 OpenAI 发布的首个文本生成视频模型，能够根据用户输入的文本提示快速制作长达一分钟的高保真视频。它还可以获取现有的静态图像并从中生成视频，并理解复杂场景中不同元素之间的物理属性及其关系，从而深度模拟真实物理世界，生成具有多个角色、包含特定运动的复杂场景，<a href="https://openai.com/sora">点击进入Sora官网</a></p>
+
+<p>目前 OpenAI 官方还未开放 Sora，不过根据之前的文生图模型 DALL 的情况，开通ChatGPT Plus的付费用户肯定是会优先使用的，想升级 ChatGPT Plus 可以参考这个教程: <a href="https://koalai.org/2024/02/29/chatgpt4.0-kaitong/">如何升级 ChatGPT Plus</a></p>
 
 <h2 id="2-sora-视频案例">2. Sora 视频案例</h2>
 
@@ -215,306 +295,60 @@
 
 <p>开通的是有效期1-2年的虚拟信用卡，开卡费包含两年年费，大约 70 元RMB，每天成本不到 1.5 毛钱。其他费用无，根据个人需求充值。</p>
 
-<p>关键是，如果没有消费成功，可以随时提现余额到支付宝。</p>]]></content><author><name>考拉AI</name></author><category term="ChatGPT" /><summary type="html"><![CDATA[关于国内快速开通 ChatGPT 4.0的方法，小白秒学秒用，保姆级教程。]]></summary></entry><entry><title type="html">ChatGPT 账号国内注册详细教程，无需手机验证码</title><link href="https://koalai.org/2024/01/01/chatgpt-sign-up-new/" rel="alternate" type="text/html" title="ChatGPT 账号国内注册详细教程，无需手机验证码" /><published>2024-01-01T00:00:00+08:00</published><updated>2024-01-01T00:00:00+08:00</updated><id>https://koalai.org/2024/01/01/chatgpt-sign-up-new</id><content type="html" xml:base="https://koalai.org/2024/01/01/chatgpt-sign-up-new/"><![CDATA[<p>之前注册 ChatGPT 除了有一个海外邮箱，还需要手机号接码，一般都是推荐一些虚拟手机号接码平台，比如 <a href="https://sms-activate.org/?ref=4616107">sms-activate.org</a></p>
+<p>关键是，如果没有消费成功，可以随时提现余额到支付宝。</p>]]></content><author><name>考拉AI</name></author><category term="ChatGPT" /><summary type="html"><![CDATA[关于国内快速开通 ChatGPT 4.0的方法，小白秒学秒用，保姆级教程。]]></summary></entry><entry><title type="html">ChatGPT 账号国内注册详细教程</title><link href="https://koalai.org/2024/01/01/chatgpt-sign-up-new/" rel="alternate" type="text/html" title="ChatGPT 账号国内注册详细教程" /><published>2024-01-01T00:00:00+08:00</published><updated>2024-01-01T00:00:00+08:00</updated><id>https://koalai.org/2024/01/01/chatgpt-sign-up-new</id><content type="html" xml:base="https://koalai.org/2024/01/01/chatgpt-sign-up-new/"><![CDATA[<p><strong>ChatGPT</strong> 可以用来写文章、问答对话，帮你写代码，查问题等，最重要的是ChatGPT 3.5是免费的，注册即可使用，但是由于某些原因，国内想要拥有一个ChatGPT账号却有一定的门槛。本文将详细介绍ChatGPT的注册流程，帮助大家顺利用上 <strong>ChatGPT</strong></p>
 
-<p>但是现在通通不用！</p>
+<p>PS: 如果你已经拥有了 ChatGPT账号，想要升级到Plus，可以看这篇教程，几分钟搞定: <a href="https://koalai.org/2024/02/29/chatgpt4.0-kaitong/">ChatGPT升级Plus支付教程</a>，<strong>ChatGPT Plus</strong> 可以使用 <strong>ChatGPT 4.0</strong>，相对3.5 更加智能，而且可以绘画（DALL），GPTs创建自己的Agent等。</p>
 
-<p>只需要你能科学上网，即可注册。</p>
+<h2 id="chatgpt-官网">ChatGPT 官网</h2>
+<p>ChatGPT 是 OpenAI 公司出的一款人工智能产品，官方网址是 <a href="https://chat.openai.com/">https://chat.openai.com</a>，请认准其官方域名 <a href="https://openai.com/">openai.com</a>，不要进错网站了，目前国内山寨的镜像网站非常多，注意辨别</p>
 
-<p>（如果还不会可以用这个：<a href="https://www.52xcjs.xyz/auth/register?code=tRE2VnaTKoEuiM7V">科学稳定访问 openai</a></p>
+<p>##注册 OpenAI 账号</p>
 
-<p>注册完后，或者你已经有账户，想要快速升级 Plus，可以看这篇教程：<a href="https://koalai.org/2024/02/29/chatgpt4.0-kaitong/">ChatGPT 2分钟升级 Plus方法</a></p>
+<p>申请openai账号需要预先准备一个国外的邮箱，建议使用谷歌邮箱，注册很简单，可以看这篇教程<a href="https://koalai.org/2024/03/01/gmail-sign-up/">谷歌邮箱注册教程</a>
+首先打开 <a href="https://chat.openai.com/">OpenAI</a> 的账户注册页面，点击 Sign up（注册）
+<img src="/images/2024-01-01-chatgpt-sign-up-new/image.png" alt="alt text" />
+在Email address（邮箱地址）输入框里面填写准备的邮箱地址，点击continue（继续）:
+<img src="/images/2024-01-01-chatgpt-sign-up-new/image1.png" alt="alt text" />
+在Password框里填入密码，然后点击Continue（注意这是要设置OpenAI账号的密码，与谷歌邮箱密码不是一回事）
+<img src="/images/2024-01-01-chatgpt-sign-up-new/image-1.png" alt="alt text" />
+密码设置完成后与点击Goback ，或者重新进入<a href="https://chat.openai.com/">OpenAI官网</a>，点击Sign in（登录）
+<img src="/images/2024-01-01-chatgpt-sign-up-new/image-2.png" alt="alt text" />
+输入谷歌邮箱账号和刚才设置的密码，验证完成后，会进入到邮箱验证界面，点击Open Gmail（打开谷歌邮箱）
+<img src="/images/2024-01-01-chatgpt-sign-up-new/image-3.png" alt="alt text" />
+进入谷歌邮箱中会有一个OpenAI的邮件（如果没有登录过谷歌邮箱需要输入谷歌邮箱的账号密码进行登录）
+<img src="/images/2024-01-01-chatgpt-sign-up-new/image-4.png" alt="alt text" />
+打开邮件，点击Verify email address（验证邮箱地址）
+<img src="/images/2024-01-01-chatgpt-sign-up-new/image-5.png" alt="alt text" />
+验证成功后会自动跳转到OpenAI的设置用户信息界面，输入你的名字和生日（日/月/年），然后点击Agree(同意)
+<img src="/images/2024-01-01-chatgpt-sign-up-new/image-6.png" alt="alt text" />
+会进入到ChatGPT对话页面，在下面的Message ChatGPT中输入你想要问的问题，即可与ChatGPT对话啦
+<img src="/images/2024-01-01-chatgpt-sign-up-new/image-7.png" alt="alt text" />
+右上角可以看到我们目前对话的版本是3.5，ChatGPT 3.5是完全免费的，所有收费的都是骗子，只要你会科学上网，你有了OpenAI账号就可以完全免费使用ChatGPT 3.5，日常我们搜索个东西，问它点问题，或者是让它帮你写点东西，都是可以的。</p>
 
-<p>注册步骤：</p>
+<p>如果你是一个ChatGPT深度使用者，对它的的回答要求比较高，想使用它的4.0版本，或是想使用ChatGPT的API进行开发，亦或是想使用ChatGPT进行绘画，那就需要开通ChatGPT Plus了，收费标准是 20 美元/每月。<a href="https://koalai.org/2024/02/29/chatgpt4.0-kaitong/">升级ChatGPT Plus教程在这里</a></p>
 
-<p>国内的邮箱都不再允许注册 ChatGPT，建议申请一个免费的海外邮箱 Proton 来注册，其他海外邮箱，如 Gmail 也可以，但是注册难度高一些，步骤繁琐。</p>
+<p>ChatGPT 登录入口是 <a href="https://chat.openai.com/">https://chat.openai.com</a></p>
 
-<h2 id="一注册-proton-邮箱">一、注册 proton 邮箱</h2>
-
-<h2 id="11-访问-proton">1.1 访问 proton</h2>
-
-<p><a href="https://proton.me/">https://proton.me/</a></p>
-
-<p>选择右上角的 「Create a free account」</p>
-
-<p><img src="https://cdn.how2cs.cn/csguide/054443.png" alt="proton 网站" /></p>
-
-<h2 id="12-选择免费套餐">1.2 选择免费套餐</h2>
-
-<p><img src="https://cdn.how2cs.cn/csguide/054505-1.png" alt="proton 套餐" /></p>
-
-<h2 id="13-选择邮箱后缀设置用户名和密码">1.3 选择邮箱后缀，设置用户名和密码</h2>
-
-<p>推荐选择 proton.me</p>
-
-<p><img src="https://cdn.how2cs.cn/csguide/151156.png" alt="proton" /></p>
-
-<h2 id="14-通过真人检验跳过手机验证">1.4 通过真人检验，跳过手机验证</h2>
-
-<p>依次拖动验证码，然后设置显示的名称，跳过手机验证就可以。</p>
-
-<p><img src="https://cdn.how2cs.cn/csguide/151253.png" alt="verification 验证" /></p>
-
-<p><img src="https://cdn.how2cs.cn/csguide/151315.png" alt="proton 验证" /></p>
-
-<p>注册完后，可以去登陆邮箱，方便接收验证码：</p>
-
-<p><a href="https://proton.me/">https://proton.me/</a></p>
-
-<h2 id="二注册-openai-账号">二、注册 OpenAI 账号</h2>
-
-<h2 id="21-申请-openai">2.1 申请 openai</h2>
-
-<p>首先打开 <a href="https://chat.openai.com/">OpenAI</a> 的账户注册页面，输入邮箱:</p>
-
-<p><a href="https://chat.openai.com/">https://chat.openai.com/</a></p>
-
-<p><img src="https://cdn.how2cs.cn/csguide/151820.png" alt="openai截图" /></p>
-
-<p>首先验证邮箱，去 Proton.me 收件箱里点击「Verify email address」即可。</p>
-
-<p><img src="https://cdn.how2cs.cn/csguide/151902.png" alt="验证邮箱" /></p>
-
-<p>然后提供你的名和姓及生日，并点击继续</p>
-
-<p><img src="https://cdn.how2cs.cn/csguide/151929.png" alt="生日" /></p>
-
-<p>然后选择您创建 API 还是 ChatGPT账户即可。</p>
-
-<p>个人用户一般都选择 ChatGPT 账户即可：</p>
-
-<p><img src="https://cdn.how2cs.cn/csguide/152006.png" alt="" /></p>
-
-<p>Openai 的用户体系分成两大类：ChatGPT 用户和API开发者用户，两个体系是相互独立的，用户名密码是一致的，但是访问入口和支付都是独立的：</p>
-
-<p>ChatGPT 用户的登录入口是 <a href="https://chat.openai.com/">https://chat.openai.com</a><br />
-API 开发者用户的登录入口是 <a href="https://platform.openai.com/">https://platform.openai.com</a></p>
-
-<p>ChatGPT 用户获取 GPT-4 的使用权限，是通过购买 GPT Plus 会员，会员的收费标准是 20 美元/每月。</p>
-
-<p>购买 GPT Plus 会员后，可以在 Chat 界面选择 GPT4 进行聊天。</p>
-
-<p>购买教程在这里:</p>
-
-<p><a href="https://koalai.org/2024/02/29/chatgpt4.0-kaitong/">ChatGPT 2分钟升级 Plus方法</a></p>
+<p>API 开发者用户的登录入口是 <a href="https://platform.openai.com/">https://platform.openai.com</a></p>
 
 <p>API 开发者用户获取 GPT-4 API的使用权限，是通过升级付费帐户，升级付费帐户的教程在这里。</p>
 
 <p>然后需要预充值5美元以上，才能开通GPT-4的访问权限</p>
 
-<p>本文参考来源 <a href="https://bewildcard.com/i/GPT778">bewildcard</a></p>]]></content><author><name>考拉AI</name></author><category term="ChatGPT" /><summary type="html"><![CDATA[ChatGPT 账号国内注册详细教程，无需手机验证码]]></summary></entry><entry><title type="html">Onlyfans 虚拟信用卡注册、充值详细教程</title><link href="https://koalai.org/2023/11/01/chatgpt4.0-onlyfans/" rel="alternate" type="text/html" title="Onlyfans 虚拟信用卡注册、充值详细教程" /><published>2023-11-01T00:00:00+08:00</published><updated>2023-11-01T00:00:00+08:00</updated><id>https://koalai.org/2023/11/01/chatgpt4.0-onlyfans</id><content type="html" xml:base="https://koalai.org/2023/11/01/chatgpt4.0-onlyfans/"><![CDATA[<h2 id="onlyfans怎么国内支付">onlyfans怎么国内支付？</h2>
+<p>本文参考来源 <a href="https://bewildcard.com/i/GPT778">bewildcard</a></p>]]></content><author><name>考拉AI</name></author><category term="ChatGPT" /><summary type="html"><![CDATA[ChatGPT 账号国内注册详细教程]]></summary></entry><entry><title type="html">Wildcard虚拟信用卡注册详细教程</title><link href="https://koalai.org/2023/03/02/bewildcard-sign-up/" rel="alternate" type="text/html" title="Wildcard虚拟信用卡注册详细教程" /><published>2023-03-02T00:00:00+08:00</published><updated>2023-03-02T00:00:00+08:00</updated><id>https://koalai.org/2023/03/02/bewildcard-sign-up</id><content type="html" xml:base="https://koalai.org/2023/03/02/bewildcard-sign-up/"><![CDATA[<p>国内想要付费订阅App store里面的某些国外软件，或者是付费升级ChatGPT Plus等，都需使用国外的银行卡进行支付，没有国外银行卡怎么办，虚拟信用卡是一个不错的选择，这里我比较推荐的是<a href="https://bewildcard.com/i/GPT778"> Wildcard</a>，开通一次可用2年，收费也比较便宜，这里不太建议去某宝上买，那上面的都比较贵，而且好多都是只能用一次。</p>
 
-<p>onlyfans不支持国内银行开的普通卡，需要使用特定的虚拟卡进行订阅。</p>
-
-<p>下面我们来看下社交平台onlyfans虚拟信用卡订阅教程。</p>
-
-<p>（PS：本文教程完全目前可用(24年)，可以放心使用~</p>
-
-<h2 id="一注册">一、注册</h2>
-
-<h3 id="11-注册链接">1.1 注册链接</h3>
-
-<p><a href="https://onlyfans.com/">https://onlyfans.com/</a><br />
-使用国内邮箱、qq、163 等邮箱即可注册</p>
-
-<p><img src="https://cdn.how2cs.cn/csguide/142120.png" alt="onlyfans" /></p>
-
-<h3 id="12-邮箱验证">1.2 邮箱验证</h3>
-
-<p>然后进行邮箱验证，我们这里点击发送会收到一封onlyfans的验证邮件，将收到的链接在登录的浏览器里复制粘贴打开即可验证成功。</p>
-
-<p><img src="https://cdn.how2cs.cn/csguide/142312.png" alt="邮箱验证onlyfans" /></p>
-
-<h2 id="二支付">二、支付</h2>
-
-<h3 id="21-不建议大家去某宝店铺买">2.1 不建议大家去某宝店铺买</h3>
-
-<p>淘宝店铺的开卡费很贵，并且是一次性使用！！！</p>
-
-<p>我已经踩过坑了，买了 30 usd，实际汇率只需要 220 元左右，但是收了 280，最最关键的是这个卡只能用一次，是临时的！</p>
-
-<p><img src="https://cdn.how2cs.cn/csguide/152529.jpg" alt="" /></p>
-
-<h3 id="22-推荐长期稳定的虚拟卡平台">2.2 推荐长期稳定的虚拟卡平台</h3>
-
-<p>比如：</p>
-
-<p><a href="https://bewildcard.com/i/GPT778">https://bewildcard.com/i/GPT778</a> ( 使用这个链接复制到浏览器打开，2分钟即可搞定开卡，还可享受88折优惠~)</p>
-
-<p>用这个链接或者使用推荐码 <strong>GPT778</strong> 还可以享受开卡88折优惠，开卡费总共100元左右，<strong>开的卡有效期达2年</strong>，后续每次消费只需要充值你需要的美元金额即可，直接银行卡就能支付入账，超级方便，冲多了还可以提现回来。</p>
-
-<p><img src="https://cdn.how2cs.cn/csguide/152535.png" alt="wildcard" /></p>
-
-<h2 id="三-开好卡后如何使用">三 开好卡后，如何使用</h2>
-
-<p>首先往卡里充值订阅博主付费内容需要的金额即可（建议多充1-2美元，防止扣款失败）</p>
-
-<p>然后去onlyfans绑定虚拟卡，<a href="https://onlyfans.com/my/payments/add_card">https://onlyfans.com/my/payments/add_card</a>：</p>
-
-<p><img src="https://cdn.how2cs.cn/csguide/152542.png" alt="虚拟卡" /></p>
-
-<p>上面需要的每一项信息，都可以直接在虚拟卡网页上看到，直接复制过去即可：</p>
-
-<p><img src="https://cdn.how2cs.cn/csguide/143711.png" alt="onlyfans绑定卡方式" /></p>
-
-<p>绑定支付信用卡后，就可以去订阅喜欢的博主啦，比如 hongkongdoll 之类的，，是不是很快捷：</p>
-
-<p><img src="https://cdn.how2cs.cn/csguide/152556.png" alt="onlyfans绑定卡" /></p>]]></content><author><name>考拉AI</name></author><category term="ChatGPT" /><summary type="html"><![CDATA[Onlyfans 虚拟信用卡注册、充值详细教程-小白必看]]></summary></entry><entry><title type="html">ChatGPT 国内如何注册，新手小白详细使用教程（接码平台完成验证）</title><link href="https://koalai.org/2023/10/01/chatgpt-sign-up/" rel="alternate" type="text/html" title="ChatGPT 国内如何注册，新手小白详细使用教程（接码平台完成验证）" /><published>2023-10-01T00:00:00+08:00</published><updated>2023-10-01T00:00:00+08:00</updated><id>https://koalai.org/2023/10/01/chatgpt-sign-up</id><content type="html" xml:base="https://koalai.org/2023/10/01/chatgpt-sign-up/"><![CDATA[<h2 id="升级-chatgpt-plus">升级 ChatGPT Plus</h2>
-
-<p><strong>ChatGPT</strong> 的火爆程度一直居高不下，相信大家对它的名字早已耳熟能详。这得益于它不仅功能强大，而且关键的是账户永久免费使用（请注意：官方账户确实是永久免费的，任何需要充值才能提问或者提问次数有限制的都是盗版山寨产品）。然而，ChatGPT 并不支持国内网络和国内用户，许多刚接触的朋友可能对 <strong>ChatGPT</strong> 还不太了解，不知道如何才能拥有账号。本文将一步一步向大家解释，<strong>ChatGPT</strong> 是什么，以及如何使用和注册账号。</p>
-
-<p>(PS: 如果你已经有了 ChatGPT账号，需要升级 Plus 可以看这篇教程，几分钟搞定: <a href="https://koalai.org/2024/02/29/chatgpt4.0-kaitong/">ChatGPT升级Plus支付教程</a></p>
-
-<h2 id="chatgpt-是什么">ChatGPT 是什么</h2>
-
-<p><strong>ChatGPT</strong> 是由 OpenAI 开发的一款大型语言模型，擅长处理各种自然语言任务，如回答问题、生成文本和进行对话等。</p>
-
-<p>简而言之，Chat GPT 是最新一代的通用超强 AI，拥有庞大的知识库，能够回答形形色色的问题。无论您有什么疑问，向 ChatGPT 提问就能得到解答！</p>
-
-<p>ChatGPT 自2022年11月30日发布以来，仅用了五天时间，全球用户数就突破了100万大关。</p>
-
-<p><img src="https://cdn.how2cs.cn/csguide/161436.jpg" alt="ChatGPT" /></p>
-
-<h2 id="chatgpt-官网">ChatGPT 官网</h2>
-
-<p><strong>ChatGPT</strong>的官方网址是 <a href="https://chat.openai.com/">https://chat.openai.com</a></p>
-
-<p>请认准其官方域名 <a href="https://openai.com/">openai.com</a>，不是这个域名的ChatGPT服务都是镜像站或者假冒伪劣网站，请注意辨别。（国内山寨版本很多）</p>
-
-<h2 id="如何注册-chatgpt-使用流程">如何注册 ChatGPT 使用流程</h2>
-
-<p>我们都想尝试一下这样强大的工具，那么如何使用 <strong>ChatGPT</strong> 呢？下面我将逐步详细地为你介绍。</p>
-
-<p>使用 ChatGPT 主要包括4个步骤：</p>
-
+<h2 id="wildcard注册">Wildcard注册</h2>
 <ol>
-  <li>
-    <p>注册 ChatGPT 账号</p>
-  </li>
-  <li>
-    <p>注册需要一个外国手机号码：通过短信接码平台 <a href="https://sms-activate.org/?ref=4616107">sms-activate.org</a> 完成 ChatGPT 手机号验证</p>
-  </li>
-  <li>
-    <p>登录 ChatGPT 账号，对话框输入，开始使用 Chat GPT ！</p>
-  </li>
-  <li>
-    <p>输入任意问题，探索 ChatGPT 的强大功能</p>
-  </li>
-</ol>
-
-<p>好了，我们开始逐步图文介绍。</p>
-
-<p>由于 OpenAI 官方限制了中国大陆地区用户的使用，所以中国手机号码无法通过验证，需要使用外国手机号，这使得注册 Chat GPT 的过程稍微复杂一些。对于不喜欢麻烦的朋友，最简单直接的方法就是在淘宝购买一个已经注册并验证好的账号，购买后即可立即使用，无需准备各种复杂的环境（适合新手小白）。这是我非常推荐的方法！</p>
-
-<p>下面是具体过程。</p>
-
-<h2 id="1注册-chatgpt-账号">1.注册 ChatGPT 账号</h2>
-
-<p>注冊ChatGPT这一步主要包含以下几步（需要按照顺序逐步操作）：</p>
-
-<ol>
-  <li>将网络环境切换成国外ip（注意：必须是国外 ip 如美国、加拿大，日本，新加坡等openai支持的国家，香港澳门 ip 是不行的），且后续整个注册流程都必须在此网络环境下进行。</li>
-  <li>打开官方注册 <a href="https://chat.openai.com/auth/login">https://chat.openai.com/auth/login</a> 链接并使用自己的邮箱进行账号注册（网易，outlook邮箱不行，必须要gmail等国外邮箱，outlook以前可以，现在不行了）</li>
-  <li>打开邮箱查收 OpenAI 账号验证邮件，点击验证按钮完成邮箱验证</li>
-</ol>
-
-<p>下面每一个步骤的图片，大家可以对照着进行操作</p>
-
-<p><img src="https://cdn.how2cs.cn/csguide/161851.jpg" alt="chatgpt注册" /></p>
-
-<p><img src="https://cdn.how2cs.cn/csguide/161907.jpg" alt="chatgpt" /></p>
-
-<p><img src="https://cdn.how2cs.cn/csguide/161914.jpg" alt="chatgpt" /></p>
-
-<p><img src="https://cdn.how2cs.cn/csguide/161922.jpg" alt="chatgpt" /></p>
-
-<p>邮箱验证完成后，我们第一步注册 <a href="https://koalai.org/">ChatGPT 账号</a>就算完成了，但是到这里我们还不能开始使用 ChatGPT，因为我们还需要进行外国手机号码验证。没有通过手机号码验证是使用不了 OpenAI（ChatGPT的开发商） 的服务的。</p>
-
-<p>因为OpenAI官方的限制，国内和港澳的手机号码还有 Google Voice 的虚拟号码都是不能使用的。</p>
-
-<p>这时候就要用到下一步的接码平台。</p>
-
-<p>现在接码的成本大约在 1 美金以上，（之所以说以上，即如果你能一次验证成功，成本大约就是1美金，但是如果失败，就1美金往上）不过随着现在注册难度增大，有可能会接码失败，失败了就重新再来。需要再重新购买号码。</p>
-
-<p>那要怎么验证呢，请看下一步。</p>
-
-<h2 id="2完成-chatgtp-手机号码验证">2.完成 ChatGTP 手机号码验证</h2>
-
-<p>这一步需要用到接码平台完成手机号验证，推荐平台链接地址：<a href="https://sms-activate.org/?ref=4616107">sms-activate.org</a></p>
-
-<p>具体步骤如下：</p>
-
-<ol>
-  <li>使用自己的邮箱在 sms-activate.org 上注册账号并完成邮箱验证（其他接码平台同理，但并非所有平台都可靠，sms-activate 是经过我亲自验证的）</li>
-  <li>打开邮箱，查收验证邮件并点击链接完成 sms-activate.org 账号认证</li>
-  <li>登录 sms-activate，然后在右上角找到并点击充值按钮</li>
-  <li>在跳转后的页面中，向下滚动找到支付宝选项，建议大家先充值1美元（如有需要，再继续充值）</li>
-  <li>充值完成后，回到首页并搜索「open」关键字，就可以找到购买 OpenAI 验证码的临时号码链接</li>
-  <li>在右侧的激活区，你会看到待使用的临时号码，将这个号码复制到 OpenAI 的验证码接收区</li>
-  <li>在 OpenAI 的页面上点击发送验证码，然后在接码平台上接收验证码（有时可能稍慢，需要耐心等待），填入验证码，就完成了 ChatGPT 手机号验证。</li>
-</ol>
-
-<p>这一步比较长，但是操起其实也不复杂，简单说就是通过接码平台收验证码完成验证。（ps：6月份以后注册难度增加，就是可能会失败，比如号码失效，标记你的邮箱无法注册等）</p>
-
-<p>下面是每一步的操作图，大家可以对照操作。</p>
-
-<p><img src="https://cdn.how2cs.cn/csguide/162053.jpg" alt="chatgpt" /></p>
-
-<p>打开邮箱找到验证邮件</p>
-
-<p><img src="https://cdn.how2cs.cn/csguide/162108.jpg" alt="chatgpt" /></p>
-
-<p><img src="https://cdn.how2cs.cn/csguide/162128.jpg" alt="chatgpt" /></p>
-
-<p><img src="https://cdn.how2cs.cn/csguide/162136.jpg" alt="chatgpt" /></p>
-
-<p><img src="https://cdn.how2cs.cn/csguide/162156.jpg" alt="chatgpt" /></p>
-
-<p><img src="https://cdn.how2cs.cn/csguide/162200.jpg" alt="chatgpt" /></p>
-
-<p><img src="https://cdn.how2cs.cn/csguide/162211.png" alt="chatgpt" /></p>
-
-<p>历经千辛万苦，我们终于可以开始使用 ChatGPT 啦，恭喜！</p>
-
-<h2 id="3登录-chatgpt-账号并开始使用">3.登录 ChatGPT 账号并开始使用</h2>
-
-<p>有了官方账号，我们就可以直接去 ChatGPT 网站去登陆使用： <a href="https://chat.openai.com/auth/login">https://chat.openai.com/auth/login</a></p>
-
-<p>只需输入账号和密码，就可以成功登录。</p>
-
-<p>登录后，我们将看到 ChatGPT 的主界面。在屏幕的正下方，就是我们使用 ChatGPT 的输入对话框。ChatGPT 采用了交互式对话界面，使用起来非常便捷友好。你可以在此输入任何你感兴趣的内容，然后按回车键，ChatGPT 就会给出回答。</p>
-
-<p><img src="https://cdn.how2cs.cn/csguide/162238.png" alt="chatgpt" /></p>
-
-<p>比如我们问一下 ChatGPT 梯形相关的问题，看看他会怎么回答。</p>
-
-<p><img src="https://cdn.how2cs.cn/csguide/162252.png" alt="chatgpt" /></p>
-
-<p>到这里，你已经学会了如何使用 ChatGPT 了！</p>
-
-<h2 id="4探索-chat-gpt-的强大功能">4.探索 Chat GPT 的强大功能</h2>
-
-<p>你可以以各种方式向 ChatGPT 提问或下达指令，通过这一步你将更深入地体验到 ChatGPT 的强大功能。来吧，朋友，让我们真正掌握如何使用 Chat GPT。</p>
-
-<p>例如，你可以：</p>
-
-<ul>
-  <li>让 ChatGPT 为你写一首诗</li>
-  <li>让 ChatGPT 为你编写代码</li>
-  <li>让 ChatGPT 帮你翻译文本</li>
-  <li>让 ChatGPT 为你编写故事</li>
-</ul>
-
-<p><img src="https://cdn.how2cs.cn/csguide/162304.png" alt="chatgpt" /></p>
-
-<p><img src="https://cdn.how2cs.cn/csguide/162425.png" alt="chatgpt" /></p>
-
-<p><img src="https://cdn.how2cs.cn/csguide/162445.png" alt="chatgpt" /></p>
-
-<p><img src="https://cdn.how2cs.cn/csguide/162459.png" alt="chatgpt" /></p>
-
-<p>好啦，到这里为止，我们已经一步步教会了你怎麽注冊 ChatGPT账号，怎么通过 ChatGPT 手机号验证，怎么用 ChatGPT。</p>
-
-<p>祝大家玩的愉快！</p>
-
-<p>这更适合不懂技术或不想折腾但是又想马上尽快体验到 ChatGPT 的朋友，而且账号可靠，售后保证，有什么不懂随时可以咨询，用起来也很省心。</p>]]></content><author><name>考拉AI</name></author><category term="ChatGPT" /><summary type="html"><![CDATA[ChatGPT 国内如何注册，新手小白详细使用教程（接码平台完成验证）]]></summary></entry></feed>
+  <li>首先<a href="https://bewildcard.com/i/GPT778">点击链接</a>进入到 Wildcard 官网，点击右上角的注册
+<img src="/images/2023-03-02-bewildcard-sign-up/image.png" alt="alt text" /></li>
+  <li>进入到收费标准明细页面，可以看到Wildcard可以订阅哪些主流的App，一年差不多100左右，开的卡有效期达2年。对比了许多虚拟卡，这家收费算是很便宜的了。点击立即注册
+<img src="/images/2023-03-02-bewildcard-sign-up/image-1.png" alt="alt text" /></li>
+  <li>进入注册页面后输入手机号，验证码和邀请码，这里可以使用我的邀请码 <strong>GPT778</strong>，邀请码能够减2美元。输入完成后点击下一步，完成验证
+<img src="/images/2023-03-02-bewildcard-sign-up/image-2.png" alt="alt text" /></li>
+  <li>然后选择认证方式，我这里选择的是缴押金认证，支付宝认证需要上传身份信息，比较麻烦点，大家按需选择，然后点击下一步
+<img src="/images/2023-03-02-bewildcard-sign-up/image-3.png" alt="alt text" /></li>
+  <li>填写身份信息和邮箱地址，点击下一步，点击确认
+<img src="/images/2023-03-02-bewildcard-sign-up/image-4.png" alt="alt text" /></li>
+  <li>选择开卡期限，建议选择两年的，比较划算点，邀请码减了两美元，点击确认支付，支付即可
+<img src="/images/2023-03-02-bewildcard-sign-up/image-5.png" alt="alt text" /></li>
+</ol>]]></content><author><name>考拉AI</name></author><category term="ChatGPT" /><summary type="html"><![CDATA[Wildcard虚拟信用卡注册详细教程]]></summary></entry></feed>
