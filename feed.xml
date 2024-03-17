@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="https://koalai.org/feed.xml" rel="self" type="application/atom+xml" /><link href="https://koalai.org/" rel="alternate" type="text/html" /><updated>2024-03-17T21:29:41+08:00</updated><id>https://koalai.org/feed.xml</id><title type="html">考拉AI</title><subtitle>考拉AI的个人博客</subtitle><author><name>考拉AI</name></author><entry><title type="html">干货教程【AI篇】| 最强AI换脸软件Rope的安装配置和使用教程以及Rope整合包下载</title><link href="https://koalai.org/2024/03/17/rope-install/" rel="alternate" type="text/html" title="干货教程【AI篇】| 最强AI换脸软件Rope的安装配置和使用教程以及Rope整合包下载" /><published>2024-03-17T00:00:00+08:00</published><updated>2024-03-17T00:00:00+08:00</updated><id>https://koalai.org/2024/03/17/rope-install</id><content type="html" xml:base="https://koalai.org/2024/03/17/rope-install/"><![CDATA[<p>Rope 是一个免费开源的 AI 换脸软件，它具有图形化界面，使得甚至小白也能够轻松地进行简单的操作。该软件提供了多种高清化算法，使用者可以实时观察换脸效果，并且还支持多种遮罩模式以及将多个人脸一起融合的功能。Rope 的官方 GitHub 仓库地址为：https://github.com/Hillobar/Rope</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="https://koalai.org/feed.xml" rel="self" type="application/atom+xml" /><link href="https://koalai.org/" rel="alternate" type="text/html" /><updated>2024-03-17T22:12:29+08:00</updated><id>https://koalai.org/feed.xml</id><title type="html">考拉AI</title><subtitle>考拉AI的个人博客</subtitle><author><name>考拉AI</name></author><entry><title type="html">干货教程【AI篇】| 最强AI换脸软件Rope的安装配置和使用教程以及Rope整合包下载</title><link href="https://koalai.org/2024/03/17/rope-install/" rel="alternate" type="text/html" title="干货教程【AI篇】| 最强AI换脸软件Rope的安装配置和使用教程以及Rope整合包下载" /><published>2024-03-17T00:00:00+08:00</published><updated>2024-03-17T00:00:00+08:00</updated><id>https://koalai.org/2024/03/17/rope-install</id><content type="html" xml:base="https://koalai.org/2024/03/17/rope-install/"><![CDATA[<p>Rope 是一个免费开源的 AI 换脸软件，它具有图形化界面，使得甚至小白也能够轻松地进行简单的操作。该软件提供了多种高清化算法，使用者可以实时观察换脸效果，并且还支持多种遮罩模式以及将多个人脸一起融合的功能。Rope 的官方 GitHub 仓库地址为：https://github.com/Hillobar/Rope</p>
 
 <p>网上也有一些Rope的整合包，免去了小白配置环境困难的苦恼，如果你觉得配置Rope的运行环境比较麻烦，可以直接跳到文章后半部分看Rope的使用教程即可。Rope整合包我也打包了一份，可以关注我的微信公众号进行下载
 但我个人还是推荐你自己部署一下环境，有以下几点好处：</p>
@@ -19,7 +19,7 @@
 <ol>
   <li>
     <p>安装Miniconda
-如果你的电脑上还没有conda 环境，可以参考我的这篇文章去安装conda环境，建议安装Miniconda即可。安装完成后需要设置conda路径到系统环境变量，首先在开始菜单搜索<strong>环境变量</strong>，打开<strong>编辑系统环境变量</strong>
+如果你的电脑上还没有conda 环境，可以<a href="https://koalai.org/2024/03/09/python-install/">参考我之前的文章</a>去安装conda环境，建议安装Miniconda即可。安装完成后需要设置conda路径到系统环境变量，首先在开始菜单搜索<strong>环境变量</strong>，打开<strong>编辑系统环境变量</strong>
 <img src="/images/2024-03-17-rope-install/ltvj3eg136.png" alt="在这里插入图片描述" />
 然后按照以下步骤添加conda 到系统环境变量中，我的路径是：D:\miniconda3\Scripts
 <img src="/images/2024-03-17-rope-install/ltvj3g1e71.png" alt="在这里插入图片描述" />
