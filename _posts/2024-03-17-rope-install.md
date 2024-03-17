@@ -30,7 +30,7 @@ Rope 是一个免费开源的 AI 换脸软件，它具有图形化界面，使�
 ## Rope环境配置和安装
 
 1. 安装Miniconda
-如果你的电脑上还没有conda 环境，可以参考我的这篇文章去安装conda环境，建议安装Miniconda即可。安装完成后需要设置conda路径到系统环境变量，首先在开始菜单搜索**环境变量**，打开**编辑系统环境变量**
+如果你的电脑上还没有conda 环境，可以[参考我之前的文章](https://koalai.org/2024/03/09/python-install/)去安装conda环境，建议安装Miniconda即可。安装完成后需要设置conda路径到系统环境变量，首先在开始菜单搜索**环境变量**，打开**编辑系统环境变量**
 ![在这里插入图片描述](/images/2024-03-17-rope-install/ltvj3eg136.png)
 然后按照以下步骤添加conda 到系统环境变量中，我的路径是：D:\miniconda3\Scripts
 ![在这里插入图片描述](/images/2024-03-17-rope-install/ltvj3g1e71.png)
