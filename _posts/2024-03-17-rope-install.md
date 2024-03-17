@@ -144,8 +144,5 @@ Rope 是一个免费开源的 AI 换脸软件，它具有图形化界面，使�
 7. 看看替换效果是不是你想要的，如果是的，接下来点击视频窗口中的播放按钮，再点击前进按钮，这两个按钮点击完后应该都是白色的，		点击完后等待整个视频替换即可，替换完成后会保存在output文件夹中。
 ![在这里插入图片描述](/images/2024-03-17-rope-install/ltvj48rd08.png)	
 
-8. 这里给出我的替换结果，效果还是非常好的
-[video(video-WfdvxxSu-1710677995030)(type-csdn)(url-https://live.csdn.net/v/embed/371554)(image-https://video-community.csdnimg.cn/vod-84deb4/f03ba81ce45371eebfd16732b68f0102/snapshots/7f1ea18986f9425baaffc1e26d07f827-00002.jpg?auth_key=4864275623-0-0-8544cc6f785b272375aa42b44dcf1d04)()]
-
 
  *Rope的汉化整合包（包含模型）以及教程中所涉及到的所有安装包我都打包好了，需要的小伙伴可以[点击打开跳转](https://koalai.org/about/)，关注微信公众号，回复关键词【**rope**】获取。*
