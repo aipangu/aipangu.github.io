@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="https://koalai.org/feed.xml" rel="self" type="application/atom+xml" /><link href="https://koalai.org/" rel="alternate" type="text/html" /><updated>2024-03-17T22:12:29+08:00</updated><id>https://koalai.org/feed.xml</id><title type="html">考拉AI</title><subtitle>考拉AI的个人博客</subtitle><author><name>考拉AI</name></author><entry><title type="html">干货教程【AI篇】| 最强AI换脸软件Rope的安装配置和使用教程以及Rope整合包下载</title><link href="https://koalai.org/2024/03/17/rope-install/" rel="alternate" type="text/html" title="干货教程【AI篇】| 最强AI换脸软件Rope的安装配置和使用教程以及Rope整合包下载" /><published>2024-03-17T00:00:00+08:00</published><updated>2024-03-17T00:00:00+08:00</updated><id>https://koalai.org/2024/03/17/rope-install</id><content type="html" xml:base="https://koalai.org/2024/03/17/rope-install/"><![CDATA[<p>Rope 是一个免费开源的 AI 换脸软件，它具有图形化界面，使得甚至小白也能够轻松地进行简单的操作。该软件提供了多种高清化算法，使用者可以实时观察换脸效果，并且还支持多种遮罩模式以及将多个人脸一起融合的功能。Rope 的官方 GitHub 仓库地址为：https://github.com/Hillobar/Rope</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="https://koalai.org/feed.xml" rel="self" type="application/atom+xml" /><link href="https://koalai.org/" rel="alternate" type="text/html" /><updated>2024-03-17T22:17:22+08:00</updated><id>https://koalai.org/feed.xml</id><title type="html">考拉AI</title><subtitle>考拉AI的个人博客</subtitle><author><name>考拉AI</name></author><entry><title type="html">干货教程【AI篇】| 最强AI换脸软件Rope的安装配置和使用教程以及Rope整合包下载</title><link href="https://koalai.org/2024/03/17/rope-install/" rel="alternate" type="text/html" title="干货教程【AI篇】| 最强AI换脸软件Rope的安装配置和使用教程以及Rope整合包下载" /><published>2024-03-17T00:00:00+08:00</published><updated>2024-03-17T00:00:00+08:00</updated><id>https://koalai.org/2024/03/17/rope-install</id><content type="html" xml:base="https://koalai.org/2024/03/17/rope-install/"><![CDATA[<p>Rope 是一个免费开源的 AI 换脸软件，它具有图形化界面，使得甚至小白也能够轻松地进行简单的操作。该软件提供了多种高清化算法，使用者可以实时观察换脸效果，并且还支持多种遮罩模式以及将多个人脸一起融合的功能。Rope 的官方 GitHub 仓库地址为：https://github.com/Hillobar/Rope</p>
 
 <p>网上也有一些Rope的整合包，免去了小白配置环境困难的苦恼，如果你觉得配置Rope的运行环境比较麻烦，可以直接跳到文章后半部分看Rope的使用教程即可。Rope整合包我也打包了一份，可以关注我的微信公众号进行下载
 但我个人还是推荐你自己部署一下环境，有以下几点好处：</p>
@@ -128,12 +128,8 @@
 <img src="/images/2024-03-17-rope-install/ltvj45fj07.png" alt="在这里插入图片描述" /></li>
   <li>点击Swap Faces，稍微等待以下，可以看到视频窗口中的人脸就被替换了
 <img src="/images/2024-03-17-rope-install/ltvj470l82.png" alt="在这里插入图片描述" /></li>
-  <li>
-    <p>看看替换效果是不是你想要的，如果是的，接下来点击视频窗口中的播放按钮，再点击前进按钮，这两个按钮点击完后应该都是白色的，		点击完后等待整个视频替换即可，替换完成后会保存在output文件夹中。
-<img src="/images/2024-03-17-rope-install/ltvj48rd08.png" alt="在这里插入图片描述" /></p>
-  </li>
-  <li>这里给出我的替换结果，效果还是非常好的
-[video(video-WfdvxxSu-1710677995030)(type-csdn)(url-https://live.csdn.net/v/embed/371554)(image-https://video-community.csdnimg.cn/vod-84deb4/f03ba81ce45371eebfd16732b68f0102/snapshots/7f1ea18986f9425baaffc1e26d07f827-00002.jpg?auth_key=4864275623-0-0-8544cc6f785b272375aa42b44dcf1d04)()]</li>
+  <li>看看替换效果是不是你想要的，如果是的，接下来点击视频窗口中的播放按钮，再点击前进按钮，这两个按钮点击完后应该都是白色的，		点击完后等待整个视频替换即可，替换完成后会保存在output文件夹中。
+<img src="/images/2024-03-17-rope-install/ltvj48rd08.png" alt="在这里插入图片描述" /></li>
 </ol>
 
 <p><em>Rope的汉化整合包（包含模型）以及教程中所涉及到的所有安装包我都打包好了，需要的小伙伴可以<a href="https://koalai.org/about/">点击打开跳转</a>，关注微信公众号，回复关键词【<strong>rope</strong>】获取。</em></p>]]></content><author><name>考拉AI</name></author><category term="AI软件" /><summary type="html"><![CDATA[最强AI换脸软件Rope的安装配置和使用教程以及Rope整合包下载]]></summary></entry><entry><title type="html">干货教程【软件篇】| IDM+m3u8解析工具无脑下载非主流网站视频</title><link href="https://koalai.org/2024/03/12/web-video-download/" rel="alternate" type="text/html" title="干货教程【软件篇】| IDM+m3u8解析工具无脑下载非主流网站视频" /><published>2024-03-12T00:00:00+08:00</published><updated>2024-03-12T00:00:00+08:00</updated><id>https://koalai.org/2024/03/12/web-video-download</id><content type="html" xml:base="https://koalai.org/2024/03/12/web-video-download/"><![CDATA[<p>当你浏览一个网站，看到一个喜欢的视频，不知道如何下载的时候，本教程或许可以帮你点小忙。大部分的主流网站都有专门的下载工具，本篇教程主要针对的是一些非主流的小网站。</p>
