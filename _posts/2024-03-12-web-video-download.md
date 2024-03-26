@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 干货教程【软件篇】| IDM+m3u8解析工具无脑下载非主流网站视频
-categories: [ChatGPT]
+categories: [软件]
 description: 干货教程【软件篇】| IDM+m3u8解析工具无脑下载非主流网站视频
 keywords: IDM, m3u8, 下载视频, 网站
 mermaid: false

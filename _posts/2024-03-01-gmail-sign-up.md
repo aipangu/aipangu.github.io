@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 谷歌邮箱账号注册教程
-categories: [ChatGPT]
+categories: [谷歌]
 description: 谷歌邮箱注册教程
 keywords: Google，Chatgpt, Gmail
 mermaid: false

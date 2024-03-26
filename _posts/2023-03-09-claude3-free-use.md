@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Claude3最新免费使用教程！无需注册！无需魔法！免费使用
-categories: [ChatGPT]
+categories: [Claude3]
 description: Claude3最新免费使用教程！无需注册！无需魔法！免费使用
 keywords: Chatgpt, ChatGPT Plus, Claude3, AI, 人工智能
 mermaid: false
