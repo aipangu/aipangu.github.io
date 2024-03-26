@@ -94,6 +94,8 @@
   
   
   
+  
+  
 
   
     {
@@ -106,7 +108,7 @@
   
     {
       "title"    : "Claude3最新免费使用教程！无需注册！无需魔法！免费使用",
-      "category" : "ChatGPT",
+      "category" : "Claude3",
       
       "url"      : "https://koalai.org/2023/03/09/claude3-free-use/",
       "keywords" : "Chatgpt, ChatGPT Plus, Claude3, AI, 人工智能"
@@ -130,7 +132,7 @@
   
     {
       "title"    : "谷歌邮箱账号注册教程",
-      "category" : "ChatGPT",
+      "category" : "谷歌",
       
       "url"      : "https://koalai.org/2024/03/01/gmail-sign-up/",
       "keywords" : "Google，Chatgpt, Gmail"
@@ -138,7 +140,7 @@
   
     {
       "title"    : "OpenAI Sora 新手小白详细使用教程，早学早用",
-      "category" : "ChatGPT",
+      "category" : "AI视频",
       
       "url"      : "https://koalai.org/2024/03/01/sora-use/",
       "keywords" : "OpenAI， Chatgpt, Sora, Chatgpt4.0, AI, 人工智能"
@@ -162,15 +164,23 @@
   
     {
       "title"    : "干货教程【软件篇】| IDM+m3u8解析工具无脑下载非主流网站视频",
-      "category" : "ChatGPT",
+      "category" : "软件",
       
       "url"      : "https://koalai.org/2024/03/12/web-video-download/",
       "keywords" : "IDM, m3u8, 下载视频, 网站"
     } ,
   
     {
-      "title"    : "干货教程【AI篇】| 最强AI换脸软件Rope的安装配置和使用教程以及Rope整合包下载",
-      "category" : "AI软件",
+      "title"    : "干货教程【AI篇】| 最强AI换脸软件Rope使用教程以及Rope整合包下载",
+      "category" : "AI换脸",
+      
+      "url"      : "https://koalai.org/2024/03/16/rope-use/",
+      "keywords" : "Rope, AI换脸, AI"
+    } ,
+  
+    {
+      "title"    : "干货教程【AI篇】| AI换脸软件Rope搭建环境运行源码详细教程",
+      "category" : "AI换脸",
       
       "url"      : "https://koalai.org/2024/03/17/rope-install/",
       "keywords" : "Rope, AI换脸, AI"

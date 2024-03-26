@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="https://koalai.org/feed.xml" rel="self" type="application/atom+xml" /><link href="https://koalai.org/" rel="alternate" type="text/html" /><updated>2024-03-17T22:17:22+08:00</updated><id>https://koalai.org/feed.xml</id><title type="html">考拉AI</title><subtitle>考拉AI的个人博客</subtitle><author><name>考拉AI</name></author><entry><title type="html">干货教程【AI篇】| 最强AI换脸软件Rope的安装配置和使用教程以及Rope整合包下载</title><link href="https://koalai.org/2024/03/17/rope-install/" rel="alternate" type="text/html" title="干货教程【AI篇】| 最强AI换脸软件Rope的安装配置和使用教程以及Rope整合包下载" /><published>2024-03-17T00:00:00+08:00</published><updated>2024-03-17T00:00:00+08:00</updated><id>https://koalai.org/2024/03/17/rope-install</id><content type="html" xml:base="https://koalai.org/2024/03/17/rope-install/"><![CDATA[<p>Rope 是一个免费开源的 AI 换脸软件，它具有图形化界面，使得甚至小白也能够轻松地进行简单的操作。该软件提供了多种高清化算法，使用者可以实时观察换脸效果，并且还支持多种遮罩模式以及将多个人脸一起融合的功能。Rope 的官方 GitHub 仓库地址为：https://github.com/Hillobar/Rope</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="https://koalai.org/feed.xml" rel="self" type="application/atom+xml" /><link href="https://koalai.org/" rel="alternate" type="text/html" /><updated>2024-03-27T00:59:28+08:00</updated><id>https://koalai.org/feed.xml</id><title type="html">考拉AI</title><subtitle>考拉AI的个人博客</subtitle><author><name>考拉AI</name></author><entry><title type="html">干货教程【AI篇】| AI换脸软件Rope搭建环境运行源码详细教程</title><link href="https://koalai.org/2024/03/17/rope-install/" rel="alternate" type="text/html" title="干货教程【AI篇】| AI换脸软件Rope搭建环境运行源码详细教程" /><published>2024-03-17T00:00:00+08:00</published><updated>2024-03-17T00:00:00+08:00</updated><id>https://koalai.org/2024/03/17/rope-install</id><content type="html" xml:base="https://koalai.org/2024/03/17/rope-install/"><![CDATA[<p>Rope 是一个免费开源的 AI 换脸软件，它具有图形化界面，使得甚至小白也能够轻松地进行简单的操作。该软件提供了多种高清化算法，使用者可以实时观察换脸效果，并且还支持多种遮罩模式以及将多个人脸一起融合的功能。Rope 的官方 GitHub 仓库地址为：https://github.com/Hillobar/Rope</p>
 
 <p>网上也有一些Rope的整合包，免去了小白配置环境困难的苦恼，如果你觉得配置Rope的运行环境比较麻烦，可以直接跳到文章后半部分看Rope的使用教程即可。Rope整合包我也打包了一份，可以关注我的微信公众号进行下载
 但我个人还是推荐你自己部署一下环境，有以下几点好处：</p>
@@ -12,17 +12,18 @@
 
 <p>如果你是一个小白，可以看我下面的更为详细的教程</p>
 
-<p><em>Rope的汉化整合包（包含模型）以及下面教程所涉及到的所有安装包我都打包好了，需要的小伙伴可以<a href="https://koalai.org/about/">点击打开跳转</a>，关注微信公众号，回复关键词【<strong>rope</strong>】获取。</em></p>
+<p><em>Rope的整合包需要的小伙伴可以<a href="https://koalai.org/about/">点击打开跳转到我的博客</a>，关注微信公众号，回复关键词【<strong>rope</strong>】获取。</em></p>
 
+<p>整合包详细使用教程参考之前写的<a href="https://blog.csdn.net/qq_17449077/article/details/136782719">这篇博客</a></p>
 <h2 id="rope环境配置和安装">Rope环境配置和安装</h2>
 
 <ol>
   <li>
     <p>安装Miniconda
-如果你的电脑上还没有conda 环境，可以<a href="https://koalai.org/2024/03/09/python-install/">参考我之前的文章</a>去安装conda环境，建议安装Miniconda即可。安装完成后需要设置conda路径到系统环境变量，首先在开始菜单搜索<strong>环境变量</strong>，打开<strong>编辑系统环境变量</strong>
-<img src="/images/2024-03-17-rope-install/ltvj3eg136.png" alt="在这里插入图片描述" />
+如果你的电脑上还没有conda 环境，可以<a href="https://blog.csdn.net/qq_17449077/article/details/136519192">参考我之前的文章</a>去安装conda环境，建议安装Miniconda即可。安装完成后需要设置conda路径到系统环境变量，首先在开始菜单搜索<strong>环境变量</strong>，打开<strong>编辑系统环境变量</strong>
+<img src="/images/2024-03-17-rope-install/lu8l8tje67.png" alt="在这里插入图片描述" />
 然后按照以下步骤添加conda 到系统环境变量中，我的路径是：D:\miniconda3\Scripts
-<img src="/images/2024-03-17-rope-install/ltvj3g1e71.png" alt="在这里插入图片描述" />
+<img src="/images/2024-03-17-rope-install/lu8l8v4j73.png" alt="在这里插入图片描述" />
  我们所有的命令都是在Anaconda Prompt 终端执行的，首先需要打开这个终端</p>
 
     <p>如果你想在window Power Shell中执行，那么需要在第一次运行conda时执行如下命令：</p>
@@ -33,7 +34,7 @@
 </code></pre></div>    </div>
   </li>
   <li>下载源码 
- 首先需要下载Rope源码，即执行以下命令。如果你clone的时候失败，可以下载源码压缩包，解压即可。
+ 首先打开<a href="https://git-scm.com/download/win">git官网</a>下载并安装git ，然后下载Rope源码，即执行以下命令。如果你clone的时候失败，可以直接去github下载源码压缩包，解压即可。
     <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> git clone https://github.com/Hillobar/Rope <span class="c">#clone失败可以下载压缩包解压即可</span>
 </code></pre></div>    </div>
     <p>然后需要进入到源码所在目录（请根据自己的情况替换路径）。即执行以下命令</p>
@@ -54,38 +55,38 @@
   <li>
     <p>安装ffmpeg
  ffmpeg windows版<a href="https://www.gyan.dev/ffmpeg/builds/">官网下载地址</a>，下载以git-full为后缀的
-<img src="/images/2024-03-17-rope-install/ltvj3hmm02.png" alt="在这里插入图片描述" /></p>
+<img src="/images/2024-03-17-rope-install/lu8l8wpl60.png" alt="在这里插入图片描述" /></p>
 
     <p>下载完成后解压压缩包，复制bin目录路径
-<img src="/images/2024-03-17-rope-install/ltvj3j8g28.png" alt="在这里插入图片描述" /></p>
+<img src="/images/2024-03-17-rope-install/lu8l8yay57.png" alt="在这里插入图片描述" /></p>
 
     <p>依次按照以下步骤，把bin路径添加到系统环境变量中
-<img src="/images/2024-03-17-rope-install/ltvj3kt657.png" alt="在这里插入图片描述" />
+<img src="/images/2024-03-17-rope-install/lu8l8zw064.png" alt="在这里插入图片描述" />
  设置完成后打开终端，输入以下命令验证</p>
     <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> ffmpeg <span class="nt">-version</span>
 </code></pre></div>    </div>
     <p>如果显示如下，则说明ffmpeg安装成功
-<img src="/images/2024-03-17-rope-install/ltvj3me197.png" alt="在这里插入图片描述" /></p>
+<img src="/images/2024-03-17-rope-install/lu8l91hv12.png" alt="在这里插入图片描述" /></p>
   </li>
   <li>
     <p>安装cuda
  <a href="https://developer.nvidia.com/cuda-toolkit-archive">点击进入cuda官方下载地址</a>
  点击进入，Rope要求下载11.8.0版本的，双击打开此版本
-<img src="/images/2024-03-17-rope-install/ltvj3o0001.png" alt="在这里插入图片描述" /></p>
+<img src="/images/2024-03-17-rope-install/lu8l933e41.png" alt="在这里插入图片描述" /></p>
 
     <p>按照如下图所示选择，点击Download进行下载
-<img src="/images/2024-03-17-rope-install/ltvj3pkq19.png" alt="在这里插入图片描述" />
+<img src="/images/2024-03-17-rope-install/lu8l94ot69.png" alt="在这里插入图片描述" />
  下载完成后安装，双击打开，设置安装路径，依次默认安装即可。安装完成后输入以下命令</p>
     <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> nvcc <span class="nt">-V</span>
 </code></pre></div>    </div>
     <p>如果显示如下，则安装成功
-<img src="/images/2024-03-17-rope-install/ltvj3r5k53.png" alt="在这里插入图片描述" /></p>
+<img src="/images/2024-03-17-rope-install/lu8l969r80.png" alt="在这里插入图片描述" /></p>
   </li>
   <li>安装cudnn
 <a href="https://developer.nvidia.com/cudnn-downloads">打开cudnn官方下载地址</a>，按照下图选择，点击Download进行下载
-<img src="/images/2024-03-17-rope-install/ltvj3sqo50.png" alt="在这里插入图片描述" />
+<img src="/images/2024-03-17-rope-install/lu8l97um54.png" alt="在这里插入图片描述" />
 下载完成后解压，目录如下，全选，然后全部复制
-<img src="/images/2024-03-17-rope-install/ltvj3uc183.png" alt="在这里插入图片描述" />
+<img src="/images/2024-03-17-rope-install/lu8l99ft36.png" alt="在这里插入图片描述" />
 进入这个路径C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8，粘贴刚才复制的所有文件到这下面即可完成安装</li>
 </ol>
 
@@ -99,7 +100,7 @@
   </li>
   <li>
     <p><a href="https://github.com/Hillobar/Rope/releases/tag/Sapphire">点击进入</a>这个网站下载所有模型，并放到Rope/models中，目录如下
- <img src="/images/2024-03-17-rope-install/ltvj3vwk89.png" alt="在这里插入图片描述" /></p>
+ <img src="/images/2024-03-17-rope-install/lu8l9b0g47.png" alt="在这里插入图片描述" /></p>
   </li>
   <li>修改Rope.bat，用记事本打开，复制替换以下内容到Rope.bat文件中
     <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> call conda activate Rope
@@ -110,29 +111,87 @@
   <li>win+r 输入cmd打开终端，输入以下命令回车
     <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> conda init cmd.exe
 </code></pre></div>    </div>
-    <h3 id="rope的使用">Rope的使用</h3>
+    <h2 id="运行rope">运行Rope</h2>
   </li>
-  <li>
-    <p>双击Rope.bat，不出意外的话会弹出如下界面，图中三个位置对应设置为刚才创建的三个文件夹
-<img src="/images/2024-03-17-rope-install/ltvj3xha25.png" alt="在这里插入图片描述" /></p>
-  </li>
-  <li>在videos文件夹中放入你要换脸的视频，在faces文件夹中放入你想换哪个脸的图片，点击右边的video，会加载videos中的所有视频
-<img src="/images/2024-03-17-rope-install/ltvj3z3r16.png" alt="在这里插入图片描述" /></li>
-  <li>点击你想要换脸的视频，右边播放窗口会加载你选择的视频进来
-<img src="/images/2024-03-17-rope-install/ltvj40om92.png" alt="在这里插入图片描述" />
- 再点击左上角的Start Rope，会模型会你检测到faces文件下的所有人脸，并会显示在Input Faces列表中
-<img src="/images/2024-03-17-rope-install/ltvj429v85.png" alt="在这里插入图片描述" /></li>
-  <li>点击视频窗口下面的Find Faces，会检测视频的第一帧人脸
-<img src="/images/2024-03-17-rope-install/ltvj43ur35.png" alt="在这里插入图片描述" /></li>
-  <li>选择视频的第一帧人脸和Input Faces列表中的人脸，选中后两者都有红框
-<img src="/images/2024-03-17-rope-install/ltvj45fj07.png" alt="在这里插入图片描述" /></li>
-  <li>点击Swap Faces，稍微等待以下，可以看到视频窗口中的人脸就被替换了
-<img src="/images/2024-03-17-rope-install/ltvj470l82.png" alt="在这里插入图片描述" /></li>
-  <li>看看替换效果是不是你想要的，如果是的，接下来点击视频窗口中的播放按钮，再点击前进按钮，这两个按钮点击完后应该都是白色的，		点击完后等待整个视频替换即可，替换完成后会保存在output文件夹中。
-<img src="/images/2024-03-17-rope-install/ltvj48rd08.png" alt="在这里插入图片描述" /></li>
 </ol>
 
-<p><em>Rope的汉化整合包（包含模型）以及教程中所涉及到的所有安装包我都打包好了，需要的小伙伴可以<a href="https://koalai.org/about/">点击打开跳转</a>，关注微信公众号，回复关键词【<strong>rope</strong>】获取。</em></p>]]></content><author><name>考拉AI</name></author><category term="AI软件" /><summary type="html"><![CDATA[最强AI换脸软件Rope的安装配置和使用教程以及Rope整合包下载]]></summary></entry><entry><title type="html">干货教程【软件篇】| IDM+m3u8解析工具无脑下载非主流网站视频</title><link href="https://koalai.org/2024/03/12/web-video-download/" rel="alternate" type="text/html" title="干货教程【软件篇】| IDM+m3u8解析工具无脑下载非主流网站视频" /><published>2024-03-12T00:00:00+08:00</published><updated>2024-03-12T00:00:00+08:00</updated><id>https://koalai.org/2024/03/12/web-video-download</id><content type="html" xml:base="https://koalai.org/2024/03/12/web-video-download/"><![CDATA[<p>当你浏览一个网站，看到一个喜欢的视频，不知道如何下载的时候，本教程或许可以帮你点小忙。大部分的主流网站都有专门的下载工具，本篇教程主要针对的是一些非主流的小网站。</p>
+<p>双击Rope.bat，不出意外的话会弹出如下界面，图中三个位置对应设置为刚才创建的三个文件夹
+<img src="/images/2024-03-17-rope-install/lu8l9cls07.png" alt="在这里插入图片描述" />
+详细使用教程参考之前写的<a href="https://blog.csdn.net/qq_17449077/article/details/136782719">这篇博客</a></p>]]></content><author><name>考拉AI</name></author><category term="AI换脸" /><summary type="html"><![CDATA[AI换脸软件Rope搭建环境运行源码详细教程]]></summary></entry><entry><title type="html">干货教程【AI篇】| 最强AI换脸软件Rope使用教程以及Rope整合包下载</title><link href="https://koalai.org/2024/03/16/rope-use/" rel="alternate" type="text/html" title="干货教程【AI篇】| 最强AI换脸软件Rope使用教程以及Rope整合包下载" /><published>2024-03-16T00:00:00+08:00</published><updated>2024-03-16T00:00:00+08:00</updated><id>https://koalai.org/2024/03/16/rope-use</id><content type="html" xml:base="https://koalai.org/2024/03/16/rope-use/"><![CDATA[<p>目前市面上面的AI换脸软件主要有以下几个：</p>
+<ol>
+  <li>rope
+ 开源 githubf地址：https://github.com/Hillobar/Rope
+ 最新版可以自动遮罩，不太需要手动调节遮罩范围，在有遮挡的情况下换脸效果也非常好，极力推荐</li>
+  <li>facefusion
+ 开源 github地址为：https://github.com/facefusion/facefusion
+ 需要手动调节遮罩范围，在有遮挡的情况下如果遮罩调节不好，换脸效果会非常差</li>
+  <li>deepface系
+ 	开源，上手难度比较高，分为deepfacelab和deepfacelive，两者要搭配使用，github地址分别为：
+ 	https://github.com/iperov/DeepFaceLab
+ 	https://github.com/iperov/DeepFaceLive
+ 	deepfacelab主要用来训练专属模型，后续我会更新模型训练的教程
+ 	deepfacelive支持直播换脸，但比较依赖于deepfacelab训练的模型，训练不好效果也比较差</li>
+  <li>swapface
+ 官网地址： https://swapface.org/#/home
+ 付费软件，每天会有免费的试用次数，但感觉效果并没有rope好</li>
+</ol>
+
+<p>总结下来，如果没有直播的需求，个人觉得rope是最佳选择。如果是直播使用，那就使用deepface系列，但需要训练自己的专属模型。今天我主要先介绍以下Rope的安装和使用。</p>
+
+<p>要想在电脑上运行Rope的源码，需要搭建复杂的运行环境。</p>
+
+<p>我这里干了两天给大家打了一个<strong>Rope整合包</strong>，可以一键启动，免去了搭建繁琐运行环境的步骤，另外解决了rope源码中换脸后的视频没有声音的bug，欢迎大家关注公众号下载。</p>
+
+<p><em>需要整合包的小伙伴可以<a href="https://koalai.org/about/">点击打开跳转到我的博客</a>，关注<strong>微信公众号</strong>，回复关键词【<strong>rope</strong>】获取</em></p>
+
+<h2 id="运行rope-电脑配置和环境要求">运行Rope 电脑配置和环境要求</h2>
+<ul>
+  <li>系统要求： windows 10 或者11</li>
+  <li>显卡要求： 英伟达独立显卡，俗称N卡，要安装好显卡驱动</li>
+  <li>内存要求：8G及以上</li>
+  <li>硬盘要求： 要有至少20G左右的剩余存储空间</li>
+</ul>
+
+<h2 id="显卡驱动安装">显卡驱动安装</h2>
+<p><strong>1. 方法一：自动更新驱动</strong>
+快捷键 【win+x】，点击选择【设备管理器】，找到【显示适配器】，选择你的显卡型号如下图，鼠标点击右键，选择点击【更新驱动程序】，点击【自动搜素驱动程序】
+<img src="c:/Users/46550/Desktop/github_proj/aipangu.github.io/images/2024-03-16-rope-use/lu8lgv9404.png" alt="在这里插入图片描述" />
+<strong>2. 方法二：官网下载安装</strong>
+	<a href="https://www.nvidia.com/Download/index.aspx?lang=cn">点击打开官网地址</a>，选择你的显卡型号和操作系统，然后点击搜素，再点击下载，下载完成之后安装即可。</p>
+
+<p><img src="c:/Users/46550/Desktop/github_proj/aipangu.github.io/images/2024-03-16-rope-use/lu8lgwvy69.png" alt="在这里插入图片描述" /></p>
+
+<h2 id="rope整合包使用">Rope整合包使用</h2>
+
+<ol>
+  <li>解压整合包后，首先双击Rope.exe去运行Rope
+<img src="c:/Users/46550/Desktop/github_proj/aipangu.github.io/images/2024-03-16-rope-use/lu8lgygp09.png" alt="在这里插入图片描述" /></li>
+  <li>运行后会弹出黑色的终端界面如下图，如果终端中出现报错信息，可能是显卡驱动没有安装，请按照上面步骤安装显卡驱动
+<img src="c:/Users/46550/Desktop/github_proj/aipangu.github.io/images/2024-03-16-rope-use/lu8lh01u81.png" alt="在这里插入图片描述" /></li>
+  <li>如果运行成功，会弹出以下界面，下图所示的三个地方，videos是放置你要换脸的视频的路径，faces文件夹中是放置你想换哪个脸的图片的路径，最终输出的换脸结果会放置在output路径中<img src="c:/Users/46550/Desktop/github_proj/aipangu.github.io/images/2024-03-16-rope-use/lu8lh1mq08.png" alt="在这里插入图片描述" />
+上述三个路径是与解压目录里面下面三个文件夹一一对应的，因此你需要准备好视频和图片分别放在下面的videos和faces目录中
+<img src="c:/Users/46550/Desktop/github_proj/aipangu.github.io/images/2024-03-16-rope-use/lu8lh38t15.png" alt="在这里插入图片描述" /></li>
+  <li>放置完成后点击左上角的Start Rope，稍等加载目标视频和源脸成功
+<img src="c:/Users/46550/Desktop/github_proj/aipangu.github.io/images/2024-03-16-rope-use/lu8lh4ti40.png" alt="在这里插入图片描述" /></li>
+  <li>点击目标视频，右边播放窗口会加载你选择的视频进来
+<img src="c:/Users/46550/Desktop/github_proj/aipangu.github.io/images/2024-03-16-rope-use/lu8lh6fd65.png" alt="在这里插入图片描述" /></li>
+  <li>点击视频窗口下面的Find Faces，会检测目标视频的第一帧人脸
+<img src="c:/Users/46550/Desktop/github_proj/aipangu.github.io/images/2024-03-16-rope-use/lu8lh80u21.png" alt="在这里插入图片描述" /></li>
+  <li>
+    <p>选择目标视频的第一帧人脸和源人脸，选中后两者都有红框
+<img src="c:/Users/46550/Desktop/github_proj/aipangu.github.io/images/2024-03-16-rope-use/lu8lh9m643.png" alt="在这里插入图片描述" /></p>
+  </li>
+  <li>首先打开右边的配置restorer，不打开的话换完后的视频分辨率会降低，变的比较模糊。然后点击Swap Faces，开始换第一帧脸，稍微等待以下，可以看到视频窗口中的人脸被替换了
+<img src="c:/Users/46550/Desktop/github_proj/aipangu.github.io/images/2024-03-16-rope-use/lu8lhb7u00.png" alt="在这里插入图片描述" /></li>
+  <li>
+    <p>看看替换效果是不是你想要的，如果是的，接下来点击视频窗口中的播放按钮，再点击前进按钮，这两个按钮点击完后应该都是白色的，等待整个进度条运行完成即可，output文件夹中查看结果。	
+<img src="c:/Users/46550/Desktop/github_proj/aipangu.github.io/images/2024-03-16-rope-use/lu8lhctc23.png" alt="在这里插入图片描述" /></p>
+  </li>
+  <li>/images
+[video(video-WfdvxxSu-1710677995030)(type-csdn)(url-https://live.csdn.net/v/embed/371554)(image-https://video-community.csdnimg.cn/vod-84deb4/f03ba81ce45371eebfd16732b68f0102/snapshots/7f1ea18986f9425baaffc1e26d07f827-00002.jpg?auth_key=4864275623-0-0-8544cc6f785b272375aa42b44dcf1d04)(title-rope_test)]</li>
+</ol>
+
+<p><em>需要整合包的小伙伴可以<a href="https://koalai.org/about/">点击打开跳转到我的博客</a>，关注<strong>微信公众号</strong>，回复关键词【<strong>rope</strong>】获取</em></p>]]></content><author><name>考拉AI</name></author><category term="AI换脸" /><summary type="html"><![CDATA[最强AI换脸软件Rope使用教程以及Rope整合包下载]]></summary></entry><entry><title type="html">干货教程【软件篇】| IDM+m3u8解析工具无脑下载非主流网站视频</title><link href="https://koalai.org/2024/03/12/web-video-download/" rel="alternate" type="text/html" title="干货教程【软件篇】| IDM+m3u8解析工具无脑下载非主流网站视频" /><published>2024-03-12T00:00:00+08:00</published><updated>2024-03-12T00:00:00+08:00</updated><id>https://koalai.org/2024/03/12/web-video-download</id><content type="html" xml:base="https://koalai.org/2024/03/12/web-video-download/"><![CDATA[<p>当你浏览一个网站，看到一个喜欢的视频，不知道如何下载的时候，本教程或许可以帮你点小忙。大部分的主流网站都有专门的下载工具，本篇教程主要针对的是一些非主流的小网站。</p>
 
 <p>我们的下载方法就是利用IDM的嗅探功能，自动获取视频的链接并去下载，对于有些网站可能会下载失败，但此时IDM已经获取到了m3u8的地址，我们可以利用m3u8解析工具去下载下来。</p>
 
@@ -207,7 +266,7 @@
 
 <p><strong>关注微信公众号：树袋熊AI</strong>，回复关键词【<strong>IDM</strong>】获取IDM和m3u8解析工具安装包</p>
 
-<p><img src="/assets/images/qrcode_name.jpg" alt="" /></p>]]></content><author><name>考拉AI</name></author><category term="ChatGPT" /><summary type="html"><![CDATA[干货教程【软件篇】| IDM+m3u8解析工具无脑下载非主流网站视频]]></summary></entry><entry><title type="html">干货教程【软件篇】| windows 下如何快速安装使用Pycharm IDE进行Python开发</title><link href="https://koalai.org/2024/03/10/pycharm-install/" rel="alternate" type="text/html" title="干货教程【软件篇】| windows 下如何快速安装使用Pycharm IDE进行Python开发" /><published>2024-03-10T00:00:00+08:00</published><updated>2024-03-10T00:00:00+08:00</updated><id>https://koalai.org/2024/03/10/pycharm-install</id><content type="html" xml:base="https://koalai.org/2024/03/10/pycharm-install/"><![CDATA[<p>PyCharm是一款由JetBrains开发的Python集成开发环境（IDE）。它为Python开发提供了全面的支持，包括代码编辑、调试、代码分析、版本控制集成等功能。非常适合刚学习Python的小白进行开发，不用像VS Code 那样需要进行复杂的json配置。</p>
+<p><img src="/assets/images/qrcode_name.jpg" alt="" /></p>]]></content><author><name>考拉AI</name></author><category term="软件" /><summary type="html"><![CDATA[干货教程【软件篇】| IDM+m3u8解析工具无脑下载非主流网站视频]]></summary></entry><entry><title type="html">干货教程【软件篇】| windows 下如何快速安装使用Pycharm IDE进行Python开发</title><link href="https://koalai.org/2024/03/10/pycharm-install/" rel="alternate" type="text/html" title="干货教程【软件篇】| windows 下如何快速安装使用Pycharm IDE进行Python开发" /><published>2024-03-10T00:00:00+08:00</published><updated>2024-03-10T00:00:00+08:00</updated><id>https://koalai.org/2024/03/10/pycharm-install</id><content type="html" xml:base="https://koalai.org/2024/03/10/pycharm-install/"><![CDATA[<p>PyCharm是一款由JetBrains开发的Python集成开发环境（IDE）。它为Python开发提供了全面的支持，包括代码编辑、调试、代码分析、版本控制集成等功能。非常适合刚学习Python的小白进行开发，不用像VS Code 那样需要进行复杂的json配置。</p>
 
 <p>如果你还没有安装配置Python环境，建议先看上一篇去安装一下Python环境，你可以选择安装系统Python或者Miniconda或者Anaconda集成的python环境，对于初学者建议安装Miniconda。<a href="https://koalai.org/2024/03/09/python-install/">点我进入Python安装配置教程</a></p>
 
@@ -359,7 +418,7 @@ pip3 config <span class="nb">set </span>global.index-url https://pypi.tuna.tsing
   <li>设置辅助邮箱，这里我用的是qq邮箱
 <img src="/images/2024-03-01-gmail-sign-up/gmail_sign_up_5.png" alt="辅助邮箱" /></li>
   <li>最后点击下一步，再点击下一步，点击我同意，你的邮箱就注册好了，会自动登录跳转到邮箱里面</li>
-</ol>]]></content><author><name>考拉AI</name></author><category term="ChatGPT" /><summary type="html"><![CDATA[谷歌邮箱注册教程]]></summary></entry><entry><title type="html">OpenAI Sora 新手小白详细使用教程，早学早用</title><link href="https://koalai.org/2024/03/01/sora-use/" rel="alternate" type="text/html" title="OpenAI Sora 新手小白详细使用教程，早学早用" /><published>2024-03-01T00:00:00+08:00</published><updated>2024-03-01T00:00:00+08:00</updated><id>https://koalai.org/2024/03/01/sora-use</id><content type="html" xml:base="https://koalai.org/2024/03/01/sora-use/"><![CDATA[<h2 id="sora-是什么">Sora 是什么？</h2>
+</ol>]]></content><author><name>考拉AI</name></author><category term="谷歌" /><summary type="html"><![CDATA[谷歌邮箱注册教程]]></summary></entry><entry><title type="html">OpenAI Sora 新手小白详细使用教程，早学早用</title><link href="https://koalai.org/2024/03/01/sora-use/" rel="alternate" type="text/html" title="OpenAI Sora 新手小白详细使用教程，早学早用" /><published>2024-03-01T00:00:00+08:00</published><updated>2024-03-01T00:00:00+08:00</updated><id>https://koalai.org/2024/03/01/sora-use</id><content type="html" xml:base="https://koalai.org/2024/03/01/sora-use/"><![CDATA[<h2 id="sora-是什么">Sora 是什么？</h2>
 <p>Sora 是 OpenAI 发布的首个文本生成视频模型，能够根据用户输入的文本提示快速制作长达一分钟的高保真视频。它还可以获取现有的静态图像并从中生成视频，并理解复杂场景中不同元素之间的物理属性及其关系，从而深度模拟真实物理世界，生成具有多个角色、包含特定运动的复杂场景，<a href="https://openai.com/sora">点击进入Sora官网</a></p>
 
 <p>目前 OpenAI 官方还未开放 Sora，不过根据之前的文生图模型 DALL 的情况，开通ChatGPT Plus的付费用户肯定是会优先使用的，想升级 ChatGPT Plus 可以参考这个教程: <a href="https://koalai.org/2024/02/29/chatgpt4.0-kaitong/">如何升级 ChatGPT Plus</a></p>
@@ -524,7 +583,7 @@ pip3 config <span class="nb">set </span>global.index-url https://pypi.tuna.tsing
   <li>标注模型生成的描述能够更好地指导Sora生成视频。</li>
   <li>Sora利用稳定扩散（Stable Diffusion）技术将静态噪声转换为连贯图像。</li>
   <li>Sora模型采用初步的扩散模型生成视频长度，并逐步消除噪声完成视频。</li>
-</ul>]]></content><author><name>考拉AI</name></author><category term="ChatGPT" /><summary type="html"><![CDATA[OpenAI Sora 新手小白详细使用教程，早学早用]]></summary></entry><entry><title type="html">国内如何快速开通升级到 ChatGPT 4.0</title><link href="https://koalai.org/2024/02/29/chatgpt4.0-kaitong/" rel="alternate" type="text/html" title="国内如何快速开通升级到 ChatGPT 4.0" /><published>2024-02-29T00:00:00+08:00</published><updated>2024-02-29T00:00:00+08:00</updated><id>https://koalai.org/2024/02/29/chatgpt4.0-kaitong</id><content type="html" xml:base="https://koalai.org/2024/02/29/chatgpt4.0-kaitong/"><![CDATA[<p>关于国内快速开通ChatGPT4.0的方法，小白秒学秒用，保姆级教程。</p>
+</ul>]]></content><author><name>考拉AI</name></author><category term="AI视频" /><summary type="html"><![CDATA[OpenAI Sora 新手小白详细使用教程，早学早用]]></summary></entry><entry><title type="html">国内如何快速开通升级到 ChatGPT 4.0</title><link href="https://koalai.org/2024/02/29/chatgpt4.0-kaitong/" rel="alternate" type="text/html" title="国内如何快速开通升级到 ChatGPT 4.0" /><published>2024-02-29T00:00:00+08:00</published><updated>2024-02-29T00:00:00+08:00</updated><id>https://koalai.org/2024/02/29/chatgpt4.0-kaitong</id><content type="html" xml:base="https://koalai.org/2024/02/29/chatgpt4.0-kaitong/"><![CDATA[<p>关于国内快速开通ChatGPT4.0的方法，小白秒学秒用，保姆级教程。</p>
 
 <h2 id="如何升级-chatgpt-40">如何升级 ChatGPT 4.0</h2>
 
@@ -670,20 +729,4 @@ ___</p>
 
 <p><strong>LMSYS Org简介：</strong></p>
 
-<p>Large Model Systems Organization (LMSYS Org) 是一个开放的研究组织，由加州大学伯克利分校的学生和教师与加州大学圣地亚哥分校和卡内基梅隆大学合作创立。  他们的目标是通过共同开发开放数据集、模型、系统和评估工具，让每个人都能访问大型模型。</p>]]></content><author><name>考拉AI</name></author><category term="ChatGPT" /><summary type="html"><![CDATA[Claude3最新免费使用教程！无需注册！无需魔法！免费使用]]></summary></entry><entry><title type="html">Wildcard虚拟信用卡注册详细教程</title><link href="https://koalai.org/2023/03/02/bewildcard-sign-up/" rel="alternate" type="text/html" title="Wildcard虚拟信用卡注册详细教程" /><published>2023-03-02T00:00:00+08:00</published><updated>2023-03-02T00:00:00+08:00</updated><id>https://koalai.org/2023/03/02/bewildcard-sign-up</id><content type="html" xml:base="https://koalai.org/2023/03/02/bewildcard-sign-up/"><![CDATA[<p>国内想要付费订阅App store里面的某些国外软件，或者是付费升级ChatGPT Plus等，都需使用国外的银行卡进行支付，没有国外银行卡怎么办，虚拟信用卡是一个不错的选择，这里我比较推荐的是<a href="https://bewildcard.com/i/GPT778"> Wildcard</a>，开通一次可用2年，收费也比较便宜，这里不太建议去某宝上买，那上面的都比较贵，而且好多都是只能用一次。</p>
-
-<h2 id="wildcard注册">Wildcard注册</h2>
-<ol>
-  <li>首先<a href="https://bewildcard.com/i/GPT778">点击链接</a>进入到 Wildcard 官网，点击右上角的注册
-<img src="/images/2023-03-02-bewildcard-sign-up/image.png" alt="alt text" /></li>
-  <li>进入到收费标准明细页面，可以看到Wildcard可以订阅哪些主流的App，一年差不多100左右，开的卡有效期达2年。对比了许多虚拟卡，这家收费算是很便宜的了。点击立即注册
-<img src="/images/2023-03-02-bewildcard-sign-up/image-1.png" alt="alt text" /></li>
-  <li>进入注册页面后输入手机号，验证码和邀请码，这里可以使用我的邀请码 <strong>GPT778</strong>，邀请码能够减2美元。输入完成后点击下一步，完成验证
-<img src="/images/2023-03-02-bewildcard-sign-up/image-2.png" alt="alt text" /></li>
-  <li>然后选择认证方式，我这里选择的是缴押金认证，支付宝认证需要上传身份信息，比较麻烦点，大家按需选择，然后点击下一步
-<img src="/images/2023-03-02-bewildcard-sign-up/image-3.png" alt="alt text" /></li>
-  <li>填写身份信息和邮箱地址，点击下一步，点击确认
-<img src="/images/2023-03-02-bewildcard-sign-up/image-4.png" alt="alt text" /></li>
-  <li>选择开卡期限，建议选择两年的，比较划算点，邀请码减了两美元，点击确认支付，支付即可
-<img src="/images/2023-03-02-bewildcard-sign-up/image-5.png" alt="alt text" /></li>
-</ol>]]></content><author><name>考拉AI</name></author><category term="ChatGPT" /><summary type="html"><![CDATA[Wildcard虚拟信用卡注册详细教程]]></summary></entry></feed>
+<p>Large Model Systems Organization (LMSYS Org) 是一个开放的研究组织，由加州大学伯克利分校的学生和教师与加州大学圣地亚哥分校和卡内基梅隆大学合作创立。  他们的目标是通过共同开发开放数据集、模型、系统和评估工具，让每个人都能访问大型模型。</p>]]></content><author><name>考拉AI</name></author><category term="Claude3" /><summary type="html"><![CDATA[Claude3最新免费使用教程！无需注册！无需魔法！免费使用]]></summary></entry></feed>
