@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="https://koalai.org/feed.xml" rel="self" type="application/atom+xml" /><link href="https://koalai.org/" rel="alternate" type="text/html" /><updated>2024-03-27T00:59:28+08:00</updated><id>https://koalai.org/feed.xml</id><title type="html">考拉AI</title><subtitle>考拉AI的个人博客</subtitle><author><name>考拉AI</name></author><entry><title type="html">干货教程【AI篇】| AI换脸软件Rope搭建环境运行源码详细教程</title><link href="https://koalai.org/2024/03/17/rope-install/" rel="alternate" type="text/html" title="干货教程【AI篇】| AI换脸软件Rope搭建环境运行源码详细教程" /><published>2024-03-17T00:00:00+08:00</published><updated>2024-03-17T00:00:00+08:00</updated><id>https://koalai.org/2024/03/17/rope-install</id><content type="html" xml:base="https://koalai.org/2024/03/17/rope-install/"><![CDATA[<p>Rope 是一个免费开源的 AI 换脸软件，它具有图形化界面，使得甚至小白也能够轻松地进行简单的操作。该软件提供了多种高清化算法，使用者可以实时观察换脸效果，并且还支持多种遮罩模式以及将多个人脸一起融合的功能。Rope 的官方 GitHub 仓库地址为：https://github.com/Hillobar/Rope</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="https://koalai.org/feed.xml" rel="self" type="application/atom+xml" /><link href="https://koalai.org/" rel="alternate" type="text/html" /><updated>2024-03-27T14:17:20+08:00</updated><id>https://koalai.org/feed.xml</id><title type="html">考拉AI</title><subtitle>考拉AI的个人博客</subtitle><author><name>考拉AI</name></author><entry><title type="html">干货教程【AI篇】| AI换脸软件Rope搭建环境运行源码详细教程</title><link href="https://koalai.org/2024/03/17/rope-install/" rel="alternate" type="text/html" title="干货教程【AI篇】| AI换脸软件Rope搭建环境运行源码详细教程" /><published>2024-03-17T00:00:00+08:00</published><updated>2024-03-17T00:00:00+08:00</updated><id>https://koalai.org/2024/03/17/rope-install</id><content type="html" xml:base="https://koalai.org/2024/03/17/rope-install/"><![CDATA[<p>Rope 是一个免费开源的 AI 换脸软件，它具有图形化界面，使得甚至小白也能够轻松地进行简单的操作。该软件提供了多种高清化算法，使用者可以实时观察换脸效果，并且还支持多种遮罩模式以及将多个人脸一起融合的功能。Rope 的官方 GitHub 仓库地址为：https://github.com/Hillobar/Rope</p>
 
 <p>网上也有一些Rope的整合包，免去了小白配置环境困难的苦恼，如果你觉得配置Rope的运行环境比较麻烦，可以直接跳到文章后半部分看Rope的使用教程即可。Rope整合包我也打包了一份，可以关注我的微信公众号进行下载
 但我个人还是推荐你自己部署一下环境，有以下几点好处：</p>
@@ -118,21 +118,24 @@
 <p>双击Rope.bat，不出意外的话会弹出如下界面，图中三个位置对应设置为刚才创建的三个文件夹
 <img src="/images/2024-03-17-rope-install/lu8l9cls07.png" alt="在这里插入图片描述" />
 详细使用教程参考之前写的<a href="https://blog.csdn.net/qq_17449077/article/details/136782719">这篇博客</a></p>]]></content><author><name>考拉AI</name></author><category term="AI换脸" /><summary type="html"><![CDATA[AI换脸软件Rope搭建环境运行源码详细教程]]></summary></entry><entry><title type="html">干货教程【AI篇】| 最强AI换脸软件Rope使用教程以及Rope整合包下载</title><link href="https://koalai.org/2024/03/16/rope-use/" rel="alternate" type="text/html" title="干货教程【AI篇】| 最强AI换脸软件Rope使用教程以及Rope整合包下载" /><published>2024-03-16T00:00:00+08:00</published><updated>2024-03-16T00:00:00+08:00</updated><id>https://koalai.org/2024/03/16/rope-use</id><content type="html" xml:base="https://koalai.org/2024/03/16/rope-use/"><![CDATA[<p>目前市面上面的AI换脸软件主要有以下几个：</p>
+
 <ol>
   <li>rope
- 开源 githubf地址：https://github.com/Hillobar/Rope
+ 开源 githubf地址：<a href="https://github.com/Hillobar/Rope">https://github.com/Hillobar/Rope</a>
  最新版可以自动遮罩，不太需要手动调节遮罩范围，在有遮挡的情况下换脸效果也非常好，极力推荐</li>
   <li>facefusion
- 开源 github地址为：https://github.com/facefusion/facefusion
+ 开源 github地址为：<a href="https://github.com/facefusion/facefusion">https://github.com/facefusion/facefusion</a>
  需要手动调节遮罩范围，在有遮挡的情况下如果遮罩调节不好，换脸效果会非常差</li>
   <li>deepface系
- 	开源，上手难度比较高，分为deepfacelab和deepfacelive，两者要搭配使用，github地址分别为：
- 	https://github.com/iperov/DeepFaceLab
- 	https://github.com/iperov/DeepFaceLive
- 	deepfacelab主要用来训练专属模型，后续我会更新模型训练的教程
- 	deepfacelive支持直播换脸，但比较依赖于deepfacelab训练的模型，训练不好效果也比较差</li>
+  开源，上手难度比较高，分为deepfacelab和deepfacelive，两者要搭配使用，github地址分别为：</li>
+</ol>
+<p><a href="https://github.com/iperov/DeepFaceLab">https://github.com/iperov/DeepFaceLab</a>
+  <a href="https://github.com/iperov/DeepFaceLive">https://github.com/iperov/DeepFaceLive</a>
+  deepfacelab主要用来训练专属模型，后续我会更新模型训练的教程
+  deepfacelive支持直播换脸，但比较依赖于deepfacelab训练的模型，训练不好效果也比较差</p>
+<ol>
   <li>swapface
- 官网地址： https://swapface.org/#/home
+ 官网地址： <a href="https://swapface.org/#/home">https://swapface.org/#/home</a>
  付费软件，每天会有免费的试用次数，但感觉效果并没有rope好</li>
 </ol>
 
@@ -145,47 +148,49 @@
 <p><em>需要整合包的小伙伴可以<a href="https://koalai.org/about/">点击打开跳转到我的博客</a>，关注<strong>微信公众号</strong>，回复关键词【<strong>rope</strong>】获取</em></p>
 
 <h2 id="运行rope-电脑配置和环境要求">运行Rope 电脑配置和环境要求</h2>
+
 <ul>
   <li>系统要求： windows 10 或者11</li>
-  <li>显卡要求： 英伟达独立显卡，俗称N卡，要安装好显卡驱动</li>
+  <li>显卡要求： 英伟达独立显卡。俗称N卡，至少4G显存，要安装好显卡驱动</li>
   <li>内存要求：8G及以上</li>
   <li>硬盘要求： 要有至少20G左右的剩余存储空间</li>
 </ul>
 
 <h2 id="显卡驱动安装">显卡驱动安装</h2>
+
 <p><strong>1. 方法一：自动更新驱动</strong>
 快捷键 【win+x】，点击选择【设备管理器】，找到【显示适配器】，选择你的显卡型号如下图，鼠标点击右键，选择点击【更新驱动程序】，点击【自动搜素驱动程序】
-<img src="c:/Users/46550/Desktop/github_proj/aipangu.github.io/images/2024-03-16-rope-use/lu8lgv9404.png" alt="在这里插入图片描述" />
+<img src="/images/2024-03-16-rope-use/lu8lgv9404.png" alt="在这里插入图片描述" />
 <strong>2. 方法二：官网下载安装</strong>
-	<a href="https://www.nvidia.com/Download/index.aspx?lang=cn">点击打开官网地址</a>，选择你的显卡型号和操作系统，然后点击搜素，再点击下载，下载完成之后安装即可。</p>
+ <a href="https://www.nvidia.com/Download/index.aspx?lang=cn">点击打开官网地址</a>，选择你的显卡型号和操作系统，然后点击搜素，再点击下载，下载完成之后安装即可。</p>
 
-<p><img src="c:/Users/46550/Desktop/github_proj/aipangu.github.io/images/2024-03-16-rope-use/lu8lgwvy69.png" alt="在这里插入图片描述" /></p>
+<p><img src="/images/2024-03-16-rope-use/lu8lgwvy69.png" alt="在这里插入图片描述" /></p>
 
 <h2 id="rope整合包使用">Rope整合包使用</h2>
 
 <ol>
   <li>解压整合包后，首先双击Rope.exe去运行Rope
-<img src="c:/Users/46550/Desktop/github_proj/aipangu.github.io/images/2024-03-16-rope-use/lu8lgygp09.png" alt="在这里插入图片描述" /></li>
+<img src="/images/2024-03-16-rope-use/lu8lgygp09.png" alt="在这里插入图片描述" /></li>
   <li>运行后会弹出黑色的终端界面如下图，如果终端中出现报错信息，可能是显卡驱动没有安装，请按照上面步骤安装显卡驱动
-<img src="c:/Users/46550/Desktop/github_proj/aipangu.github.io/images/2024-03-16-rope-use/lu8lh01u81.png" alt="在这里插入图片描述" /></li>
-  <li>如果运行成功，会弹出以下界面，下图所示的三个地方，videos是放置你要换脸的视频的路径，faces文件夹中是放置你想换哪个脸的图片的路径，最终输出的换脸结果会放置在output路径中<img src="c:/Users/46550/Desktop/github_proj/aipangu.github.io/images/2024-03-16-rope-use/lu8lh1mq08.png" alt="在这里插入图片描述" />
+<img src="/images/2024-03-16-rope-use/lu8lh01u81.png" alt="在这里插入图片描述" /></li>
+  <li>如果运行成功，会弹出以下界面，下图所示的三个地方，videos是放置你要换脸的视频的路径，faces文件夹中是放置你想换哪个脸的图片的路径，最终输出的换脸结果会放置在output路径中<img src="/images/2024-03-16-rope-use/lu8lh1mq08.png" alt="在这里插入图片描述" />
 上述三个路径是与解压目录里面下面三个文件夹一一对应的，因此你需要准备好视频和图片分别放在下面的videos和faces目录中
-<img src="c:/Users/46550/Desktop/github_proj/aipangu.github.io/images/2024-03-16-rope-use/lu8lh38t15.png" alt="在这里插入图片描述" /></li>
+<img src="/images/2024-03-16-rope-use/lu8lh38t15.png" alt="在这里插入图片描述" /></li>
   <li>放置完成后点击左上角的Start Rope，稍等加载目标视频和源脸成功
-<img src="c:/Users/46550/Desktop/github_proj/aipangu.github.io/images/2024-03-16-rope-use/lu8lh4ti40.png" alt="在这里插入图片描述" /></li>
+<img src="/images/2024-03-16-rope-use/lu8lh4ti40.png" alt="在这里插入图片描述" /></li>
   <li>点击目标视频，右边播放窗口会加载你选择的视频进来
-<img src="c:/Users/46550/Desktop/github_proj/aipangu.github.io/images/2024-03-16-rope-use/lu8lh6fd65.png" alt="在这里插入图片描述" /></li>
+<img src="/images/2024-03-16-rope-use/lu8lh6fd65.png" alt="在这里插入图片描述" /></li>
   <li>点击视频窗口下面的Find Faces，会检测目标视频的第一帧人脸
-<img src="c:/Users/46550/Desktop/github_proj/aipangu.github.io/images/2024-03-16-rope-use/lu8lh80u21.png" alt="在这里插入图片描述" /></li>
+<img src="/images/2024-03-16-rope-use/lu8lh80u21.png" alt="在这里插入图片描述" /></li>
   <li>
     <p>选择目标视频的第一帧人脸和源人脸，选中后两者都有红框
-<img src="c:/Users/46550/Desktop/github_proj/aipangu.github.io/images/2024-03-16-rope-use/lu8lh9m643.png" alt="在这里插入图片描述" /></p>
+<img src="/images/2024-03-16-rope-use/lu8lh9m643.png" alt="在这里插入图片描述" /></p>
   </li>
   <li>首先打开右边的配置restorer，不打开的话换完后的视频分辨率会降低，变的比较模糊。然后点击Swap Faces，开始换第一帧脸，稍微等待以下，可以看到视频窗口中的人脸被替换了
-<img src="c:/Users/46550/Desktop/github_proj/aipangu.github.io/images/2024-03-16-rope-use/lu8lhb7u00.png" alt="在这里插入图片描述" /></li>
+<img src="/images/2024-03-16-rope-use/lu8lhb7u00.png" alt="在这里插入图片描述" /></li>
   <li>
-    <p>看看替换效果是不是你想要的，如果是的，接下来点击视频窗口中的播放按钮，再点击前进按钮，这两个按钮点击完后应该都是白色的，等待整个进度条运行完成即可，output文件夹中查看结果。	
-<img src="c:/Users/46550/Desktop/github_proj/aipangu.github.io/images/2024-03-16-rope-use/lu8lhctc23.png" alt="在这里插入图片描述" /></p>
+    <p>看看替换效果是不是你想要的，如果是的，接下来点击视频窗口中的播放按钮，再点击前进按钮，这两个按钮点击完后应该都是白色的，等待整个进度条运行完成即可，output文件夹中查看结果。
+<img src="/images/2024-03-16-rope-use/lu8lhctc23.png" alt="在这里插入图片描述" /></p>
   </li>
   <li>/images
 [video(video-WfdvxxSu-1710677995030)(type-csdn)(url-https://live.csdn.net/v/embed/371554)(image-https://video-community.csdnimg.cn/vod-84deb4/f03ba81ce45371eebfd16732b68f0102/snapshots/7f1ea18986f9425baaffc1e26d07f827-00002.jpg?auth_key=4864275623-0-0-8544cc6f785b272375aa42b44dcf1d04)(title-rope_test)]</li>
