@@ -184,6 +184,14 @@
       
       "url"      : "https://koalai.org/2024/03/17/rope-install/",
       "keywords" : "Rope, AI换脸, AI"
+    } ,
+  
+    {
+      "title"    : "干货教程【AI篇】|开源AI数字人工具SadTalker环境搭建和使用教程",
+      "category" : "AI数字人",
+      
+      "url"      : "https://koalai.org/2024/04/01/sadtalker.install/",
+      "keywords" : "SadTalker, 数字人, AI"
     } 
   
 ]

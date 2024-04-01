@@ -1,4 +1,83 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="https://koalai.org/feed.xml" rel="self" type="application/atom+xml" /><link href="https://koalai.org/" rel="alternate" type="text/html" /><updated>2024-03-27T14:17:20+08:00</updated><id>https://koalai.org/feed.xml</id><title type="html">考拉AI</title><subtitle>考拉AI的个人博客</subtitle><author><name>考拉AI</name></author><entry><title type="html">干货教程【AI篇】| AI换脸软件Rope搭建环境运行源码详细教程</title><link href="https://koalai.org/2024/03/17/rope-install/" rel="alternate" type="text/html" title="干货教程【AI篇】| AI换脸软件Rope搭建环境运行源码详细教程" /><published>2024-03-17T00:00:00+08:00</published><updated>2024-03-17T00:00:00+08:00</updated><id>https://koalai.org/2024/03/17/rope-install</id><content type="html" xml:base="https://koalai.org/2024/03/17/rope-install/"><![CDATA[<p>Rope 是一个免费开源的 AI 换脸软件，它具有图形化界面，使得甚至小白也能够轻松地进行简单的操作。该软件提供了多种高清化算法，使用者可以实时观察换脸效果，并且还支持多种遮罩模式以及将多个人脸一起融合的功能。Rope 的官方 GitHub 仓库地址为：https://github.com/Hillobar/Rope</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="https://koalai.org/feed.xml" rel="self" type="application/atom+xml" /><link href="https://koalai.org/" rel="alternate" type="text/html" /><updated>2024-04-01T11:55:59+08:00</updated><id>https://koalai.org/feed.xml</id><title type="html">考拉AI</title><subtitle>考拉AI的个人博客</subtitle><author><name>考拉AI</name></author><entry><title type="html">干货教程【AI篇】|开源AI数字人工具SadTalker环境搭建和使用教程</title><link href="https://koalai.org/2024/04/01/sadtalker.install/" rel="alternate" type="text/html" title="干货教程【AI篇】|开源AI数字人工具SadTalker环境搭建和使用教程" /><published>2024-04-01T00:00:00+08:00</published><updated>2024-04-01T00:00:00+08:00</updated><id>https://koalai.org/2024/04/01/sadtalker.install</id><content type="html" xml:base="https://koalai.org/2024/04/01/sadtalker.install/"><![CDATA[<p>一张包含人像的照片和一段语音，如何让照片中的人物开口说话？</p>
+
+<p>一段包含人物视频和一段语音，如何给视频配上语音，并使得视频中的人物口型和语音匹配？</p>
+
+<p>如果你遇到以上两种场景，那么本教程或许可以帮到你，目前开源免费的主流嘴音同步AI工具主要有以下几个：</p>
+<ol>
+  <li>Wav2Lip
+  github开源地址： https://github.com/Rudrabha/Wav2Lip
+  只支持语音驱动视频嘴型同步， 效果一般，可能需要自己去训练模型才可以得到比较好的效果
+  还提供了一个在线试用版的，选用sync1.6.0模型效果非常不错，<a href="https://app.synclabs.so/playground/lip-sync">打开此地址在线试用</a></li>
+  <li>Easy-Wav2Lip
+  github开源地址：https://github.com/anothermartz/Easy-Wav2Lip
+  基于Wav2Lip做了改进，效果和速度有所提升，但个人感觉效果还是一般</li>
+  <li>AniPortrait
+  github 开源地址：https://github.com/Zejun-Yang/AniPortrait
+  腾讯开源的，支持自驱动和脸部重演（类似于换脸），音频驱动（照片开口说话），效果还不错</li>
+  <li>video-retalking
+  github开源地址：https://github.com/OpenTalker/video-retalking
+  只支持语音驱动视频嘴型同步，但效果感觉比 Wav2Lip系列的要好</li>
+  <li>SadTalker
+  github开源地址： https://github.com/OpenTalker/SadTalker
+  与video-retalking效果差不多，两者用到的技术基本一致，但是支持图片输入</li>
+  <li>SadTalker-Video-Lip-Sync
+ github开源地址：https://github.com/Zz-ww/SadTalker-Video-Lip-Sync
+ 基于SadTalker对视频做了补帧等优化，效果更加自然。作者做了个比较，感兴趣的可以移步github看下比较结果</li>
+</ol>
+
+<p>从易用性来讲，上述的提到的这几种嘴型同步工具，都只能通过源码搭建环境去运行使用，还是比较复杂的，有的提供了Stable Diffusion插件，对SD熟悉的小伙伴可以自行搜索安装</p>
+
+<p>从生成效果上来讲，对比下来我个人觉得SadTalker效果还比较不错，而且同时支持视频和图片输入。所以本篇主要对SadTalker的环境搭建和使用做一个详细介绍。</p>
+
+<p>觉得搭建环境麻烦的小伙伴可以下载我的整合包，点击【一键启动.bat】去运行，按照使用说明去修改运行参数。整合包获取方式如下：</p>
+
+<p><em><a href="https://koalai.org/about/">点击打开我的个人博客网站扫码</a>或者搜索关注公众号<strong>树袋熊AI</strong>，并回复关键词【<strong>SadTalker</strong>】获取</em></p>
+<h2 id="基础软件安装">基础软件安装</h2>
+
+<p>显卡驱动、Git、ffmpeg、Anaconda安装这些我就不再详细介绍了，可以参考<a href="https://editor.csdn.net/md/?articleId=137027934">Rope源码运行环境搭建</a>这篇博客去安装这些基础软件。另外如果是window10/11的小伙伴可以使用 winget 在终端安装这些软件更加方便，可以在终端通过 “winget search 软件名字” 去搜素，复制id后通过 “winget install 软件id” 去安装。</p>
+
+<h2 id="源码下载及运行环境搭建">源码下载及运行环境搭建</h2>
+
+<p>打开Power Shell终端，按照以下步骤运行，注意windows下不要拷贝带#的注释</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 1. 下载源码，clone失败的话，可以去github下载压缩包解压代替这一步</span>
+git clone https://github.com/OpenTalker/SadTalker.git
+<span class="c"># 2. 进入源码文件夹</span>
+<span class="nb">cd </span>SadTalker 
+<span class="c"># 3，创建conda虚拟环境</span>
+conda create <span class="nt">-n</span> sadtalker <span class="nv">python</span><span class="o">=</span>3.8
+<span class="c"># 4，激活虚拟环境</span>
+conda activate sadtalker
+<span class="c"># 5. 安装torch，一个深度学习框架</span>
+pip <span class="nb">install </span><span class="nv">torch</span><span class="o">==</span>1.12.1+cu113 <span class="nv">torchvision</span><span class="o">==</span>0.13.1+cu113 <span class="nv">torchaudio</span><span class="o">==</span>0.12.1 <span class="nt">--extra-index-url</span> https://download.pytorch.org/whl/cu113
+<span class="c"># 6. 安装软件运行所需的依赖库</span>
+pip <span class="nb">install</span> <span class="nt">-r</span> requirements.txt
+</code></pre></div></div>
+<h2 id="模型下载及放置">模型下载及放置</h2>
+
+<p>可以去<a href="https://github.com/OpenTalker/SadTalker">github下载</a>checkpoints模型放置到checkpoints文件夹中；下载weights模型放置到gfgan/weights文件夹中。也可以去我的<a href="https://pan.baidu.com/s/1MdX8V_lZM3yCYvDIyQBy2w?pwd=koai">百度网盘上下载打包好</a>的，下载完成后模型列表如下：</p>
+
+<p><img src="/images/2024-04-01-sadtalker.install/lufq4ztf18.png" alt="在这里插入图片描述" /></p>
+<h2 id="运行sadtalker源码">运行SadTalker源码</h2>
+<p>打开Power Shell终端运行，注意windows下不要拷贝带#的注释</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 1. 进入源码文件夹</span>
+<span class="nb">cd </span>SadTalker 
+<span class="c"># 2，进入虚拟环境</span>
+conda activate sadtalker
+<span class="c"># 3. 运行代码进行推理, examples中放置了测试资源, 全身视频，可以加--still参数</span>
+python inference.py <span class="nt">--driven_audio</span> ./examples/driven_audio/chinese_poem2.wav <span class="nt">--source_image</span> ./examples/source_image/full_body_2.png  <span class="nt">--result_dir</span> ./examples/ref_video <span class="nt">--still</span> <span class="nt">--preprocess</span> full <span class="nt">--enhancer</span> gfpgan
+</code></pre></div></div>
+<p>主要参数解释：</p>
+<ul>
+  <li>–driven_audio：音频的路径位置，具体到某个音频，wav格式</li>
+  <li>–source_image：视频或者图片路径，具体到某个图像或者视频</li>
+  <li>–result_dir：结果视频生成的位置，具体到某个文件夹</li>
+</ul>
+
+<p>运行成功后会出现以下界面
+<img src="/images/2024-04-01-sadtalker.install/lufq51el99.png" alt="在这里插入图片描述" /></p>
+
+<p><em><a href="https://koalai.org/about/">点击打开我的个人博客网站扫码</a>或者搜索关注公众号<strong>树袋熊AI</strong>，并回复关键词【<strong>SadTalker</strong>】获取整合包</em></p>]]></content><author><name>考拉AI</name></author><category term="AI数字人" /><summary type="html"><![CDATA[开源AI数字人工具SadTalker环境搭建和使用教程]]></summary></entry><entry><title type="html">干货教程【AI篇】| AI换脸软件Rope搭建环境运行源码详细教程</title><link href="https://koalai.org/2024/03/17/rope-install/" rel="alternate" type="text/html" title="干货教程【AI篇】| AI换脸软件Rope搭建环境运行源码详细教程" /><published>2024-03-17T00:00:00+08:00</published><updated>2024-03-17T00:00:00+08:00</updated><id>https://koalai.org/2024/03/17/rope-install</id><content type="html" xml:base="https://koalai.org/2024/03/17/rope-install/"><![CDATA[<p>Rope 是一个免费开源的 AI 换脸软件，它具有图形化界面，使得甚至小白也能够轻松地进行简单的操作。该软件提供了多种高清化算法，使用者可以实时观察换脸效果，并且还支持多种遮罩模式以及将多个人脸一起融合的功能。Rope 的官方 GitHub 仓库地址为：https://github.com/Hillobar/Rope</p>
 
 <p>网上也有一些Rope的整合包，免去了小白配置环境困难的苦恼，如果你觉得配置Rope的运行环境比较麻烦，可以直接跳到文章后半部分看Rope的使用教程即可。Rope整合包我也打包了一份，可以关注我的微信公众号进行下载
 但我个人还是推荐你自己部署一下环境，有以下几点好处：</p>
@@ -673,65 +752,4 @@ pip3 config <span class="nb">set </span>global.index-url https://pypi.tuna.tsing
 
 <p>然后需要预充值5美元以上，才能开通GPT-4的访问权限</p>
 
-<p>本文参考来源 <a href="https://bewildcard.com/i/GPT778">bewildcard</a></p>]]></content><author><name>考拉AI</name></author><category term="ChatGPT" /><summary type="html"><![CDATA[ChatGPT 账号国内注册详细教程]]></summary></entry><entry><title type="html">Claude3最新免费使用教程！无需注册！无需魔法！免费使用</title><link href="https://koalai.org/2023/03/09/claude3-free-use/" rel="alternate" type="text/html" title="Claude3最新免费使用教程！无需注册！无需魔法！免费使用" /><published>2023-03-09T00:00:00+08:00</published><updated>2023-03-09T00:00:00+08:00</updated><id>https://koalai.org/2023/03/09/claude3-free-use</id><content type="html" xml:base="https://koalai.org/2023/03/09/claude3-free-use/"><![CDATA[<hr />
-<p>使用Chatgpt4.0，注册海外邮箱、科学访问OpenAI、调用API，可以参考这篇文章：</p>
-
-<p><a href="https://koalai.org/2024/02/29/chatgpt4.0-kaitong/">2024年国内如何快速开通 ChatGPT 4.0 PLUS 升级教程。</a></p>
-
-<h2 id="一claude3简介">一、Claude3简介</h2>
-
-<p><img src="/images/2023-03-09-claude3-free-use/ltkb9ryt93.png" alt="图片" /></p>
-
-<p>Claude3是一个由生成式AI平台Anthropic发布的多模态大模型。性能及各项指标远超GPT-4，详情请看：<a href="http://mp.weixin.qq.com/s?__biz=MzkzMjY1NjEwNA==&amp;mid=2247483763&amp;idx=1&amp;sn=0096fb60fa33251e68c7aacc8dfa17d8&amp;chksm=c25927f4f52eaee23cace2daf19c2e6ebb813a8561acf6739284be62653a1128abdfb2ffd8de&amp;scene=21#wechat_redirect">Anthropic发布最强大模型Claude 3，实力碾压GPT-4和Gemini！</a></p>
-
-<h2 id="二官网使用claude3">二、官网使用Claude3</h2>
-
-<p>国内如果想使用官方的Claude3，<strong>只能登录官网</strong>：https://claude.ai/</p>
-
-<p>注册所需条件：</p>
-
-<hr />
-
-<ol>
-  <li>
-    <p>科学上网（自行解决）</p>
-  </li>
-  <li>
-    <p>海外手机号（某宝）</p>
-  </li>
-  <li>
-    <p>海外邮箱（参考：<a href="https://koalai.org/2024/03/01/gmail-sign-up/">谷歌邮箱注册教程。</a>）</p>
-  </li>
-</ol>
-
-<hr />
-
-<h2 id="三国内使用claude3">三、国内使用Claude3</h2>
-
-<ol>
-  <li>
-    <p><strong>打开LMSYS Org的主页，点击Chatbot Arena</strong></p>
-
-    <p><img src="/images/2023-03-09-claude3-free-use/ltkb9tmp49.jpg" alt="图片" /></p>
-  </li>
-  <li>
-    <p><strong>点击Direct Chat</strong></p>
-
-    <p><img src="/images/2023-03-09-claude3-free-use/ltkb9v8v61.jpg" alt="图片" /></p>
-  </li>
-  <li>
-    <p><strong>选择Claude3模型</strong></p>
-
-    <p><img src="/images/2023-03-09-claude3-free-use/image-1.png" alt="alt text" /></p>
-  </li>
-  <li>
-    <p><strong>然后就可以输入问题点击发送啦</strong></p>
-
-    <p><img src="/images/2023-03-09-claude3-free-use/image.png" alt="alt text" />
-___</p>
-  </li>
-</ol>
-
-<p><strong>LMSYS Org简介：</strong></p>
-
-<p>Large Model Systems Organization (LMSYS Org) 是一个开放的研究组织，由加州大学伯克利分校的学生和教师与加州大学圣地亚哥分校和卡内基梅隆大学合作创立。  他们的目标是通过共同开发开放数据集、模型、系统和评估工具，让每个人都能访问大型模型。</p>]]></content><author><name>考拉AI</name></author><category term="Claude3" /><summary type="html"><![CDATA[Claude3最新免费使用教程！无需注册！无需魔法！免费使用]]></summary></entry></feed>
+<p>本文参考来源 <a href="https://bewildcard.com/i/GPT778">bewildcard</a></p>]]></content><author><name>考拉AI</name></author><category term="ChatGPT" /><summary type="html"><![CDATA[ChatGPT 账号国内注册详细教程]]></summary></entry></feed>
