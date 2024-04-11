@@ -1,4 +1,93 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="https://koalai.org/feed.xml" rel="self" type="application/atom+xml" /><link href="https://koalai.org/" rel="alternate" type="text/html" /><updated>2024-04-01T11:55:59+08:00</updated><id>https://koalai.org/feed.xml</id><title type="html">考拉AI</title><subtitle>考拉AI的个人博客</subtitle><author><name>考拉AI</name></author><entry><title type="html">干货教程【AI篇】|开源AI数字人工具SadTalker环境搭建和使用教程</title><link href="https://koalai.org/2024/04/01/sadtalker.install/" rel="alternate" type="text/html" title="干货教程【AI篇】|开源AI数字人工具SadTalker环境搭建和使用教程" /><published>2024-04-01T00:00:00+08:00</published><updated>2024-04-01T00:00:00+08:00</updated><id>https://koalai.org/2024/04/01/sadtalker.install</id><content type="html" xml:base="https://koalai.org/2024/04/01/sadtalker.install/"><![CDATA[<p>一张包含人像的照片和一段语音，如何让照片中的人物开口说话？</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="https://koalai.org/feed.xml" rel="self" type="application/atom+xml" /><link href="https://koalai.org/" rel="alternate" type="text/html" /><updated>2024-04-11T18:44:13+08:00</updated><id>https://koalai.org/feed.xml</id><title type="html">考拉AI</title><subtitle>考拉AI的个人博客</subtitle><author><name>考拉AI</name></author><entry><title type="html">干货教程【AI篇】|腾讯开源数字人工具AniPortrait整合包获取和使用教程</title><link href="https://koalai.org/2024/04/11/aniportrait-install/" rel="alternate" type="text/html" title="干货教程【AI篇】|腾讯开源数字人工具AniPortrait整合包获取和使用教程" /><published>2024-04-11T00:00:00+08:00</published><updated>2024-04-11T00:00:00+08:00</updated><id>https://koalai.org/2024/04/11/aniportrait-install</id><content type="html" xml:base="https://koalai.org/2024/04/11/aniportrait-install/"><![CDATA[<p>最近腾讯开源了一款数字人工具，直接对标阿里的EMO，github 地址为：<a href="https://github.com/Zejun-Yang/AniPortrait">https://github.com/Zejun-Yang/AniPortrait</a>
+主要支持以下两个功能：</p>
+
+<ol>
+  <li>脸部重演
+通过给定一段视频和一张图片，可以把视频中的人物替换为图片中的人物，支持二次元人物</li>
+  <li>音频驱动
+通过给定一张人物照片和一段音频，生成一段语音和嘴型同步的视频，支持二次元人物</li>
+</ol>
+
+<p><strong>电脑配置和环境要求</strong></p>
+
+<ul>
+  <li>系统要求： windows 10 或者11</li>
+  <li>显卡要求： 英伟达独立显卡，俗称N卡，要安装好显卡驱动, 显存8G及以上</li>
+  <li>内存要求：16G及以上</li>
+  <li>硬盘要求： 要有至少30G左右的剩余存储空间，最好是固态硬盘</li>
+</ul>
+
+<p><strong>本文章主要分为两部分：</strong></p>
+
+<ol>
+  <li>详细介绍 AniPortrait 源码运行环境搭建</li>
+  <li>详细介绍 AniPortrait 如何使用。</li>
+</ol>
+
+<p>由于源码运行环境搭建较为复杂，觉得麻烦的小伙伴可以跳过第一部分，直接下载我为大家准备的整合包，然后按照文章第二部分使用教程操作即可。</p>
+
+<p><em><a href="https://koalai.org/about/">点击打开我的个人博客网站</a>扫码或者搜索关注公众号<strong>树袋熊AI</strong>，并回复关键词【<strong>AniP</strong>】获取包含模型的整合包</em></p>
+
+<h2 id="1--aniportrait-源码运行环境搭建">1.  AniPortrait 源码运行环境搭建</h2>
+
+<h3 id="基础软件安装">基础软件安装</h3>
+
+<p>显卡驱动、cuda、git、ffmpeg、anaconda安装这些我就不再详细介绍了，可以参考<a href="https://blog.csdn.net/qq_17449077/article/details/137027934">Rope源码运行环境搭建这篇博客</a>去安装这些基础软件。另外如果是window10/11的小伙伴可以使用 winget 在终端安装这些软件更加方便，可以在终端通过 “winget search 软件名字” 去搜素，复制id后通过 “winget install 软件id” 去安装。</p>
+
+<h3 id="源码下载及运行环境搭建">源码下载及运行环境搭建</h3>
+
+<p>打开Power Shell终端，按照以下步骤运行，注意windows下不要拷贝带#的注释</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 1. 下载源码，clone失败的话，可以去github下载压缩包解压代替这一步</span>
+git clone https://github.com/Zejun-Yang/AniPortrait.git
+<span class="c"># 2. 进入源码文件夹</span>
+<span class="nb">cd </span>AniPortrait
+<span class="c"># 3，创建conda虚拟环境</span>
+conda create <span class="nt">-n</span> AniPortrait <span class="nv">python</span><span class="o">=</span>3.10
+<span class="c"># 4，激活虚拟环境</span>
+conda activate AniPortrait
+<span class="c"># 5. 安装软件运行所需的依赖库</span>
+pip <span class="nb">install</span> <span class="nt">-r</span> requirements.txt
+</code></pre></div></div>
+
+<h3 id="下载和放置模型">下载和放置模型</h3>
+
+<p>从下面的5个地址中下载模型，并放到 pretrained_weights 文件夹中：
+<a href="https://huggingface.co/ZJYang/AniPortrait/tree/main">weights</a>
+<a href="https://huggingface.co/runwayml/stable-diffusion-v1-5">StableDiffusion V1.5</a>
+<a href="https://huggingface.co/stabilityai/sd-vae-ft-mse">sd-vae-ft-mse</a>
+<a href="https://huggingface.co/lambdalabs/sd-image-variations-diffusers/tree/main/image_encoder">image_encoder</a>
+<a href="https://huggingface.co/facebook/wav2vec2-base-960h/tree/main">wav2vec2-base-960h</a></p>
+
+<p>所有的模型我已经下载打包好了，获取方式在文末。下载完成后最终模型目录如下：
+<img src="/images/2024-04-11-aniportrait-install/799097e729e14f82b8f6ab0349c11ac0.png" alt="在这里插入图片描述" /></p>
+
+<h3 id="运行aniportrait-源码">运行AniPortrait 源码</h3>
+
+<p>打开Power Shell终端运行，注意windows下不要拷贝带#的注释</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 1. 进入源码文件夹</span>
+<span class="nb">cd </span>AniPortrait
+<span class="c"># 2，进入虚拟环境</span>
+conda activate AniPortrait
+<span class="c"># 3. 运行代码进行推理, 运行成功后终端会出现一个url链接，浏览器打开链接即可 </span>
+python <span class="nt">-m</span> scripts.app 
+</code></pre></div></div>
+
+<p>运行后如果终端报缺失 dll 的错误，请到文末获取 VC_redist 并安装</p>
+
+<h2 id="2-aniportrait-使用教程">2. AniPortrait 使用教程</h2>
+
+<p>运行成功后，浏览器打开 url 程序主界面如下：
+<img src="/images/2024-04-11-aniportrait-install/864acce41991414a9001ae19dc500698.png" alt="在这里插入图片描述" /></p>
+
+<p>默认的处理序列长度L是60，比较短，建议修改成0，表示会自动计算序列长度，W和H表示输出视频的长度和宽度，尽量不要调整太高，建议用默认的值，如果想得到高清视频，可以用视频增强软件去处理。</p>
+
+<p>可以上传自己本地的数据，另外 examples 中也自带了一些测试数据，点击后会自动加载到上传区，点击Generate等待视频生成即可，Result 中会显示最终生成的结果，可以播放或者下载到本地。</p>
+
+<p>我测试了一下，感觉除了最后几帧效果会比较差，整体效果还不错。</p>
+
+<p><em><a href="https://koalai.org/about/">点击打开我的个人博客网站</a>扫码或者搜索关注公众号<strong>树袋熊AI</strong>，并回复关键词【<strong>AniP</strong>】获取包含模型的整合包</em></p>]]></content><author><name>考拉AI</name></author><category term="AI数字人" /><summary type="html"><![CDATA[腾讯开源数字人工具AniPortrait整合包获取和使用教程]]></summary></entry><entry><title type="html">干货教程【AI篇】|开源AI数字人工具SadTalker环境搭建和使用教程</title><link href="https://koalai.org/2024/04/01/sadtalker.install/" rel="alternate" type="text/html" title="干货教程【AI篇】|开源AI数字人工具SadTalker环境搭建和使用教程" /><published>2024-04-01T00:00:00+08:00</published><updated>2024-04-01T00:00:00+08:00</updated><id>https://koalai.org/2024/04/01/sadtalker.install</id><content type="html" xml:base="https://koalai.org/2024/04/01/sadtalker.install/"><![CDATA[<p>一张包含人像的照片和一段语音，如何让照片中的人物开口说话？</p>
 
 <p>一段包含人物视频和一段语音，如何给视频配上语音，并使得视频中的人物口型和语音匹配？</p>
 
@@ -712,44 +801,4 @@ pip3 config <span class="nb">set </span>global.index-url https://pypi.tuna.tsing
 
 <p>开通的是有效期1-2年的虚拟信用卡，开卡费包含两年年费，大约 70 元RMB，每天成本不到 1.5 毛钱。其他费用无，根据个人需求充值。</p>
 
-<p>关键是，如果没有消费成功，可以随时提现余额到支付宝。</p>]]></content><author><name>考拉AI</name></author><category term="ChatGPT" /><summary type="html"><![CDATA[关于国内快速开通 ChatGPT 4.0的方法，小白秒学秒用，保姆级教程。]]></summary></entry><entry><title type="html">ChatGPT 账号国内注册详细教程</title><link href="https://koalai.org/2024/01/01/chatgpt-sign-up-new/" rel="alternate" type="text/html" title="ChatGPT 账号国内注册详细教程" /><published>2024-01-01T00:00:00+08:00</published><updated>2024-01-01T00:00:00+08:00</updated><id>https://koalai.org/2024/01/01/chatgpt-sign-up-new</id><content type="html" xml:base="https://koalai.org/2024/01/01/chatgpt-sign-up-new/"><![CDATA[<p><strong>ChatGPT</strong> 可以用来写文章、问答对话，帮你写代码，查问题等，最重要的是ChatGPT 3.5是免费的，注册即可使用，但是由于某些原因，国内想要拥有一个ChatGPT账号却有一定的门槛。本文将详细介绍ChatGPT的注册流程，帮助大家顺利用上 <strong>ChatGPT</strong></p>
-
-<p>PS: 如果你已经拥有了 ChatGPT账号，想要升级到Plus，可以看这篇教程，几分钟搞定: <a href="https://koalai.org/2024/02/29/chatgpt4.0-kaitong/">ChatGPT升级Plus支付教程</a>，<strong>ChatGPT Plus</strong> 可以使用 <strong>ChatGPT 4.0</strong>，相对3.5 更加智能，而且可以绘画（DALL），GPTs创建自己的Agent等。</p>
-
-<h2 id="chatgpt-官网">ChatGPT 官网</h2>
-<p>ChatGPT 是 OpenAI 公司出的一款人工智能产品，官方网址是 <a href="https://chat.openai.com/">https://chat.openai.com</a>，请认准其官方域名 <a href="https://openai.com/">openai.com</a>，不要进错网站了，目前国内山寨的镜像网站非常多，注意辨别</p>
-
-<p>##注册 OpenAI 账号</p>
-
-<p>申请openai账号需要预先准备一个国外的邮箱，建议使用谷歌邮箱，注册很简单，可以看这篇教程<a href="https://koalai.org/2024/03/01/gmail-sign-up/">谷歌邮箱注册教程</a>
-首先打开 <a href="https://chat.openai.com/">OpenAI</a> 的账户注册页面，点击 Sign up（注册）
-<img src="/images/2024-01-01-chatgpt-sign-up-new/image.png" alt="alt text" />
-在Email address（邮箱地址）输入框里面填写准备的邮箱地址，点击continue（继续）:
-<img src="/images/2024-01-01-chatgpt-sign-up-new/image1.png" alt="alt text" />
-在Password框里填入密码，然后点击Continue（注意这是要设置OpenAI账号的密码，与谷歌邮箱密码不是一回事）
-<img src="/images/2024-01-01-chatgpt-sign-up-new/image-1.png" alt="alt text" />
-密码设置完成后与点击Goback ，或者重新进入<a href="https://chat.openai.com/">OpenAI官网</a>，点击Sign in（登录）
-<img src="/images/2024-01-01-chatgpt-sign-up-new/image-2.png" alt="alt text" />
-输入谷歌邮箱账号和刚才设置的密码，验证完成后，会进入到邮箱验证界面，点击Open Gmail（打开谷歌邮箱）
-<img src="/images/2024-01-01-chatgpt-sign-up-new/image-3.png" alt="alt text" />
-进入谷歌邮箱中会有一个OpenAI的邮件（如果没有登录过谷歌邮箱需要输入谷歌邮箱的账号密码进行登录）
-<img src="/images/2024-01-01-chatgpt-sign-up-new/image-4.png" alt="alt text" />
-打开邮件，点击Verify email address（验证邮箱地址）
-<img src="/images/2024-01-01-chatgpt-sign-up-new/image-5.png" alt="alt text" />
-验证成功后会自动跳转到OpenAI的设置用户信息界面，输入你的名字和生日（日/月/年），然后点击Agree(同意)
-<img src="/images/2024-01-01-chatgpt-sign-up-new/image-6.png" alt="alt text" />
-会进入到ChatGPT对话页面，在下面的Message ChatGPT中输入你想要问的问题，即可与ChatGPT对话啦
-<img src="/images/2024-01-01-chatgpt-sign-up-new/image-7.png" alt="alt text" />
-右上角可以看到我们目前对话的版本是3.5，ChatGPT 3.5是完全免费的，所有收费的都是骗子，只要你会科学上网，你有了OpenAI账号就可以完全免费使用ChatGPT 3.5，日常我们搜索个东西，问它点问题，或者是让它帮你写点东西，都是可以的。</p>
-
-<p>如果你是一个ChatGPT深度使用者，对它的的回答要求比较高，想使用它的4.0版本，或是想使用ChatGPT的API进行开发，亦或是想使用ChatGPT进行绘画，那就需要开通ChatGPT Plus了，收费标准是 20 美元/每月。<a href="https://koalai.org/2024/02/29/chatgpt4.0-kaitong/">升级ChatGPT Plus教程在这里</a></p>
-
-<p>ChatGPT 登录入口是 <a href="https://chat.openai.com/">https://chat.openai.com</a></p>
-
-<p>API 开发者用户的登录入口是 <a href="https://platform.openai.com/">https://platform.openai.com</a></p>
-
-<p>API 开发者用户获取 GPT-4 API的使用权限，是通过升级付费帐户，升级付费帐户的教程在这里。</p>
-
-<p>然后需要预充值5美元以上，才能开通GPT-4的访问权限</p>
-
-<p>本文参考来源 <a href="https://bewildcard.com/i/GPT778">bewildcard</a></p>]]></content><author><name>考拉AI</name></author><category term="ChatGPT" /><summary type="html"><![CDATA[ChatGPT 账号国内注册详细教程]]></summary></entry></feed>
+<p>关键是，如果没有消费成功，可以随时提现余额到支付宝。</p>]]></content><author><name>考拉AI</name></author><category term="ChatGPT" /><summary type="html"><![CDATA[关于国内快速开通 ChatGPT 4.0的方法，小白秒学秒用，保姆级教程。]]></summary></entry></feed>
